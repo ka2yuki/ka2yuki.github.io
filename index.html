@@ -1,1 +1,36 @@
-Hello git 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
+
+
+</head>
+<body>
+
+  <div id="fullpage">
+      <div class="section">1</div>
+      <div class="section">2</div>
+      <div class="section">3</div>
+      <div class="section">4</div>
+      <div class="section">5</div>
+  </div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery('#fullpage').fullpage({
+    navigation: true, // nav の on,off
+    navigationPosition: 'right', // 場所
+    autoScrolling:false, // content 区切りの画面 scroll
+    fitToSection: false, // Section(content) に半端位置の際,オートフィット
+    sectionsColor: ['#fff', '#EDA82D', '#40A0E6', '#fff','#AEAFB2'] //bg
+  });
+});
+</script>
+
+
+</body>
+</html>
