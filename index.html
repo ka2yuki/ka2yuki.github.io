@@ -9,6 +9,10 @@
 
 
 <style media="screen">
+p{
+  padding: 0;
+  margin: 0 ;
+}
 .section{
 //text-align:center;
 }
@@ -17,6 +21,17 @@ text-align: center;
 font-weight: bold;
 font-size: 3em;
 border: 10px solid #000;
+}
+.sectionTitle{
+  text-align: center;
+}
+.studyContent {
+    margin: 0 auto;
+    display: table;
+}
+.studyContents {
+    float: left;
+    padding: 0 30px 10px;
 }
 
 </style>
@@ -27,11 +42,30 @@ border: 10px solid #000;
   <div id="fullpage">
       <div class="section">Hi, I'm Moriy</div>
       <div class="section">
-	<ul>
-        <li><a href="http://think-ideas.net/study/mvc.php" target="_brank">MVC-Study</a></li>
-        <li><a href="http://think-ideas.net/study/array.php" target="_brank">Array-Study</a></li>
-        <li></li>
-	</ul>
+        <h1 class="sectionTitle">Study</h1>
+        <div class="studyContent">
+          <div class="studyContents">
+            <h2>Section</h2>
+          	<ul>
+                  <li><a href="http://think-ideas.net/study/mvc.php" target="_brank">MVC-Study</a></li>
+                  <li><a href="http://think-ideas.net/study/array.php" target="_brank">Array-Study</a></li>
+                  <li></li>
+          	</ul>
+          </div>
+          <div class="studyContents">
+            <h2>APPS</h2>
+            <p>PHP</p>
+          	<ul>
+                  <li><a href="http://think-ideas.net/study/cookingOrder" target="_brank">Cooking Order Site</a></li>
+                  <li></li>
+          	</ul>
+            <p>Rails</p>
+            <ul>
+                  <li><a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">Rails Tutorial</a></li>
+                  <li></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="section">3</div>
       <div class="section">4</div>
