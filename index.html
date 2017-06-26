@@ -12,30 +12,30 @@
 
 
 <style media="screen">
-p{
-  padding: 0;
-  margin: 0 ;
-}
-.section{
-//text-align:center;
-}
-.section:first-child{
-text-align: center;
-font-weight: bold;
-font-size: 3em;
-border: 10px solid #000;
-}
-.sectionTitle{
+  p{
+    padding: 0;
+    margin: 0 ;
+  }
+  .section{
+   text-align: center;
+  }
+  .section:first-child{
   text-align: center;
-}
-.studyContent {
-    margin: 0 auto;
-    display: table;
-}
-.studyContents {
-    float: left;
-    padding: 0 30px 10px;
-}
+  font-weight: bold;
+  font-size: 3em;
+  border: 10px solid #000;
+  }
+  .sectionTitle{
+    text-align: center;
+  }
+  .studyContent {
+      margin: 0 auto;
+      display: table;
+  }
+  .studyContents {
+      float: left;
+      padding: 0 30px 10px;
+  }
 
 </style>
 
@@ -80,7 +80,7 @@ $(function() {
   $('#fullpage').fullpage({
     navigation: true, // nav の on,off
     navigationPosition: 'right', // 場所
-    autoScrolling:false, // content 区切りの画面 scroll
+    // autoScrolling: false, // content 区切りの画面 scroll
     fitToSection: false, // Section(content) に半端位置の際,オートフィット
     sectionsColor: ['#fff', '#EDA82D', '#40A0E6', '#fff','#AEAFB2'] //bg
   });
