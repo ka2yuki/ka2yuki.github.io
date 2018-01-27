@@ -7,87 +7,70 @@
   <title>MyProtpolio</title>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
-
-
-<style media="screen">
-  p{
-    padding: 0;
-    margin: 0 ;
-  }
-  .section{
-   text-align: center;
-  }
-  .section:first-child{
-  text-align: center;
-  font-weight: bold;
-  font-size: 3em;
-  border: 10px solid #000;
-  }
-  .sectionTitle{
-    text-align: center;
-  }
-  .studyContent {
-      margin: 0 auto;
-      display: table;
-  }
-  .studyContents {
-      float: left;
-      padding: 0 30px 10px;
-  }
-
-</style>
-
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
   <div id="fullpage">
-      <div class="section">Hi, I'm Moriy</div>
-      <div class="section">
-        <h1 class="sectionTitle">Study</h1>
-        <div class="studyContent">
-          <div class="studyContents">
-            <h2>Section</h2>
-            <a href="t/test.html">link</a>
-          	<ul>
-                  <li><a href="http://think-ideas.net/study/mvc.php" target="_brank">MVC-Study</a></li>
-                  <li><a href="http://think-ideas.net/study/array.php" target="_brank">Array-Study</a></li>
-                  <li></li>
-          	</ul>
-          </div>
-          <div class="studyContents">
-            <h2>APPS</h2>
-            <p>PHP</p>
-          	<ul>
-                  <li><a href="http://think-ideas.net/study/cookingOrder" target="_brank">Cooking Order Site (now)</a></li>
-                  <li></li>
-          	</ul>
-            <p>Rails</p>
-            <ul>
-                  <li><a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">Rails Tutorial (7 in 12)</a></li>
-                  <li></li>
-            </ul>
-          </div>
-        </div>
+      <div class="section" id="section0">
+        <video id="myVideo" loop muted data-autoplay>
+            <source src="assets/flowers.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <p style="
+          position: relative;
+          top: 45%;
+          color: white;
+          "
+          >Hi, I'm Moriy</p>
       </div>
-      <div class="section">3</div>
-      <div class="section">4</div>
-      <div class="section">5</div>
+<!-- sec2 -->
+      </div>
+      <div class="section" id="section1">
+        <h1 class="sectionTitle">Works</h1>
+        <div class="contents grid">
+          <div class="content module">
+            <div class="c-img">commingSoon</div>
+            <div class="c-title">Angular2</div>            
+          </div>
+          <div class="content module">
+            <div class="c-img"><img src="assets/janken.gif" alt=""></div>
+            <div class="c-title">Swift</div>
+          </div>
+          <div class="content module">
+            <div class="c-img">commingSoon</div>
+            <div class="c-title">Rails.v5</div>
+          </div>
+          <div class="content module">
+            <a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">
+              <div class="c-img">R</div>
+              <div class="c-title">Rails.v4 (7 in 12)</div>
+            </a>
+          </div>
+          <div class="content module"></div>
+        </div>
+
+      </div>
+<!-- sec3 -->
+      <div class="section" id="section2">3</div>
   </div>
 
-<script type="text/javascript">
-$(function() {
-  $('#fullpage').fullpage({
-    navigation: true, // nav の on,off
-    navigationPosition: 'right', // 場所
-    // autoScrolling: false, // content 区切りの画面 scroll
-    fitToSection: false, // Section(content) に半端位置の際,オートフィット
-    sectionsColor: ['#fff', '#EDA82D', '#40A0E6', '#fff','#AEAFB2'] //bg
-  });
-});
 
-</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        autoScrolling: false,
+        fitToSection: false, // Section(content) に半端位置の際,オートフィット
+        sectionsColor: ['#fff'],
+//        scrollOverflow: true
+      });
+    });
+  </script>
 
 
 </body>
