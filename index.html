@@ -5,61 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyProtpolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/ityped@1.0.2"></script>
+  <style>
+    .ityped-cursor {
+      font-size: 6rem;
+      /* Flashing. this code */
+      /* opacity: 1; */
+      /* -webkit-animation: blink 0.3s infinite;
+      -moz-animation: blink 0.3s infinite;
+      animation: blink 0.3s infinite;
+      animation-direction: alternate; */
+    }
+    /* @keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+    @-webkit-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    }
+    @-moz-keyframes blink {
+      100% {
+        opacity: 0;
+      }
+    } */
+  </style>
 </head>
 <body>
 
   <div id="fullpage">
+      <!-- sec1 -->
       <div class="section" id="section0">
         <video id="myVideo" loop muted data-autoplay>
             <source src="assets/flowers.mp4" type="video/mp4">
         </video>
-        <div class="layer">
-          <p style="
-          position: relative;
-          top: 45%;
-          color: white;
-          "
-          >Hi, I'm Moriy</p>
+        <div class="layer" id="app">
+          <h1><span id="ityped" class="ityped-cursor"></span></h1>
+        </div>
       </div>
-<!-- sec2 -->
-      </div>
-      <div class="section" id="section1">
+      <!-- sec2 -->
+      <div class="section d-flex flex-row" id="section1">
         <h1 class="sectionTitle">Works</h1>
-        <div class="contents grid">
-          <div class="content module">
-            <a href="https://angular2v5-tutorial.herokuapp.com/" target="_brank">
-              <div class="c-img">A</div>
-              <div class="c-title">Angular2</div>
-            </a>
+        <div class="d-flex flex-row con ">
+          <div class="card border-primary mb-3 mx-3" style="max-width: 18rem;">
+            <div class="card-header">Angular2</div>
+            <div class="card-body text-primary">
+              <!-- <h5 class="card-title">Primary card title</h5> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="https://angular2v5-tutorial.herokuapp.com/" target="_brank"> Angular2 Link</a>
+            </div>
           </div>
-          <div class="content module">
-            <div class="c-img"><img src="assets/janken.gif" alt=""></div>
-            <div class="c-title">Swift</div>
+          <div class="card border-secondary mb-3 mr-3" style="max-width: 18rem;">
+            <div class="card-header">Swift</div>
+            <img src="assets/janken.gif" class="card-img-top" alt="...">
+            <div class="card-body text-secondary">
+            </div>
           </div>
-          <div class="content module">
-            <div class="c-img">commingSoon</div>
-            <div class="c-title">Rails.v5</div>
+          <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Rails.v4</div>
+            <div class="card-body text-success">
+              <a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">Link</a>
+            </div>
           </div>
-          <div class="content module">
-            <a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">
-              <div class="c-img">R</div>
-              <div class="c-title">Rails.v4 (7 in 12)</div>
-            </a>
-          </div>
-          <div class="content module"></div>
         </div>
 
+        <div class="d-flex flex-row con">
+            <div class="card border-danger mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-danger">
+                <h5 class="card-title">Danger card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card border-warning mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-warning">
+                <h5 class="card-title">Warning card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card border-info mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-info">
+                <h5 class="card-title">Info card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card border-light mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Light card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Header</div>
+              <div class="card-body text-dark">
+                <h5 class="card-title">Dark card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        </div>
       </div>
-<!-- sec3 -->
-      <div class="section" id="section2">3</div>
   </div>
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
   <script type="text/javascript">
     $(function() {
@@ -69,9 +131,19 @@
         autoScrolling: false,
         fitToSection: false, // Section(content) に半端位置の際,オートフィット
         sectionsColor: ['#fff'],
-//        scrollOverflow: true
+//      scrollOverflow: true
       });
     });
+
+    ityped.init(
+      document.querySelector("#ityped"), 
+      {
+        loop: true,
+        backSpeed:  10,
+        backDelay:  4500,
+        showCursor: false,
+        strings: ["Welcome to My Site!"]
+      })
   </script>
 
 
