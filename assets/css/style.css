@@ -55,46 +55,6 @@
 
 
   /* コンテンツ レイアウト */
-    .contents {
-      }
-    .content {
-    }
-    .grid {/*親*/
-      /* Grid Fallback */
-      display: flex;
-      flex-wrap: wrap;
-      /* Supports Grid */
-      display: grid;
-      grid-auto-rows: minmax(150px, auto); /*1,それ以降*/
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*1,それ以降*/
-      grid-gap: 1em;
-      margin: 0 auto;
-      max-width: 56em;
-      padding: 1em 0;
-    }
-    .module {/*子*/
-      /* Demo-Specific Styles */
-      background: white;
-      height: 300px;
-      /* Flex Fallback */
-      margin-left: 5px;
-      margin-right: 5px;
-      flex: 1 1 200px;
-      border-radius: 10px;
-    }
-    .c-img{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 80%;
-    }
-    .c-title{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /*background: skyblue;*/
-      height: 20%;
-    }
 
   #section1{
     background : white;
