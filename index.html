@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MyProtpolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://unpkg.com/ityped@1.0.2"></script>
-  <style>
-    .ityped-cursor {
-      font-size: 5rem;
-      /* Flashing. this code */
-      /* opacity: 1; */
-      /* -webkit-animation: blink 0.3s infinite;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MyProtpolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
+    <style>
+      .ityped-cursor {
+        font-size: 5rem;
+        /* Flashing. this code */
+        /* opacity: 1; */
+        /* -webkit-animation: blink 0.3s infinite;
       -moz-animation: blink 0.3s infinite;
       animation: blink 0.3s infinite;
       animation-direction: alternate; */
-    }
-    /* @keyframes blink {
+      }
+      /* @keyframes blink {
       100% {
         opacity: 0;
       }
@@ -34,15 +43,14 @@
         opacity: 0;
       }
     } */
-  </style>
-</head>
-<body>
-
-  <div id="fullpage">
+    </style>
+  </head>
+  <body>
+    <div id="fullpage">
       <!-- sec1 -->
       <div class="section" id="section0">
         <video id="myVideo" loop muted data-autoplay>
-            <source src="assets/flowers.mp4" type="video/mp4">
+          <source src="assets/flowers.mp4" type="video/mp4" />
         </video>
         <div class="layer" id="app">
           <h1><span id="ityped" class="ityped-cursor"></span></h1>
@@ -53,12 +61,19 @@
       <div class="section d-flex flex-row" id="section1">
         <h1 class="sectionTitle">Tutorials & Books & Movies</h1>
         <div class="d-flex flex-row con row">
-
           <div class="card border-info mb-3 col-sm" style="max-width: 18rem;">
             <div class="card-header">Vue.js</div>
             <div class="card-body">
               <h5 class="card-title">Shopping Cart</h5>
-              <a name="" id="" class="btn btn-primary" href="./vuejs" role="button" target="_black">Link</a>
+              <a
+                name=""
+                id=""
+                class="btn btn-primary"
+                href="./vuejs"
+                role="button"
+                target="_black"
+                >Link</a
+              >
               <!-- <p class="card-text">.</p> -->
               <div>
                 <span class="text-dark">4/May/2019</span>
@@ -66,28 +81,43 @@
             </div>
           </div>
 
-          <div class="card border-primary mb-3 mx-3 col-sm" style="max-width: 18rem;">
+          <div
+            class="card border-primary mb-3 mx-3 col-sm"
+            style="max-width: 18rem;"
+          >
             <div class="card-header">Angular2</div>
             <div class="card-body text-primary">
               <!-- <h5 class="card-title">Primary card title</h5> -->
               <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="https://angular2v5-tutorial.herokuapp.com/" target="_brank"> Angular2 Link</a>
+              <a
+                href="https://angular2v5-tutorial.herokuapp.com/"
+                target="_brank"
+              >
+                Angular2 Link</a
+              >
             </div>
           </div>
-          <div class="card border-secondary mb-3 mr-3 col-sm" style="max-width: 18rem;">
+          <div
+            class="card border-secondary mb-3 mr-3 col-sm"
+            style="max-width: 18rem;"
+          >
             <div class="card-header">Swift</div>
-            <img src="assets/janken.gif" class="card-img-top" alt="...">
-            <div class="card-body text-secondary">
-            </div>
+            <img src="assets/janken.gif" class="card-img-top" alt="..." />
+            <div class="card-body text-secondary"></div>
           </div>
-          <div class="card border-success mb-3 col-sm" style="max-width: 18rem;">
+          <div
+            class="card border-success mb-3 col-sm"
+            style="max-width: 18rem;"
+          >
             <div class="card-header">Rails.v4</div>
             <div class="card-body text-success">
-              <a href="https://safe-inlet-76266.herokuapp.com/" target="_brank">Link</a>
+              <a href="https://safe-inlet-76266.herokuapp.com/" target="_brank"
+                >Link</a
+              >
             </div>
           </div>
         </div>
-<!-- 
+        <!-- 
         <div class="d-flex flex-row con row">
             <div class="card border-danger mb-3 col-sm" style="max-width: 18rem;">
               <div class="card-header">Header</div>
@@ -124,114 +154,138 @@
           <div class="col-sm mt-3">
             <h3>非掲載</h3>
             <ul class="list-group list-group-flush text-left con">
-                <li class="list-group-item">wordpress : コーポレートサイト 6件</li>
-                <li class="list-group-item">Rails : 帳票管理システム、スキャンシステム .. etc</li>
-                <li class="list-group-item">Node.js : LINE Messaging API</li>
+              <li class="list-group-item">
+                wordpress : コーポレートサイト 6件
+              </li>
+              <li class="list-group-item">
+                Rails : 帳票管理システム、スキャンシステム .. etc
+              </li>
+              <li class="list-group-item">Node.js : LINE Messaging API</li>
             </ul>
           </div>
           <div class="col-sm mt-3">
             <h3>学習Log</h3>
             <ul class="list-group list-group-flush text-left con">
-                <li class="list-group-item"><a href="https://prog-8.com/dashboard" target="_blank">Progate</a> Lv.: 240, 総演習クリア数: 913</li>
-                <li class="list-group-item"><a href="https://dotinstall.com/home" target="_blank">Dotinstall</a> 総完了数 : 914, 第 54 期生 2012年12月 登録</li>
-                <li class="list-group-item">udemy : node.js, Rails, React Native</li>
+              <li class="list-group-item">
+                <a href="https://prog-8.com/dashboard" target="_blank"
+                  >Progate</a
+                >
+                Lv.: 240, 総演習クリア数: 913
+              </li>
+              <li class="list-group-item">
+                <a href="https://dotinstall.com/home" target="_blank"
+                  >Dotinstall</a
+                >
+                総完了数 : 914, 第 54 期生 2012年12月 登録
+              </li>
+              <li class="list-group-item">
+                udemy : node.js, Rails, React Native
+              </li>
             </ul>
             <canvas id="myChart" width="400" height="400"></canvas>
           </div>
         </div>
-
-
       </div>
+    </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        autoScrolling: false,
-        fitToSection: false, // Section(content) に半端位置の際,オートフィット
-        sectionsColor: ['#fff'],
-//      scrollOverflow: true
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#fullpage").fullpage({
+          navigation: true,
+          navigationPosition: "right",
+          autoScrolling: false,
+          fitToSection: false, // Section(content) に半端位置の際,オートフィット
+          sectionsColor: ["#fff"]
+          //      scrollOverflow: true
+        });
       });
-    });
 
-    ityped.init(
-      document.querySelector("#ityped"), 
-      {
+      ityped.init(document.querySelector("#ityped"), {
         loop: true,
-        backSpeed:  10,
-        backDelay:  4500,
+        backSpeed: 10,
+        backDelay: 4500,
         showCursor: false,
         strings: ["Welcome to My Site!"]
-      })
+      });
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var data2 = {
-            datasets: [{
-                label: 'Bar Dataset',
-                data: [10, 20, 30, 40]
-            }, {
-                label: 'Line Dataset',
-                data: [50, 40, 50, 20],
-                // Changes this dataset to become a line
-                type: 'line'
-            }],
-            labels: ['January', 'February', 'March', 'April']
-        };
-    var data = {
-      labels: ['Progate', 'Dotinstall', 'udemy'],
-      datasets: [
-        {
-			label: '完了数',
-			data: [913, 914, 2],
-			backgroundColor: "rgba(219,39,91,0.5)"
-        },
-        {
-            label: '完了数',
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var data2 = {
+        datasets: [
+          {
+            label: "Bar Dataset",
+            data: [10, 20, 30, 40]
+          },
+          {
+            label: "Line Dataset",
+            data: [50, 40, 50, 20],
+            // Changes this dataset to become a line
+            type: "line"
+          }
+        ],
+        labels: ["January", "February", "March", "April"]
+      };
+      var data = {
+        labels: ["Progate", "Dotinstall", "udemy"],
+        datasets: [
+          {
+            label: "完了数",
+            data: [913, 914, 2],
+            backgroundColor: "rgba(219,39,91,0.5)"
+          },
+          {
+            label: "完了数",
             data: [913, 914, 2],
             backgroundColor: "rgba(39,219,91,0.5)",
             // Changes this dataset to become a line
-            type: 'line'
-        }
-      ]
-    };
-    var options =  {
-      title: {
-        display: true,
-        text: 'Bar chart'
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-            suggestedMax: 1000,
-            suggestedMin: 0,
-            stepSize: 10,
-            callback: function(value, index, values){
-              return  value + ' 本'
-            }
+            type: "line"
           }
-        }]
-      },
-    };
-    var mixedChart = new Chart(ctx, {
-        type: 'bar',
+        ]
+      };
+      var options = {
+        title: {
+          display: true,
+          text: "Bar chart"
+        },
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                suggestedMax: 1000,
+                suggestedMin: 0,
+                stepSize: 10,
+                callback: function(value, index, values) {
+                  return value + " 本";
+                }
+              }
+            }
+          ]
+        }
+      };
+      var mixedChart = new Chart(ctx, {
+        type: "bar",
         data: data,
         options: options
-    });
-  </script>
-
-
-</body>
+      });
+    </script>
+  </body>
 </html>
