@@ -150,6 +150,7 @@
             </div>
         </div> -->
 
+        <!-- Chart -->
         <div class="row con">
           <div class="col-sm mt-3">
             <h3>非掲載</h3>
@@ -179,7 +180,7 @@
                 総完了数 : 914, 第 54 期生 2012年12月 登録
               </li>
               <li class="list-group-item">
-                udemy : node.js, Rails, React Native
+                node.js, Rails, React. etc
               </li>
             </ul>
             <canvas id="myChart" width="400" height="400"></canvas>
@@ -228,33 +229,19 @@
         strings: ["Welcome to My Site!"]
       });
 
+      // chart
       var ctx = document.getElementById("myChart").getContext("2d");
-      var data2 = {
-        datasets: [
-          {
-            label: "Bar Dataset",
-            data: [10, 20, 30, 40]
-          },
-          {
-            label: "Line Dataset",
-            data: [50, 40, 50, 20],
-            // Changes this dataset to become a line
-            type: "line"
-          }
-        ],
-        labels: ["January", "February", "March", "April"]
-      };
       var data = {
-        labels: ["Progate", "Dotinstall", "udemy"],
+        labels: ["Progate", "Dotinstall"],
         datasets: [
           {
             label: "完了数",
-            data: [913, 914, 2],
+            data: [913, 914],
             backgroundColor: "rgba(219,39,91,0.5)"
           },
           {
             label: "完了数",
-            data: [913, 914, 2],
+            data: [913, 914],
             backgroundColor: "rgba(39,219,91,0.5)",
             // Changes this dataset to become a line
             type: "line"
