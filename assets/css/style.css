@@ -12,8 +12,8 @@ p {
   padding: 0;
   margin: 0;
 }
-.section {
-  text-align: center;
+.section > h1 {
+  /* text-align: center; */
 }
 .section:first-child {
   text-align: center;
@@ -22,6 +22,7 @@ p {
 }
 .sectionTitle {
   width: 100vw;
+  text-align: center;
 }
 
 /* Top  */
