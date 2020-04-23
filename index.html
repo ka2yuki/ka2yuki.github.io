@@ -18,32 +18,7 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://unpkg.com/ityped@1.0.2"></script>
-    <style>
-      .ityped-cursor {
-        font-size: 5rem;
-        /* Flashing. this code */
-        /* opacity: 1; */
-        /* -webkit-animation: blink 0.3s infinite;
-      -moz-animation: blink 0.3s infinite;
-      animation: blink 0.3s infinite;
-      animation-direction: alternate; */
-      }
-      /* @keyframes blink {
-      100% {
-        opacity: 0;
-      }
-    }
-    @-webkit-keyframes blink {
-      100% {
-        opacity: 0;
-      }
-    }
-    @-moz-keyframes blink {
-      100% {
-        opacity: 0;
-      }
-    } */
-    </style>
+    <style></style>
   </head>
   <body>
     <div id="fullpage">
@@ -149,43 +124,6 @@
               </div>
             </div>
         </div> -->
-
-        <!-- Chart -->
-        <div class="row con">
-          <div class="col-sm mt-3">
-            <h3>非掲載</h3>
-            <ul class="list-group list-group-flush text-left con">
-              <li class="list-group-item">
-                wordpress : コーポレートサイト 6件
-              </li>
-              <li class="list-group-item">
-                Rails : 帳票管理システム、スキャンシステム .. etc
-              </li>
-              <li class="list-group-item">Node.js : LINE Messaging API</li>
-            </ul>
-          </div>
-          <div class="col-sm mt-3">
-            <h3>学習Log</h3>
-            <ul class="list-group list-group-flush text-left con">
-              <li class="list-group-item">
-                <a href="https://prog-8.com/dashboard" target="_blank"
-                  >Progate</a
-                >
-                Lv.: 240, 総演習クリア数: 913
-              </li>
-              <li class="list-group-item">
-                <a href="https://dotinstall.com/home" target="_blank"
-                  >Dotinstall</a
-                >
-                総完了数 : 914, 第 54 期生 2012年12月 登録
-              </li>
-              <li class="list-group-item">
-                node.js, Rails, React. etc
-              </li>
-            </ul>
-            <canvas id="myChart" width="400" height="400"></canvas>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -199,24 +137,16 @@
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.js"></script>
     <script type="text/javascript">
-      $(function() {
+      $(function () {
         $("#fullpage").fullpage({
           navigation: true,
           navigationPosition: "right",
           autoScrolling: false,
           fitToSection: false, // Section(content) に半端位置の際,オートフィット
-          sectionsColor: ["#fff"]
+          sectionsColor: ["#fff"],
           //      scrollOverflow: true
         });
       });
@@ -226,7 +156,7 @@
         backSpeed: 10,
         backDelay: 4500,
         showCursor: false,
-        strings: ["Welcome to My Site!"]
+        strings: ["Welcome to My Site!"],
       });
 
       // chart
@@ -237,21 +167,21 @@
           {
             label: "完了数",
             data: [913, 914],
-            backgroundColor: "rgba(219,39,91,0.5)"
+            backgroundColor: "rgba(219,39,91,0.5)",
           },
           {
             label: "完了数",
             data: [913, 914],
             backgroundColor: "rgba(39,219,91,0.5)",
             // Changes this dataset to become a line
-            type: "line"
-          }
-        ]
+            type: "line",
+          },
+        ],
       };
       var options = {
         title: {
           display: true,
-          text: "Bar chart"
+          text: "Bar chart",
         },
         scales: {
           yAxes: [
@@ -260,18 +190,18 @@
                 suggestedMax: 1000,
                 suggestedMin: 0,
                 stepSize: 10,
-                callback: function(value, index, values) {
+                callback: function (value, index, values) {
                   return value + " 本";
-                }
-              }
-            }
-          ]
-        }
+                },
+              },
+            },
+          ],
+        },
       };
       var mixedChart = new Chart(ctx, {
         type: "bar",
         data: data,
-        options: options
+        options: options,
       });
     </script>
   </body>
