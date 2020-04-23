@@ -1,32 +1,36 @@
-*, *:before, *:after {
-    /* padding や border の幅を width計算 に含めない. */
-      -webkit-box-sizing: border-box;
-         -moz-box-sizing: border-box;
-          -ms-box-sizing: border-box;
-           -o-box-sizing: border-box;
-              box-sizing: border-box;
-  }
-  p{ padding: 0; margin: 0 ; }
-  .section{
-   text-align: center;
-  }
-  .section:first-child{
+*,
+*:before,
+*:after {
+  /* padding や border の幅を width計算 に含めない. */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.section {
+  text-align: center;
+}
+.section:first-child {
   text-align: center;
   font-weight: bold;
   font-size: 3em;
-  }
-  .sectionTitle{
-    width: 100vw;
-  }
+}
+.sectionTitle {
+  width: 100vw;
+}
 
-
- /* Top  */
-#myVideo{
+/* Top  */
+#myVideo {
   position: absolute;
   right: 0;
   bottom: 0;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
@@ -35,12 +39,12 @@
   background-position: center center;
   background-size: contain;
   object-fit: cover; /*cover video background */
-  z-index:3;
+  z-index: 3;
 }
 #section0 {
   z-index: -1;
 }
-#section0 .layer{
+#section0 .layer {
   position: absolute;
   z-index: 4;
   width: 90%;
@@ -48,28 +52,60 @@
   top: 4%;
   left: 4%;
   border: 10px solid;
-  -webkit-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
+/* コンテンツ レイアウト */
 
-  /* コンテンツ レイアウト */
+#section1 {
+  background: white;
+}
+.con {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+.con .card {
+  margin: 1rem;
+}
 
-  #section1{
-    background : white;
-  }
-  .con{
-    width: 80%;
-    margin: auto;
-    justify-content: center;
-  }
-  .con .card{
-    margin: 1rem;
-  }
+#section2 {
+  background: -webkit-gradient(
+    linear,
+    top left,
+    bottom left,
+    from(#c0fefa),
+    to(#84fbfbc9)
+  );
+  background: -webkit-linear-gradient(#c0fefa, #84fbfbc9);
+  background: linear-gradient(#c0fefa, #84fbfbc9);
+}
 
-	#section2{
-		background: -webkit-gradient(linear, top left, bottom left, from(#c0fefa), to(#84fbfbc9));
-		background: -webkit-linear-gradient(#c0fefa, #84fbfbc9);
-		background: linear-gradient(#c0fefa,#84fbfbc9);
-	}
+.ityped-cursor {
+  font-size: 5rem;
+  /* Flashing. this code */
+  /* opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate; */
+}
+/* 
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+} 
+*/
