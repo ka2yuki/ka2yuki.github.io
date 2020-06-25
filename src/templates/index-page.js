@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import Typed from 'react-typed'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
@@ -37,30 +38,44 @@ export const IndexPageTemplate = ({
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen site-title"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            // boxShadow:
+              // 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+            // backgroundColor: 'rgb(255, 68, 0)',
+            backgroundColor: 'rgba(255, 255, 255, 0.41)',
+            // color: 'white',
             lineHeight: '1',
             padding: '0.25em',
           }}
         >
-          {title}
+          {/* {title}
+           */}
+          <Typed
+            strings={[title]}
+            typeSpeed={40}
+            startDelay={2500}
+            // loop
+          />
         </h1>
+
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            // boxShadow:
+            //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+            backgroundColor: 'rgba(255, 255, 255, 0.41)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
           }}
         >
-          {subheading}
+          {/* {subheading} */}
+          <Typed
+            strings={[subheading]}
+            typeSpeed={40}
+            startDelay={4500}
+          />
         </h3>
       </div>
     </div>

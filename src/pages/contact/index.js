@@ -39,7 +39,8 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>お問い合わせ</h1>
+              <p>掲載希望の情報などございましたら、お気軽にご連絡頂けると幸いです。</p>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +59,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    お名前
                   </label>
                   <div className="control">
                     <input
