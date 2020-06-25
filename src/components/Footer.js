@@ -29,7 +29,7 @@ const Footer = class extends React.Component {
                         Home
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/about">
                         About
                       </Link>
@@ -43,7 +43,7 @@ const Footer = class extends React.Component {
                       <Link className="navbar-item" to="/contact/examples">
                         Form Examples
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <a
                         className="navbar-item"
