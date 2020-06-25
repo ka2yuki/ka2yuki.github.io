@@ -79,9 +79,9 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="section section--gradient section-main-box">
       <div className="container">
-        <div className="section">
+        <div className="section section-main">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
@@ -111,7 +111,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    最新の投稿
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">

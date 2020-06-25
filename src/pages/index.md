@@ -36,16 +36,6 @@ intro:
 
         「第6の戦場」：人間の脳
 
-
-        戦場におけるもっとも強力なツールが、人間の脳とデヴァイスを接続する「ブレイン・コンピューター・インターフェイス（BCI）」。  
-
-        - 手が麻痺した人が脳を使ってタイピング  
-
-        - 義肢を本物の手足のように使う  
-
-        いっぽう、こうした技術が悪用され身体の操作に使われたり、殺人に利用される可能性もある。  
-
-        1. 安全保障の専門家であるバーンナビー・ジャックは最近、ペースメーカーや埋め込み型除細動器を [容易にハッキング](https://www.computerworld.com/article/2492453/pacemaker-hack-can-deliver-deadly-830-volt-jolt.html)
 # We sell green and roasted coffee beans that are sourced directly from
 # independent farmers and farm cooperatives. We’re proud to offer a
 # variety of coffee beans grown with great care for the environment and

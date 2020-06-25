@@ -6,6 +6,7 @@ $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 $bmi-main-color: #0500ff
 // #007cff
+$section-padding: 1rem 0 !default
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
@@ -14,7 +15,6 @@ $black: #2b2523
 
 h3, p
   white-space: pre-wrap;
-
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -141,7 +141,6 @@ $menu-label-color: $white-ter
 
 @import "~bulma"
 
-
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
@@ -154,3 +153,10 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+  .section
+    padding: $section-padding
+  .section-main-box
+    padding: .1rem 0 !important
+    .section-main
+      padding: 2rem 1.5rem !important
