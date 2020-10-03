@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import Typed from 'react-typed'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import Typed from "react-typed";
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({
   image,
@@ -29,24 +29,21 @@ export const IndexPageTemplate = ({
     >
       <div
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+          display: "flex",
+          height: "100px",
+          lineHeight: "1",
+          justifyContent: "space-around",
+          alignItems: "left",
+          flexDirection: "column",
         }}
       >
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen site-title"
           style={{
-            // boxShadow:
-              // 'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            // backgroundColor: 'rgb(255, 68, 0)',
-            backgroundColor: 'rgba(255, 255, 255, 0.41)',
-            // color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            boxShadow:
+              "rgb(255, 68, 0) 0.2rem 0px 0px, rgb(255, 68, 0) -0.2rem 0px 0px",
+            lineHeight: "1",
+            padding: "0.25em",
           }}
         >
           {/* {title}
@@ -60,22 +57,17 @@ export const IndexPageTemplate = ({
         </h1>
 
         <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen sub-title"
           style={{
             // boxShadow:
             //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgba(255, 255, 255, 0.41)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
+            color: "white",
+            lineHeight: "1",
+            padding: "0.25em",
           }}
         >
           {/* {subheading} */}
-          <Typed
-            strings={[subheading]}
-            typeSpeed={40}
-            startDelay={4500}
-          />
+          <Typed strings={[subheading]} typeSpeed={40} startDelay={4500} />
         </h3>
       </div>
     </div>
@@ -85,6 +77,8 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
+                {/* TextContents */}
+                {/* 
                 <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
@@ -92,23 +86,23 @@ export const IndexPageTemplate = ({
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
-                </div>
+                </div> */}
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                    {/* <p>{description}</p> */}
                   </div>
                 </div>
-                {/* <Features gridItems={intro.blurbs} />
+                <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
-                </div> */}
+                </div>
                 {/* POST */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
@@ -128,7 +122,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -140,10 +134,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-}
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -157,8 +151,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -166,9 +160,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -206,4 +200,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

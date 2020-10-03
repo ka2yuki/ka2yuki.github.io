@@ -1,11 +1,14 @@
 @import "~bulma/sass/utilities/initial-variables"
+// https://bulma.io/
 
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
-$bmi-main-color: #0500ff
-// #007cff
+$site-logo: #007cff
+$home-welcome-color: #cddc39
+// $text-obi: $grey-lighter
+$text-obi: $black
 $section-padding: 1rem 0 !default
 
 $primary: $kaldi-red
@@ -13,11 +16,18 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+body
+  font-family: $family-sans-serif
+
 h3, p
   white-space: pre-wrap;
-
 .navbar .navbar-menu
   box-shadow:none !important
+.site-logo
+  color: $site-logo
+  font-weight: bold
+  font-size: 1.5rem
+  font-family: monospace
 
 .content .taglist
   list-style: none
@@ -33,6 +43,15 @@ h3, p
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+.site-title
+  color: $white
+  // background: $black
+  font-weight: bold
+  font-size: 1.2rem
+  font-family: monospace
+.sub-title
+  color: $grey-lighter !important
 
 .subtitle
   font-size: 1.2em !important
@@ -80,12 +99,6 @@ h3, p
 
 .margin-top-0
   margin-top: 0 !important
-.site-title
-  // background: white
-  color: $bmi-main-color
-  font-weight: bold
-  font-size: 1.2rem
-  font-family: monospace
 
 .navbar-item .icon
   color: $primary
