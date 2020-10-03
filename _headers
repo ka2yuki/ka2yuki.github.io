@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-/static/*
-  Cache-Control: "public, max-age=360000"
-=======
 ## Created with gatsby-plugin-netlify
 
 /*
@@ -283,4 +279,3 @@
   Link: </ka2yuki/component---src-pages-404-js-2c0972c830969706c6f5.js>; rel=preload; as=script
   Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </ka2yuki/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
->>>>>>> gh-pages
