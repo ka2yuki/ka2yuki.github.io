@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-tags-js","path":"/tags/brain/","result":{"data":{"site":{"siteMetadata":{"title":"Gatsby + Netlify CMS Starter"}},"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/blog/2020-06-25-最初の投稿です/"},"frontmatter":{"title":"「第6の戦場」人間の脳が戦場になる"}}}]}},"pageContext":{"tag":"Brain"}}}
