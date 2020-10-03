@@ -1,32 +1,16 @@
 ---
 templateKey: index-page
-title: BRAIN MACHINE INTERFACE
+title: Wedcome to my site 
 image: /img/home-jumbotron2.jpg
-heading: Brain Machine Interface (BMI)とは
-subheading: Brain Machine Interface, Frequency, V2K..
+heading: 作品集
+subheading: developments, lifelog ..
 mainpitch:
-  title: 目的  #Why Kaldi
+  title: 作品集  #Why Kaldi
   description: >
-    ブレイン・マシン・インターフェース（Brain Machine Interface：BMI） にて 脳波 などを利用し、  
-
-    脳情報へ手術などを全く伴わない、完全非侵襲技術（非侵襲的な方法）にてアクセスできるようになり、
-
-    5G, 6G など更なる技術発展による「電磁波」からの健康面などへの懸念なども含め、  
-
-    専門家以外の方も分かりやすく理解することで、不安を少しでも取り除き、  
-    
-    より安全な運用方法を考えるきっかけ を作ることです。
-# Kaldi is the coffee store for everyone who believes that great coffee
-# shouldn't just taste good, it should do good too. We source all of our beans
-# directly from small scale sustainable farmers and make sure part of the
-# profits are reinvested in their communities.
+    ..
 
 description: >-
-  脳と機械を直接、または間接的につないで、脳の内部の中枢神経の信号を解読して利用し、外部から介入して操作する技術。
-# Kaldi is the ultimate spot for coffee lovers who want to learn about their
-# java’s origin and support the farmers that grew it. We take coffee production,
-# roasting and brewing seriously and we’re glad to pass that knowledge to
-# anyone.
+  ..
 
 intro:
   blurbs:
