@@ -1,2 +1,286 @@
+<<<<<<< HEAD
 /static/*
   Cache-Control: "public, max-age=360000"
+=======
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.b872369f494689a64b60.css
+  Cache-Control: public, max-age=31536000, immutable
+/styles-c2fe8482057191dca484.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-8b2dba2eaf74e60b9862.js
+  Cache-Control: public, max-age=31536000, immutable
+/6856248c00fc7a17368c03e2cf9f4280bd8891ff-ee4acef61c1fb1867fb2.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-product-page-js-935814f9df0da0daa59a.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-index-page-js-f698fbb673b9b6109ad1.js
+  Cache-Control: public, max-age=31536000, immutable
+/29107295-6c7892a17dea868f5606.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-js-83a0924c4ac390c6007f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-about-page-js-8d8e08def5e1d470f1e8.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-templates-tags-js-737e51173fd92fd6840c.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-2c0972c830969706c6f5.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-blog-index-js-62026e9b183d33bbdced.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-examples-js-97122c69ce437e74e988.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-file-upload-js-1a67049e61d283ee35d7.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-index-js-50a46d8c3ef3a376c549.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-contact-thanks-js-1df96a69d118970ea894.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-tags-index-js-15597fa3f7cb9bc7ca28.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-9d4aa502ff52928c473a.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-c152ba565b125b3af6dc.js
+  Cache-Control: public, max-age=31536000, immutable
+/532a2f07-cc3884068482c29dbcee.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-64123a19176fa56c5cfd.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/ka2yuki/products/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/6856248c00fc7a17368c03e2cf9f4280bd8891ff-ee4acef61c1fb1867fb2.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-product-page-js-935814f9df0da0daa59a.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/products/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/6856248c00fc7a17368c03e2cf9f4280bd8891ff-ee4acef61c1fb1867fb2.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-index-page-js-f698fbb673b9b6109ad1.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/29107295-6c7892a17dea868f5606.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-blog-post-js-83a0924c4ac390c6007f.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/blog/2016-12-17-making-sense-of-the-scaas-new-flavor-wheel/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/29107295-6c7892a17dea868f5606.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-blog-post-js-83a0924c4ac390c6007f.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/blog/2017-01-04-a-beginners-guide-to-brewing-with-chemex/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/blog/2020-06-25-最初の投稿です/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/29107295-6c7892a17dea868f5606.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-blog-post-js-83a0924c4ac390c6007f.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/blog/2020-06-25-最初の投稿です/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/29107295-6c7892a17dea868f5606.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-blog-post-js-83a0924c4ac390c6007f.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/blog/2017-01-04-just-in-small-batch-of-jamaican-blue-mountain-in-store-next-week/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/about/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-about-page-js-8d8e08def5e1d470f1e8.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/flavor/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/flavor/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/tasting/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/tasting/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/brewing/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/brewing/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/chemex/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/chemex/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/brain/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/brain/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/jamaica/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/jamaica/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/green-beans/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-templates-tags-js-737e51173fd92fd6840c.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/green-beans/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/404/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-404-js-2c0972c830969706c6f5.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/blog/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/6856248c00fc7a17368c03e2cf9f4280bd8891ff-ee4acef61c1fb1867fb2.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-blog-index-js-62026e9b183d33bbdced.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/blog/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/contact/examples/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-contact-examples-js-97122c69ce437e74e988.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/contact/examples/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/contact/file-upload/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-contact-file-upload-js-1a67049e61d283ee35d7.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/contact/file-upload/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/contact/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-contact-index-js-50a46d8c3ef3a376c549.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/contact/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/contact/thanks/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-contact-thanks-js-1df96a69d118970ea894.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/contact/thanks/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/tags/
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/29107295-6c7892a17dea868f5606.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-tags-index-js-15597fa3f7cb9bc7ca28.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/tags/page-data.json>; rel=preload; as=fetch; crossorigin
+/ka2yuki/404.html
+  Link: </ka2yuki/webpack-runtime-9d4aa502ff52928c473a.js>; rel=preload; as=script
+  Link: </ka2yuki/framework-c152ba565b125b3af6dc.js>; rel=preload; as=script
+  Link: </ka2yuki/532a2f07-cc3884068482c29dbcee.js>; rel=preload; as=script
+  Link: </ka2yuki/app-64123a19176fa56c5cfd.js>; rel=preload; as=script
+  Link: </ka2yuki/styles-c2fe8482057191dca484.js>; rel=preload; as=script
+  Link: </ka2yuki/commons-8b2dba2eaf74e60b9862.js>; rel=preload; as=script
+  Link: </ka2yuki/component---src-pages-404-js-2c0972c830969706c6f5.js>; rel=preload; as=script
+  Link: </ka2yuki/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </ka2yuki/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
+>>>>>>> gh-pages
