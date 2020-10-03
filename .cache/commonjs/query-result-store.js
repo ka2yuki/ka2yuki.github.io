@@ -79,7 +79,7 @@ class PageQueryStore extends _react.default.Component {
       return /*#__PURE__*/_react.default.createElement("div", null);
     }
 
-    return /*#__PURE__*/_react.default.createElement(_pageRenderer.default, (0, _extends2.default)({}, this.props, data.result));
+    return /*#__PURE__*/_react.default.createElement(_pageRenderer.default, (0, _extends2.default)({}, this.props, data));
   }
 
 }
