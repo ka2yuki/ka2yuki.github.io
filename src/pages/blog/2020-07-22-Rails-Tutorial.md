@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
 title: Rails Tutorial６ Log
-date: 2020-07-26T21:59:35.844Z
+date: 2020-07-26
 description: Raails Tutorial var6を購入し、完走までの記録。
 featuredpost: false
-featuredimage: /img/rails.png
+featuredimage: /img/flavor_wheel.png
 tags:
   - Rails
 ---

@@ -14,7 +14,8 @@ description: >-
 
 intro:
   blurbs:
-    - image:
+    - image: Null
+
       text: >
         「第1~5の戦場」：陸・海・空・宇宙・サイバースペース  
 
@@ -68,5 +69,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-
-あああああああああああああ
