@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "ka2yuki",
   siteMetadata: {
     title: "Gatsby + Netlify CMS Starter",
     description:
