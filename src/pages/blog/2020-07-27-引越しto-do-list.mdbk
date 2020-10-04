@@ -1,0 +1,34 @@
+---
+templateKey: blog-post
+title: 引越しTo-Do-List
+date: 2020-07-27T12:35:42.189Z
+description: todo
+featuredpost: true
+featuredimage: /img/coffee-gear.png
+
+tags:
+  - Private
+---
+# 3ヶ月前
+- [ ] 物件探し
+
+# 1週間前
+- [ ] 郵便住所変更 **＊MUST**
+- [ ] 転出届 **＊MUST**
+- [ ] 荷物整理
+
+✈️ 飛行機の場合
+- [ ] 空港までかかる時間（空港には最低**30分前**）
+- [ ] 空港での行動を把握する
+  - [ ] **チェックインカウンターの場所** 把握
+  - [ ] オンラインチェックかチケット発行
+  - [ ] 荷物を預ける
+  - [ ] **搭乗口の場所** 把握
+
+# 当日
+✈️ 飛行機の場合
+- [ ] 余裕を持って早めの行動
+
+多分、こんな感じ..
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75ce78de-32ef-452d-b4a2-7ba3026a536b/deploy-status)](https://app.netlify.com/sites/deblog/deploys)
