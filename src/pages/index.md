@@ -14,6 +14,9 @@ description: >-
 
 intro:
   blurbs:
+    - image: /img/react.png
+      text: React で APIから Blogデータ を取得し表示しています。
+      url: http://static-pages-portfolio.herokuapp.com/react-skeleton-screens/
     - image: /img/vue.png
       text: ShoppingCart by Vuejs
       url: 
@@ -27,8 +30,8 @@ intro:
       text: Angular2v5
       url: https://angular2v5-tutorial.herokuapp.com/
     - image: /img/ror.png
-      text: Rails.v4
-      url: https://safe-inlet-76266.herokuapp.com/
+      text: Rails.v4(2016/10/14)
+      url: https://first-rails-20161014.herokuapp.com//
  
   heading: What we offer
   description: >
