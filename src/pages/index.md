@@ -18,8 +18,8 @@ intro:
       text: React で APIから Blogデータ を取得し表示しています。
       url: http://static-pages-portfolio.herokuapp.com/react-skeleton-screens/
     - image: /img/vue.png
-      text: ShoppingCart by Vuejs
-      url: 
+      text: ショッピングカート by Vuejs
+      url: http://static-pages-portfolio.herokuapp.com/vuejs/
     #  /img/coffee.png
     # We sell green and roasted coffee beans that are sourced directly from
     # independent farmers and farm cooperatives. We’re proud to offer a
