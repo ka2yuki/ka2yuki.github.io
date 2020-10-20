@@ -15,7 +15,10 @@ description: >-
 intro:
   blurbs:
     - image: /img/react.png
-      text: React で APIから Blogデータ を取得し表示しています。
+      text: ログイン機能付きの チャットアプリ。ServerはFirebase。using React.
+      url: https://superchat-205e0.web.app/
+    - image: /img/react.png
+      text: APIから Blogデータ を取得し表示しています。using React.
       url: http://static-pages-portfolio.herokuapp.com/react-skeleton-screens/
     - image: /img/vue.png
       text: ショッピングカート by Vuejs
