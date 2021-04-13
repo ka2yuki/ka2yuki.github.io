@@ -1,8 +1,8 @@
 # What is this
-## This is Blog which is made on Gatsby.
+- Gatsby.js(reactjs).
+  - テンプレ：[gatsby-starter-netlify-cms)](https://www.gatsbyjs.com/starters/netlify-templates/gatsby-starter-netlify-cms)
 
-# Todo
-Push Only! without Build in local!!
+
 
 # URL
 https://ka2yuki.github.io/
