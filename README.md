@@ -1,5 +1,5 @@
-# 求人エントリーサイト
-
+# ポートフォリオ
+URL：[ka2yuki.github.io](https://ka2yuki.github.io/)
 ## フロントエンド
 - [create-react-app](https://create-react-app.dev/)：環境構築。
 - ライブラリ：
@@ -27,9 +27,3 @@
 - ログインページ　：`/login`
   - Email, Password.
 ---
-## check this application.
-```sh
-npm i
-npm run start
-```
-Hosting URL: https://applyforajob-4b9d9.web.app
