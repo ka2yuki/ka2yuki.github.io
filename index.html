@@ -36,8 +36,15 @@
         header .navbar-toggler {
           display: block; 
         }
-        header .contact {
+        header .contact
+        {
           display: none;
+        }
+        header .contacts li {
+          padding: 10px 0;
+        }
+        header .contacts a {
+          text-decoration: none;
         }
       }
     </style>
@@ -53,9 +60,10 @@
           <h4 class="text-white">Portfolio</h4>
           <p class="text-muted">これまでに携わった公開可能な案件と、個人作成した物を載せています。</p>
         </div>
-        <div class="col-sm-4 offset-md-1 py-4">
+        <div class="col-sm-4 offset-md-1 py-4 contacts">
           <h4 class="text-white">Contact</h4>
           <ul class="list-unstyled">
+            <!-- <li><a href="https://www.facebook.com/katsuyuki.mori.752" class="text-white fb">Facebook</a></li> -->
             <!-- <li><a href="#" class="text-white">Follow on Twitter</a></li> -->
             <!-- <li><a href="#" class="text-white">Email me</a></li> -->
             <li><a href="https://forms.gle/f6CGVFAdbkS4dhNr9" class="text-white">お問い合わせフォーム</a></li>
@@ -193,11 +201,15 @@
       </div>
     </div>
   </div>
+ 
+  <button class="contact" style="background-color: azure; border-radius:5px;padding: 10px 20px;font-size: 12px;font-weight: bold;margin: 0 auto;display: flex;">
+    <a href="https://forms.gle/f6CGVFAdbkS4dhNr9" style="text-decoration: none;color:black">お問い合わせ</a></button>
 
 </main>
 
 <footer class="text-muted py-5">
   <div class="container">
+    <div class="sns-pc"><a href="https://www.facebook.com/katsuyuki.mori.752" style="text-decoration: none;">facebook</a></div>
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
