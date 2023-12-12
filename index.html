@@ -21,16 +21,19 @@
         -moz-user-select: none;
         user-select: none;
       }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
       header .navbar-toggler {
         display: none;
       }
       main .worklist small {
         margin-right: .5rem;
+      }
+      footer .sns-pc li a {
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
       @media screen and (max-width: 724px) {
         header .navbar-toggler {
@@ -209,7 +212,10 @@
 
 <footer class="text-muted py-5">
   <div class="container">
-    <div class="sns-pc"><a href="https://www.facebook.com/katsuyuki.mori.752" style="text-decoration: none;">facebook</a></div>
+    <ul class="sns-pc">
+      <li><a href="https://www.wantedly.com/id/katsuyuki_mori_">Wantedly</a></li>
+      <li><a href="https://www.facebook.com/katsuyuki.mori.752">Facebook</a></li>
+    </ul>
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
