@@ -21,16 +21,19 @@
         -moz-user-select: none;
         user-select: none;
       }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
       header .navbar-toggler {
         display: none;
       }
       main .worklist small {
         margin-right: .5rem;
+      }
+      footer .sns-pc li a {
+        text-decoration: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
       @media screen and (max-width: 724px) {
         header .navbar-toggler {
@@ -107,20 +110,19 @@
 
       <h2>ホームページ作成</h2>
       <div class="row mb-5 g-3">
-        <div class="col">
+        <!-- <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/img/88ya.png" class="card-img-top"/>
-
+            <img class="card-img-top" src="" />
             <div class="card-body">
               <p class="card-text">HTML, WordPress</p>
               <div class="d-flex justify-content-between align-items-center">
-                <a href="https://88ya.jp/" type="button" class="btn btn-primary">View</a>
+                <a href="" type="button" class="btn btn-primary">View</a>
                 <small class="text-muted">2016/09</small>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-8 worklist">
+        </div> -->
+        <div class="col-md-12 worklist">
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><small>2023/08</small>総合買取販売のサイト作成</li>
             <li class="list-group-item"><small>2023/03</small>既存サイトの修正</li>
@@ -137,9 +139,10 @@
             <li class="list-group-item"><small>2016/06</small>ECサイトのベースHTMLコーディング</li>
           </ul>
         </div>
+        <!-- <p>※守秘義務の都合上、URL記載できない実績でございます。個別にはお話できるものもございますので、ご興味を持っていただけましたらお気軽にご連絡ください。</p> -->
       </div>
 
-      <h2>個人作成</h2>
+      <!-- <h2>個人作成</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
@@ -181,7 +184,7 @@
           </div>
         </div>
 
-        <!-- <div class="col">
+        <div class="col">
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
@@ -196,9 +199,9 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
 
-      </div>
+      </div> -->
     </div>
   </div>
  
@@ -209,7 +212,10 @@
 
 <footer class="text-muted py-5">
   <div class="container">
-    <div class="sns-pc"><a href="https://www.facebook.com/katsuyuki.mori.752" style="text-decoration: none;">facebook</a></div>
+    <ul class="sns-pc">
+      <li><a href="https://www.wantedly.com/id/katsuyuki_mori_">Wantedly</a></li>
+      <li><a href="https://www.facebook.com/katsuyuki.mori.752">Facebook</a></li>
+    </ul>
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
