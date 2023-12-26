@@ -1,0 +1,15 @@
+.base-btn {
+    background-color: azure;
+    border-radius:5px;
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #e6f5fd;
+    box-shadow: 0.5px 1px #bde1e18c;
+    text-decoration: none;
+    color:black
+}
+button{
+    border: none;
+}
