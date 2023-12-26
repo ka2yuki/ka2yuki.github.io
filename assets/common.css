@@ -1,3 +1,10 @@
+button{
+    border: none;
+}
+a {
+    text-decoration: unset;
+}
+
 .base-btn {
     background-color: azure;
     border-radius:5px;
@@ -9,7 +16,4 @@
     box-shadow: 0.5px 1px #bde1e18c;
     text-decoration: none;
     color:black
-}
-button{
-    border: none;
 }
