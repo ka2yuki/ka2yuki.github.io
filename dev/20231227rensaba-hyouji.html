@@ -12,9 +12,6 @@
     <link href="../assets/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/common.css">
     <style>
-      main .post-body h3 {
-        border-bottom: 3px solid #c1c1c1;
-      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -86,16 +83,18 @@
       <div class="py-md-4 py-3 bg-light">
         <div class="container w-75">
             <div class="post">
-              <h2>レンサバ表示までの流れ</h2>
+              <h1>ホームページ表示とSSL化(https)</h1>
               <div class="post-body">
+                <h3>概要</h3>
+                <p>レンタルサーバーでホームページを表示。SSL(https)有効化までの流れ。<br></p>
                 <h3>前提</h3>
-                ・お名前ドットコムでドメイン取得<br>
-                ・さくらレンタルサーバーのプラン契約
+                ・ドメイン取得済み（今回はお名前ドットコム）<br>
+                ・サーバー契約済み（今回はさくらのレンタルサーバ）
                 <br><br>
                 <h3>Todo</h3>
-                1. <strong>さくらレンタルサーバー</strong>で、ドメイン追加の「移管せずに使う」から登録。<br>
-                2. <strong>お名前ドットコム</strong>で、さくらレンタルサーバーのネームサーバー登録。<br>
-                3. SSLレッツエンクリプト登録。<br><br>
+                1. ドメインを登録する。<strong>さくらのレンタルサーバ</strong>で「移管せずに使う」から登録。<br>
+                2. ネームサーバーを登録する。<strong>お名前ドットコム</strong>でさくらのレンタルサーバの「あれ」を登録。<br>
+                3. SSL有効化。（無料）レッツエンクリプト。<br><br>
                 <h3>ドメインの名前解決ができないため無料SSL機能がご利用いただけません。と表示される場合</h3>
                 <div style="background-color: red;color: white;border-radius: 5px;padding: 5px;">
                   例）ドメインの名前解決ができないため無料SSL機能がご利用いただけません。</div>
