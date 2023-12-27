@@ -1,13 +1,16 @@
 button{
     border: none;
+    border-radius:5px;
 }
 a {
     text-decoration: unset;
 }
+ul {
+    list-style-type: none;
+}
 
 .base-btn {
     background-color: azure;
-    border-radius:5px;
     margin: 0;
     padding: 10px;
     font-size: 12px;
@@ -16,4 +19,7 @@ a {
     box-shadow: 0.5px 1px #bde1e18c;
     text-decoration: none;
     color:black
+}
+.base-btn:hover {
+    opacity: .8;
 }
