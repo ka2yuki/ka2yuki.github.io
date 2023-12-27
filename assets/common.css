@@ -5,6 +5,9 @@ button{
 a {
     text-decoration: unset;
 }
+a:hover {
+    opacity: .8;
+}
 ul {
     list-style-type: none;
 }
@@ -14,6 +17,9 @@ main .container {
     border-radius:5px;
     border:1px solid #ffeaea9c;
     padding:1rem;
+}
+main .container .posts li a {
+    color: #334155;
 }
 
 .base-btn {
