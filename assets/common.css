@@ -9,8 +9,15 @@ ul {
     list-style-type: none;
 }
 
+
+main .container {
+    border-radius:5px;
+    border:1px solid #ffeaea9c;
+    padding:1rem;
+}
+
 .base-btn {
-    background-color: azure;
+    background-color: white;
     margin: 0;
     padding: 10px;
     font-size: 12px;

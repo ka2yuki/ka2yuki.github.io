@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+    header .navbar-toggler {
+        display: block; 
+    }
+    header .contact
+    {
+        display: none;
+    }
+    header .contacts li {
+        padding: 10px 0;
+    }
+    header .contacts a {
+        text-decoration: none;
+    }
+
+    main .container {
+        min-width: 95%;
+    }
+}
