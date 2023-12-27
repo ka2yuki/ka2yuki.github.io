@@ -11,7 +11,11 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/common.css">
+
     <style>
+      main .post-body h3 {
+        border-bottom: 3px solid #c1c1c1;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -62,6 +66,9 @@
           </a>
           <ul style="display: flex;list-style: none;gap: 10px;margin: 0;">
             <li>
+                <a class="base-btn" href="../dev" style="text-decoration: none;color:black">記事一覧</a>
+            </li>
+            <li>
                 <a class="base-btn" href="https://forms.gle/f6CGVFAdbkS4dhNr9" style="text-decoration: none;color:black">お問い合わせ</a>
             </li>
           </ul>
@@ -93,37 +100,28 @@
 
     <main>
       <div class="py-5 bg-light">
-        <div class="container">
-          <div class="row mb-5 g-3">
-            <!-- <div class="col">
-              <div class="card shadow-sm">
-                <img class="card-img-top" src="" />
-                <div class="card-body">
-                  <p class="card-text">HTML, WordPress</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="" type="button" class="btn btn-primary">View</a>
-                    <small class="text-muted">2016/09</small>
-                  </div>
-                </div>
+        <div class="container w-75" 
+             style="background-color:aliceblue;border-radius:5px;border:1px solid #ffeaea9c;padding:1rem;">
+            <div class="post">
+              <h2>レンサバ表示までの流れ</h2>
+              <div class="post-body">
+                <h3>前提</h3>
+                ・お名前ドットコムでドメイン取得<br>
+                ・さくらレンタルサーバーのライトプランを契約
+                <br><br>
+                <h3>Todo</h3>
+                1. さくらレンタルサーバーで、ドメイン追加の「移管せずに使う」から登録。<br>
+                2. お名前ドットコムで、さくらレンタルサーバーのネームサーバーを登録する。<br>
+                3. SSLレッツエンクリプトを登録する<br><br>
+                <h3>ドメインの名前解決ができないため無料SSL機能がご利用いただけません。と表示される場合</h3>
+                <div style="background-color: red;color: white;border-radius: 5px;padding: 5px;">ドメインの名前解決ができないため無料SSL機能がご利用いただけません。</div>
+                <p style="margin: 11px 0;"><strong>少し時間をおいたら設定できる。</strong></p>
+                <p style="font-size: .9rem;border-left: 3px solid gray;padding:0 0 0 7px;">※ゾーン情報の修正後、修正内容がインターネットに反映されるまで 最大48時間程度お時間が必要です。<br>
+                    設定完了後、十分な時間経過後に再度設定してください。<a href="https://faq.sakura.ad.jp/s/article/000001109?_gl=1*jpgoro*_gcl_au*MTg5NTQxODQzLjE3MDI3MTIwMDc.#01-01">link</a></p>
               </div>
-            </div> -->
-            <div class="posts">
-              <!-- <h2>Total</h2> -->
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="20231227domain-post.html"><small>2023年12月27日</small>レンサバ表示までの流れ</a></li>
-                <li class="list-group-item"><a href="initial-post.html"><small>2023年12月26日</small>最初の投稿</a></li>
-              </ul>
             </div>
-            <!-- <p>※守秘義務の都合上、URL記載できない実績でございます。個別にはお話できるものもございますので、ご興味を持っていただけましたらお気軽にご連絡ください。</p> -->
-          </div>
-
         </div>
       </div>
-    
-      <button class="contact" style="background-color: azure; border-radius:5px;padding: 10px 20px;font-size: 12px;font-weight: bold;margin: 0 auto;display: flex;border-color:#d3d3d79c;">
-        <a href="https://forms.gle/f6CGVFAdbkS4dhNr9" style="text-decoration: none;color:black">お問い合わせ</a>
-      </button>
-
     </main>
 
     <footer class="text-muted py-5">
