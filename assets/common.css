@@ -5,15 +5,28 @@ button{
 a {
     text-decoration: unset;
 }
+a:hover {
+    opacity: .8;
+}
 ul {
     list-style-type: none;
 }
 
+/* single post */
+main .container .post h1 {
+    margin-bottom: 1.5rem;
+}
+main .container .post-body h3 {
+    border-bottom: 3px solid #c1c1c1;
+}
 
 main .container {
     border-radius:5px;
     border:1px solid #ffeaea9c;
     padding:1rem;
+}
+main .container .posts li a {
+    color: #334155;
 }
 
 .base-btn {
