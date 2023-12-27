@@ -1,6 +1,16 @@
+button{
+    border: none;
+    border-radius:5px;
+}
+a {
+    text-decoration: unset;
+}
+ul {
+    list-style-type: none;
+}
+
 .base-btn {
     background-color: azure;
-    border-radius:5px;
     margin: 0;
     padding: 10px;
     font-size: 12px;
@@ -10,6 +20,6 @@
     text-decoration: none;
     color:black
 }
-button{
-    border: none;
+.base-btn:hover {
+    opacity: .8;
 }

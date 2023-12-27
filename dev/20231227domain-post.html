@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../assets/common.css">
 
     <style>
+      main .post-body h3 {
+        border-bottom: 3px solid #c1c1c1;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -100,9 +103,21 @@
         <div class="container w-75" 
              style="background-color:aliceblue;border-radius:5px;border:1px solid #ffeaea9c;padding:1rem;">
             <div class="post">
-              <h2>Title</h2>
+              <h2>レンサバ表示までの流れ</h2>
               <div class="post-body">
-                投稿内容
+                <h3>前提</h3>
+                ・お名前ドットコムでドメイン取得<br>
+                ・さくらレンタルサーバーのライトプランを契約
+                <br><br>
+                <h3>Todo</h3>
+                1. さくらレンタルサーバーで、ドメイン追加の「移管せずに使う」から登録。<br>
+                2. お名前ドットコムで、さくらレンタルサーバーのネームサーバーを登録する。<br>
+                3. SSLレッツエンクリプトを登録する<br><br>
+                <h3>ドメインの名前解決ができないため無料SSL機能がご利用いただけません。と表示される場合</h3>
+                <div style="background-color: red;color: white;border-radius: 5px;padding: 5px;">ドメインの名前解決ができないため無料SSL機能がご利用いただけません。</div>
+                <p style="margin: 11px 0;"><strong>少し時間をおいたら設定できる。</strong></p>
+                <p style="font-size: .9rem;border-left: 3px solid gray;padding:0 0 0 7px;">※ゾーン情報の修正後、修正内容がインターネットに反映されるまで 最大48時間程度お時間が必要です。<br>
+                    設定完了後、十分な時間経過後に再度設定してください。<a href="https://faq.sakura.ad.jp/s/article/000001109?_gl=1*jpgoro*_gcl_au*MTg5NTQxODQzLjE3MDI3MTIwMDc.#01-01">link</a></p>
               </div>
             </div>
         </div>
