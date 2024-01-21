@@ -1,5 +1,7 @@
 # Branch Control
-production <- dev -> features  
+1. production <- dev -> features(New FrameWork✨)  
+2. production <- dev -> features(Nextjs)  
+3. production <- dev -> features(html,css..)  
 
 ## memo
 ### リニューアルを想定すると：
