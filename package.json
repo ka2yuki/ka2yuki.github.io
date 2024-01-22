@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "preview": "next build && serve docs",
-    "start": "serve docs",
+    "preview": "next build && serve out",
+    "start": "serve out",
     "lint": "next lint"
   },
   "dependencies": {
