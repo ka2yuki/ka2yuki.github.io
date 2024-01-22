@@ -6,6 +6,7 @@ const nextConfig = {
   swcMinify: true,
   output: 'export',
   distDir: 'docs',
+  images: { unoptimized: true }
 };
 
 module.exports = withContentlayer(nextConfig);
