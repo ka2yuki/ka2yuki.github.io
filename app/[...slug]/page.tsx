@@ -55,6 +55,11 @@ export default async function PagePage({ params }: PageProps) {
       {page.description && <p className="text-xl">{page.description}</p>}
       <hr />
       <Mdx code={page.body.code} />
+      {/* <!-- Lancers Code START --> */}
+      <a className="block pt-3" href="https://www.lancers.jp/affiliate/track?id=2154970&link=%2F" target="_blank" rel="nofollow">
+        <img alt="クラウドソーシング「ランサーズ」" src="https://www.lancers.jp/img/affiliate/lancer_2_728x90.gif?v=2.0" border="0" />
+      </a>
+      {/* <!-- Lancers Code END --> */}
     </article>
   )
 }
