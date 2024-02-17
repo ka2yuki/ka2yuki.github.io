@@ -26,9 +26,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="max-w-2xl mx-auto py-10 px-4">
             <header>
               <div className="flex items-center justify-between">
-                <nav className="flex w-full text-sm font-medium">
-                  <Link href="/">Home</Link>
-                  <Link href="/about" className="ml-auto px-4">About</Link>
+                <nav className="flex items-center justify-between w-full text-sm font-medium">
+                  <Link href="/" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Home</Link>
+                  <div>
+                    <Link href="/about" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">About</Link>
+                  </div>
                 </nav>
                 <ModeToggle />
               </div>
