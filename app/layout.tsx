@@ -4,6 +4,8 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +29,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header>
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
-                  <Link href="/" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Home</Link>
+                    <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
+                  </Link>
                   <div>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">About</Link>
                   </div>
