@@ -50,7 +50,7 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert">
+    <article className="py-7 prose dark:prose-invert">
       <h1 className="mb-2">{post.title}</h1>
       {/* <span>{post.date}</span> */}
       {post.description && (
@@ -60,14 +60,16 @@ export default async function PostPage({ params }: PostProps) {
       )}
       <hr className="my-4" />
       <Mdx code={post.body.code} />
-      {/* <!-- Lancers Code START --> */}
-      <a href="https://www.lancers.jp/affiliate/track?id=2154970&link=%2F" target="_blank" rel="nofollow">
-        <img alt="クラウドソーシング「ランサーズ」" src="https://www.lancers.jp/img/affiliate/banner_animate468_60_1.gif" />
-      </a>
-      <a className="" href="https://www.lancers.jp/affiliate/track?id=2154970&link=%2F" target="_blank" rel="nofollow">
-        <img alt="クラウドソーシング「ランサーズ」" src="https://www.lancers.jp/img/affiliate/lancer_2_728x90.gif?v=2.0" />
-      </a>
-      {/* <!-- Lancers Code END --> */}
+      <div className="pt-5">
+        {/* <!-- Lancers Code START --> */}
+        <a href="https://www.lancers.jp/affiliate/track?id=2154970&link=%2F" target="_blank" rel="nofollow">
+          <img alt="クラウドソーシング「ランサーズ」" src="https://www.lancers.jp/img/affiliate/banner_animate468_60_1.gif" />
+        </a>
+        <a className="" href="https://www.lancers.jp/affiliate/track?id=2154970&link=%2F" target="_blank" rel="nofollow">
+          <img alt="クラウドソーシング「ランサーズ」" src="https://www.lancers.jp/img/affiliate/lancer_2_728x90.gif?v=2.0" />
+        </a>
+        {/* <!-- Lancers Code END --> */}
+      </div>
     </article>
   )
 }

@@ -25,13 +25,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl mx-auto py-10 px-4">
+          <div className="max-w-2xl mx-auto py-7 px-4">
             <header>
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
+                  <Link href="/" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80"
+                    style={{ fontSize: '10px' }}>
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
                   <div>
+                    <Link href="/todo" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Todo</Link>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">About</Link>
                   </div>
                 </nav>
