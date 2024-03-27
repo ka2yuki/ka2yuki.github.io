@@ -29,12 +29,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header>
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
-                  <Link href="/" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80"
+                  <Link href="/" className="p-3 rounded hover:bg-sky-300 hover:text-white hover:opacity-70"
                     style={{ fontSize: '10px' }}>
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
                   <div>
-                    <Link href="/security" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Security</Link>
+                    {/* <Link href="/security" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Security</Link> */}
                     <Link href="/about" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">About</Link>
                   </div>
                 </nav>
