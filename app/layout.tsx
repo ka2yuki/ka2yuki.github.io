@@ -34,8 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
                   <div>
-                    {/* <Link href="/security" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">Security</Link> */}
-                    <Link href="/about" className="p-3 rounded hover:bg-sky-700 hover:text-white opacity-80">About</Link>
+                    <a href="https://superchat-205e0.web.app/" className="p-3 rounded hover:bg-sky-300 hover:text-black">話す</a>
                   </div>
                 </nav>
                 <ModeToggle />
