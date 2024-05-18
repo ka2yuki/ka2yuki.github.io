@@ -33,9 +33,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     style={{ fontSize: '10px' }}>
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
-                  <div>
-                    <a href="https://superchat-205e0.web.app/" className="p-3 rounded hover:bg-sky-300 hover:text-black">話す</a>
-                  </div>
                 </nav>
                 <ModeToggle />
               </div>
