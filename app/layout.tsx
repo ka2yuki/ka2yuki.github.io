@@ -33,6 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     style={{ fontSize: '10px' }}>
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
+                    <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                 </nav>
                 <ModeToggle />
               </div>
