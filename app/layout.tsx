@@ -34,8 +34,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    {/* <Link href="/todo" className="p-3 rounded hover:bg-sky-300 hover:text-black">Todo</Link> */}
-                    {/* <Link href="/news" className="p-3 rounded hover:bg-sky-300 hover:text-black">News</Link> */}
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                     <a className="p-3 hover:bg-sky-300 hover:opacity-70 rounded" href="https://forms.gle/dEG3iwuxJEp9nLs86">
                       <FontAwesomeIcon icon={faEnvelope} title="mail" style={{ width: '25px' }} />
