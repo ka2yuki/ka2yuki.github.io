@@ -2,9 +2,14 @@ import { Post, allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
 
 export default function Home() {
+  /**
+   * Post: .sort() の引数
+   * allPosts: map & posts rendering..
+   */
   allPosts.sort(function (a: Post, b: Post) {
     return (a.date > b.date ? -1 : 1);
   });
+
   return (
     <div className="pt-0 prose dark:prose-invert">
       {allPosts.map((post) => (
