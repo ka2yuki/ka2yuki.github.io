@@ -6,6 +6,7 @@ import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -33,6 +34,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     style={{ fontSize: '10px' }}>
                     <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
+                  </div>
                 </nav>
                 <ModeToggle />
               </div>
