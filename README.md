@@ -25,4 +25,4 @@ https://vercel.com/templates/next.js/nextjs-contentlayer
   - MardDown を .gitignore する
 
 ## 気になる Next.js Templates
-- https://vercel.com/templates?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app&type=blog
+- https://vercel.com/templates?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app&type=blog 
