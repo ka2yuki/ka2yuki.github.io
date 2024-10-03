@@ -36,6 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   </Link>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
+                    <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
                   </div>
                 </nav>
                 <ModeToggle />
