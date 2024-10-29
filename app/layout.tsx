@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Head from "next"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -49,6 +50,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
           <Analytics />
         </ThemeProvider>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6623379183106626"
+          crossorigin="anonymous"></script>
       </body>
     </html>
   )
