@@ -51,7 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
         </ThemeProvider>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6623379183106626"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
       </body>
     </html>
   )
