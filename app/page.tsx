@@ -16,6 +16,7 @@ export default function Home() {
       <ul className="text-sm">
         <li><a href="https://coliss.com/articles/build-websites/operation/css/css-framework-for-radial-circular-ui.html">UI要素をグリッドではなく、サークル・放射状、曲線状にレイアウトできるCSSのフレームワーク -Orbit | coliss.com</a></li>
       </ul>
+      <hr className="p-0 m-0" />
       {allPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug} className="no-underline">
