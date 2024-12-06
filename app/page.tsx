@@ -12,6 +12,10 @@ export default function Home() {
 
   return (
     <div className="pt-0 prose dark:prose-invert">
+      <h2 className="text-sm">気になる記事一覧：</h2>
+      <ul className="text-sm">
+        <li><a href="https://coliss.com/articles/build-websites/operation/css/css-framework-for-radial-circular-ui.html">UI要素をグリッドではなく、サークル・放射状、曲線状にレイアウトできるCSSのフレームワーク -Orbit | coliss.com</a></li>
+      </ul>
       {allPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug} className="no-underline">
