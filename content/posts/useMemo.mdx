@@ -1,0 +1,30 @@
+---
+title: useMemo について
+description: 
+date: "2024-10-30"
+---
+
+画像のマージンを調整しようとしたら `React.useMemo()` 返却するコンポーネントのようだった為、(contentlayer) [React.useMemo](https://react.dev/reference/react/useMemo)について調べてみました。
+
+```js
+// mdx-components.tsx
+const Component = useMDXComponent(code)
+return <Component components={components} />
+
+// node_modules/next-contentlayer/src/hooks/useMDXComponent.ts
+export const useMDXComponent = (code: string, globals: Record<string, unknown> = {}) => {
+  return React.useMemo(() => getMDXComponent(code, globals), [code, globals])
+}
+```
+
+- `React.useMemo(無名関数、配列)`。
+
+```js
+// node_modules/@types/react/index.d.ts:1102
+* @version 16.8.0
+* @see https://react.dev/reference/react/useMemo
+*/
+function useMemo<T>(factory: () => T, deps: DependencyList | undefined): T;
+```
+- `useMemo()`の`<T>`は第一引数の関数実行時のTと同じで、返却もTなので`useMemo()`は第一引数の関数実行時の何か（多分大体はなんらかの関数）が返却returnされる?? 2024年10月30日
+- つまり`useMemo()`は第一引数に渡される関数。で実行される事。が返却returnされる。2024年10月30日

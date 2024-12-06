@@ -1,0 +1,18 @@
+---
+title: css positionのメモ
+description: 
+date: "2024-11-23"
+---
+
+### position:relative absolute と display:flex はなるべく併用しない。  
+おやをrelativeとした場合  
+  
+- ４つの子をabsoluteの方が意外とシンプル。  
+- `[[1,2], [3,4]]`で display:flex で入れ子 columun にすると逆に難しかった。。
+  
+### ４つの子をabsolute
+- 1: `{left:0, top:0}`
+- 2: `{left:0, bottom:0}`
+- 3: `{right:0, top:0}`
+- 4: `{right:0, bottom:0}`
+- 5: `option?: {left: 50%, ...}`

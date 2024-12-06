@@ -1,0 +1,26 @@
+---
+title: favorite package.json scripts for Next.js
+description: 
+date: "2024-10-29"
+---
+
+## お気に入りの 「package.json scripts」 Next.js用
+After
+```json
+  "scripts": {
+    "start": "next dev",
+    "preview": "next build && serve out",
+    "lint": "next lint"
+  },
+```
+Before
+```json
+  scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "next build && serve out",
+    "start": "serve out",
+    "lint": "next lint"
+  },
+```
+以上。
