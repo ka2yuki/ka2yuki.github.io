@@ -14,6 +14,7 @@ export default function Home() {
     <div className="pt-0 prose dark:prose-invert">
       <h2 className="text-sm">気になる記事一覧：</h2>
       <ul className="text-sm">
+        <li>🎉<a href="https://react.dev/blog/2024/12/05/react-19">React 19 is now stable! | Dec 05, 2024</a></li>
         <li><a href="https://coliss.com/articles/build-websites/operation/css/css-framework-for-radial-circular-ui.html">UI要素をグリッドではなく、サークル・放射状、曲線状にレイアウトできるCSSのフレームワーク -Orbit | coliss.com</a></li>
       </ul>
       <hr className="p-0 m-0" />
