@@ -2,6 +2,8 @@ import Link from "next/link"
 import Head from "next"
 import "./globals.css"
 import { Inter } from "next/font/google"
+
+// components
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
@@ -40,9 +42,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
                   <Link href="/" className="p-3 rounded hover:bg-sky-300 hover:text-white hover:opacity-70"
                     style={{ fontSize: '10px' }}>
-                    <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
+                    {/* <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} /> */}
                   </Link>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <a href="https://chatgpt.com">ChatGPT</a>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                     <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
                   </div>
