@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faBox, faCube, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   /**
@@ -39,6 +40,10 @@ export default function Home() {
             <ul>
               <li>npx update-browserslist-db@latest</li>
               <li>Why you should do it regularly: <a href=" https://github.com/browserslist/update-db#readme"> https://github.com/browserslist/update-db#readme</a></li>
+              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faCube} /> caniuse-lite</a></li>
+              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faBoxOpen} /> caniuse-lite</a></li>
+              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faGithub} /> caniuse-lite</a></li>
+
             </ul>
           </li>
         </ul>
