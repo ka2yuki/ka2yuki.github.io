@@ -33,6 +33,15 @@ export default function Home() {
           <li className="m-0 leading-normal"><a href="https://caniuse.com/ciu/news">https://caniuse.com/ciu/news</a></li>
           <li className="m-0 leading-normal"><a href="https://caniuse.com">https://caniuse.com</a></li>
         </ul>
+        <li>memo:</li>
+        <ul>
+          <li>Browserslist: caniuse-lite is outdated. Please run:
+            <ul>
+              <li>npx update-browserslist-db@latest</li>
+              <li>Why you should do it regularly: <a href=" https://github.com/browserslist/update-db#readme"> https://github.com/browserslist/update-db#readme</a></li>
+            </ul>
+          </li>
+        </ul>
       </ul>
 
       <hr className="p-0 m-0" />
