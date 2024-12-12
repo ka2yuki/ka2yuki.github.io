@@ -14,6 +14,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     <a href="https://chatgpt.com">ChatGPT</a>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                     <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
+                    <a href="https://github.com/ka2yuki"><FontAwesomeIcon icon={faGithub} /></a>
                   </div>
                 </nav>
                 <ModeToggle />
