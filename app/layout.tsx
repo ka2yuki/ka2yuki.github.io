@@ -5,9 +5,13 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
+
+// fortawesome: https://docs.fontawesome.com/web/use-with/react/use-with
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] })
 
