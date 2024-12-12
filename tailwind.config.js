@@ -7,7 +7,19 @@ module.exports = {
   ],
   darkMode: ["class"],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: 'none',
+            },
+          },
+        },
+      },
+    },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography")
+  ],
 }
