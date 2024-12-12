@@ -18,6 +18,7 @@
     "@types/react-dom": "18.2.1",
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
+    "caniuse-lite": "^1.0.30001688",
     "contentlayer": "^0.3.2",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
