@@ -15,49 +15,50 @@ export default function Home() {
   });
 
   return (
-    <div className="pt-0 prose dark:prose-invert">
-      <h2 className="text-sm">気になる記事一覧：</h2>
-      <ul className="text-sm">
-        <li className="leading-normal m-0">🎉<a href="https://react.dev/blog/2024/12/05/react-19">React 19 is now stable! | Dec 05, 2024</a></li>
-        <li className="leading-normal m-0"><a href="https://coliss.com/articles/build-websites/operation/css/css-framework-for-radial-circular-ui.html">UI要素をグリッドではなく、サークル・放射状、曲線状にレイアウトできるCSSのフレームワーク -Orbit | coliss.com</a></li>
-      </ul>
-      <h2 className="text-sm">ReadingList <FontAwesomeIcon icon={faFile} />：</h2>
-      <ul className="text-sm">
-        <li className="m-0 leading-normal"><FontAwesomeIcon icon={faFile} /> <a href="https://github.com/integrations/slack#readme">Slack: with Github</a></li>
-        <li className="m-0 leading-normal"><FontAwesomeIcon icon={faGithub} className="m-0" /> <a href="https://github.com/vercel/styled-jsx?tab=readme-ov-file#styled-jsx">styled-jsx</a></li>
-      </ul>
-
-      <h2 className="text-sm">DevInfo：</h2>
-      <ul>
-        <li>Can I use: up-to-date browser support tables: </li>
-        <ul>
-          <li className="m-0 leading-normal"><a href="https://caniuse.com/ciu/news">https://caniuse.com/ciu/news</a></li>
-          <li className="m-0 leading-normal"><a href="https://caniuse.com">https://caniuse.com</a></li>
+    <div className="pt-0 prose max-w-fit dark:prose-invert flex justify-center">
+      <div className="left w-5/12">
+        <h2 className="text-sm">気になる記事一覧：</h2>
+        <ul className="text-sm">
+          <li className="leading-normal m-0">🎉<a href="https://react.dev/blog/2024/12/05/react-19">React 19 is now stable! | Dec 05, 2024</a></li>
+          <li className="leading-normal m-0"><a href="https://coliss.com/articles/build-websites/operation/css/css-framework-for-radial-circular-ui.html">UI要素をグリッドではなく、サークル・放射状、曲線状にレイアウトできるCSSのフレームワーク -Orbit | coliss.com</a></li>
         </ul>
-        <li>memo:</li>
-        <ul>
-          <li>Browserslist: caniuse-lite is outdated. Please run:
-            <ul>
-              <li>npx update-browserslist-db@latest</li>
-              <li>Why you should do it regularly: <a href=" https://github.com/browserslist/update-db#readme"> https://github.com/browserslist/update-db#readme</a></li>
-              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faCube} /> caniuse-lite</a></li>
-              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faBoxOpen} /> caniuse-lite</a></li>
-              <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faGithub} /> caniuse-lite</a></li>
-
-            </ul>
-          </li>
+        <h2 className="text-sm">ReadingList <FontAwesomeIcon icon={faFile} />：</h2>
+        <ul className="text-sm">
+          <li className="m-0 leading-normal"><FontAwesomeIcon icon={faFile} /> <a href="https://github.com/integrations/slack#readme">Slack: with Github</a></li>
+          <li className="m-0 leading-normal"><FontAwesomeIcon icon={faGithub} className="m-0" /> <a href="https://github.com/vercel/styled-jsx?tab=readme-ov-file#styled-jsx">styled-jsx</a></li>
         </ul>
-      </ul>
 
+        <h2 className="text-sm">DevInfo：</h2>
+        <ul>
+          <li className="m-0 leading-normal">Can I use: up-to-date browser support tables: </li>
+          <ul>
+            <li className="m-0 leading-normal"><a href="https://caniuse.com/ciu/news">https://caniuse.com/ciu/news</a></li>
+            <li className="m-0 leading-normal"><a href="https://caniuse.com">https://caniuse.com</a></li>
+          </ul>
+          <li>memo:</li>
+          <ul>
+            <li className="m-0 leading-normal">Browserslist: caniuse-lite is outdated. Please run:
+              <ul>
+                <li className="m-0 leading-normal">npx update-browserslist-db@latest</li>
+                <li className="m-0 leading-normal">Why you should do it regularly: <a href=" https://github.com/browserslist/update-db#readme"> https://github.com/browserslist/update-db#readme</a></li>
+                <li className="m-0 leading-normal"><a href="https://github.com/browserslist/caniuse-lite"><FontAwesomeIcon icon={faGithub} /> caniuse-lite</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
       <hr className="p-0 m-0" />
-      {allPosts.map((post) => (
-        <article key={post._id}>
-          <Link href={post.slug} className="no-underline">
-            <h2 className="mt-5 mb-0">{post.title}</h2>
-          </Link>
-          {post.description && <p className="mt-0">{post.description}</p>}
-        </article>
-      ))}
+      <div className="right">
+        {allPosts.map((post) => (
+          <article key={post._id}>
+            <Link href={post.slug} className="no-underline">
+              <h2 className="mt-5 mb-0">{post.title}</h2>
+            </Link>
+            {post.description && <p className="mt-0">{post.description}</p>}
+          </article>
+        ))}
+      </div>
     </div>
   )
 }
