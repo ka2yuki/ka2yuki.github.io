@@ -50,7 +50,7 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="py-7 prose dark:prose-invert">
+    <article className="w-10/12 py-7 prose dark:prose-invert">
       <h1 className="mb-2">{post.title}</h1>
       {/* <span>{post.date}</span> */}
       {post.description && (

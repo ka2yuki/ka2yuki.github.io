@@ -55,16 +55,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="w-10/12 mx-auto py-7 px-4">
-            <header className="flex justify-center pb-2">
+          <div className="mx-auto py-7 px-4">
+            <header className="flex justify-center pb-2 xl:pb-3">
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
                   <Link href="/" className="p-3 rounded hover:bg-sky-300 hover:text-white hover:opacity-70"
-                    style={{ fontSize: '10px' }}>
+                    >
                     {/* <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} /> */}
                   </Link>
                   <div className="gap-2" style={{ display: 'flex', alignItems: 'center' }}>
-                    <a href="https://chatgpt.com">
+                    <a href="https://chatgpt.com" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
                       <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>
                     </a>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
@@ -76,7 +76,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <ModeToggle />
               </div>
             </header>
-            <main className="flex justify-center">{children}</main>
+            {/* 注意： children要素なので　更にコンポーネント側でラップしてしまう。flexの際はコンポーネント側、センタリングはmargin: 0 auto;で。 */}
+            <main>{children}</main>
           </div>
           <Analytics />
         </ThemeProvider>

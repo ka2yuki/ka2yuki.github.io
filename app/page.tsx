@@ -15,8 +15,8 @@ export default function Home() {
   });
 
   return (
-    <div className="pt-0 prose max-w-fit dark:prose-invert flex justify-center">
-      <div className="left w-5/12">
+    <div className="mx-auto prose dark:prose-invert md:max-w-fit xl:flex justify-center pt-0">
+      <div className="left xl:w-6/12">
         <h2 className="text-sm">気になる記事一覧：</h2>
         <ul className="text-sm">
           <li className="leading-normal m-0">🎉<a href="https://react.dev/blog/2024/12/05/react-19">React 19 is now stable! | Dec 05, 2024</a></li>
@@ -49,7 +49,7 @@ export default function Home() {
         </ul>
       </div>
       <hr className="p-0 m-0" />
-      <div className="right">
+      <div className="right xl:w-6/12 xl:pl-7">
         {allPosts.map((post) => (
           <article key={post._id}>
             <Link href={post.slug} className="no-underline">
