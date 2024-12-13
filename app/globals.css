@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .prose a:hover {
+    @apply underline decoration-dashed;
+  }
+}
