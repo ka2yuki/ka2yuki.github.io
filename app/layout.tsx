@@ -17,6 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Script from "next/script"
 import Image from "next/image"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -61,16 +62,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
                   <Link href="/" className="p-3 rounded hover:bg-sky-300 hover:text-white hover:opacity-70"
                     >
-                    {/* <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} /> */}
+                    <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
                   </Link>
                   <div className="gap-2" style={{ display: 'flex', alignItems: 'center' }}>
-                    <a href="https://chatgpt.com" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
-                      <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>
-                    </a>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                     <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
-                    <a href="https://github.com/ka2yuki">
+                    <a href="https://github.com/ka2yuki" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
                       <FontAwesomeIcon icon={faGithub} size="xl" /></a>
+                    <a href="https://chatgpt.com" className="p-3 rounded hover:bg-sky-300 hover:opacity-70 text-xs">
+                      <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>
+                    </a>
                   </div>
                 </nav>
                 <ModeToggle />
