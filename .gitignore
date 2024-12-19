@@ -35,3 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .contentlayer
+
+# 検討中
+/draft_posts/*
