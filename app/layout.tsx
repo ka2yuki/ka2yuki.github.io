@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
-        <div className="moveX">text</div>
+        <div className="moveX"><a className="border border-indigo-600 text-indigo-600  rounded-full" href="https://tailwindcss.com/docs/customizing-colors">color pallet | TailwindCSS</a></div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto px-4">
             <header className="flex justify-center pb-2 xl:pb-3">

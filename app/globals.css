@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 .moveX {
-  color: blue;
+  width: 100vw;
+  border: solid;
+  color: #34d399;
   animation-name: moveX;
-  animation-duration: 30s;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
 }
 @keyframes moveX {
