@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
-        <div className="moveX"><a className="border border-indigo-600 text-indigo-600  rounded-full" href="https://tailwindcss.com/docs/customizing-colors">color pallet | TailwindCSS</a></div>
+        <div className="flex py-1"><a className="news" href="https://tailwindcss.com/docs/customizing-colors">Color Pallet | TailwindCSS</a></div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto px-4">
             <header className="flex justify-center pb-2 xl:pb-3">
@@ -68,7 +68,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <div className="gap-2" style={{ display: 'flex', alignItems: 'center' }}>
                     <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
                     <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
-                    <a href="https://github.com/ka2yuki" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
+                    <a href="https://github.com/ka2yuki/ka2yuki.github.io" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
                       <FontAwesomeIcon icon={faGithub} size="xl" /></a>
                     <a href="https://chatgpt.com" className="p-3 rounded hover:bg-sky-300 hover:opacity-70 text-xs">
                       <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>

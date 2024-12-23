@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.moveX {
+:root {
+  --nuxt-border-color: #00dc824d !important;
+  --nuxt-background-color: #b3f5d166 !important;
+}
+.news {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--nuxt-border-color);
+  border-radius: 999px;
+  background-color: var(--nuxt-background-color);
+  padding: 0.1rem 1rem;
+  font-size: 0.75rem;
+}
+.anime-slideX {
   width: 100vw;
   border: solid;
   color: #34d399;
