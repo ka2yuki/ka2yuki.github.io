@@ -55,8 +55,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
+        <div className="moveX">text</div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="mx-auto py-7 px-4">
+          <div className="mx-auto px-4">
             <header className="flex justify-center pb-2 xl:pb-3">
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">

@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.moveX {
+  color: blue;
+  animation-name: moveX;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveX {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-100vw);
+  }
+}
 @layer components {
   .prose a:hover {
     @apply underline decoration-dashed;
