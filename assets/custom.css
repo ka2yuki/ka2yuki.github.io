@@ -1,0 +1,27 @@
+/* Button */
+.btn {
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #e6f5fd;
+  box-shadow: 0.5px 1px #bde1e18c;
+  text-decoration: none;
+  color: black;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+a.style-nuxt {
+  border-color: #00dc824d!important;
+  background-color: #b3f5d166!important;
+  border-width: 5px;
+  border-style: dashed;
+  color: rgb(10 83 49);
+}
+a.style-nuxt:hover {
+  border-style: solid;
+  color: rgb(30 41 59);
+}

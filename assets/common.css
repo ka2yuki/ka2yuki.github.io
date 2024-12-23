@@ -1,14 +1,26 @@
+:root {
+  --next-radius: 12px;
+  --next-accents-2: #eaeaea;
+  --next-accents-3: #999;
+}
+
 html,
 body {
   margin: 1rem 0;
   padding: 0.1rem;
   box-sizing: border-box;
 }
+
 body {
   margin: 0 auto;
   width: 97%;
   max-width: 1000px;
   border: 1px solid;
+  border-radius: var(--next-radius);
+  border-color: var(--next-accents-2);
+}
+body:hover {
+  border-color: var(--next-accents-3);
 }
 
 header,
@@ -61,6 +73,7 @@ a:hover {
   border-style: dashed;
   border-color: #334155;
 }
+
 ul {
   list-style-type: none;
 }
@@ -82,21 +95,6 @@ main .container .posts li a {
   color: #334155;
 }
 
-/* Button */
-.btn {
-  background-color: white;
-  margin: 0;
-  padding: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  border: 1px solid #e6f5fd;
-  box-shadow: 0.5px 1px #bde1e18c;
-  text-decoration: none;
-  color: black;
-}
-.btn:hover {
-  opacity: 0.8;
-}
 
 .bd-placeholder-img {
   font-size: 1.125rem;
