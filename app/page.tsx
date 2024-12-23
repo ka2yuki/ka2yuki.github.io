@@ -28,7 +28,7 @@ export default function Home() {
           <li className="m-0 leading-normal"><FontAwesomeIcon icon={faGithub} className="m-0" /> <a href="https://github.com/vercel/styled-jsx?tab=readme-ov-file#styled-jsx">styled-jsx</a></li>
         </ul>
 
-        <h2 className="text-sm">DevInfo：</h2>
+        <h2 className="text-sm">Development to help URLs：</h2>
         <ul>
           <li className="m-0 leading-normal">Can I use: up-to-date browser support tables: </li>
           <ul>

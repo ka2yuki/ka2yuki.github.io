@@ -22,7 +22,7 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "devlog2",
+  title: "devlog",
   description: "開発メモ。個人的に検索頻度が多い内容など。できるだけ公式URLも合わせてメモしていきます。",
   other: {
     "google-adsense-account": "ca-pub-6623379183106626"
