@@ -15,6 +15,17 @@
   padding: 0.1rem 1rem;
   font-size: 0.75rem;
 }
+
+.nav-link {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+}
+.nav-link:hover {
+  background-color: rgb(125 211 252);
+  color: white;
+  opacity: 0.7;
+}
+
 .anime-slideX {
   width: 100vw;
   border: solid;

@@ -61,16 +61,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header className="flex justify-center pb-2 xl:pb-3">
               <div className="flex items-center justify-between">
                 <nav className="flex items-center justify-between w-full text-sm font-medium">
-                  <Link href="/" className="p-3 rounded hover:bg-sky-300 hover:text-white hover:opacity-70"
-                    >
-                    <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
-                  </Link>
                   <div className="gap-2" style={{ display: 'flex', alignItems: 'center' }}>
-                    <Link href="/about" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">About</Link>
-                    <Link href="/portfolio" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">Portfolio</Link>
-                    <a href="https://github.com/ka2yuki/ka2yuki.github.io" className="p-3 rounded hover:bg-sky-300 hover:text-black hover:opacity-70">
+                    <Link href="/" className="nav-link">
+                      <FontAwesomeIcon icon={faHouse} title="home" style={{ width: '25px' }} />
+                    </Link>
+                    <Link href="/portfolio" className="nav-link">Portfolio</Link>
+                    <a href="https://github.com/ka2yuki/ka2yuki.github.io" className="nav-link">
                       <FontAwesomeIcon icon={faGithub} size="xl" /></a>
-                    <a href="https://chatgpt.com" className="p-3 rounded hover:bg-sky-300 hover:opacity-70 text-xs">
+                    <a href="https://chatgpt.com" className="nav-link text-xs">
                       <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>
                     </a>
                   </div>
