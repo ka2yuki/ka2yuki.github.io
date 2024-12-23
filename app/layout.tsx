@@ -18,6 +18,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Script from "next/script"
 import Image from "next/image"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
+import { faBookmark } from "@fortawesome/free-regular-svg-icons"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -53,9 +54,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           `}
       </Script>
       <body
-        className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
+        className={`pb-5 antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
-        <div className="flex py-1"><a className="news" href="https://tailwindcss.com/docs/customizing-colors">Color Pallet | TailwindCSS</a></div>
+        <div className="flex p-1">
+          <FontAwesomeIcon icon={faBookmark} className="pt-1 pl-1" />
+          <a className="news" href="https://tailwindcss.com/docs/customizing-colors">Color Pallet | TailwindCSS</a>
+        </div>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto px-4">
             <header className="flex justify-center pb-2 xl:pb-3">
@@ -67,10 +71,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     </Link>
                     <Link href="/portfolio" className="nav-link">Portfolio</Link>
                     <a href="https://github.com/ka2yuki/ka2yuki.github.io" className="nav-link">
-                      <FontAwesomeIcon icon={faGithub} size="xl" /></a>
-                    <a href="https://chatgpt.com" className="nav-link text-xs">
-                      <Image src="/openai-logomark.svg" alt="chatgptlogo" width={20} height={20}/>
-                    </a>
+                      <FontAwesomeIcon icon={faGithub} size="xl" />
+                    </a>s
                   </div>
                 </nav>
                 <ModeToggle />
