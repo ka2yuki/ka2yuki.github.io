@@ -1,6 +1,9 @@
+* {
+      box-sizing: border-box;
+}
+
 html,
     body {
-      box-sizing: border-box;
     }
 
     a {
@@ -10,6 +13,11 @@ html,
     ul {
       /* margin: 0; */
       padding-left: 1.5rem;
+      display: flex;
+    }
+
+    li {
+      list-style: none;
     }
 
     main {
@@ -35,4 +43,16 @@ html,
     td {
       border: 1px solid rgb(160 160 160);
       padding: 8px 10px;
+    }
+
+    header nav ul li a {
+      padding: .5rem 1rem;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      box-shadow: 2px 2px gainsboro;
+    }
+    
+    header nav ul li a:hover {
+      opacity: .9;
+      border: dashed darkcyan;
     }
