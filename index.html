@@ -14,6 +14,7 @@
   <style></style>
 
   <!-- name属性: content属性; 文書のメタデータを 名前:値 の ペアで提供 -->
+  <!-- meta: https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta -->
   <meta charset="utf-8">
   <!-- <meta name="application-name" content=""> --> <!-- Simple web pages shouldn't define an application-name. -->
   <meta name="author" content="Katsuyuki Mori">
@@ -21,14 +22,19 @@
   <meta name="generator">
   <meta name="keyword" name="">
 
-  <!-- meta: https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta -->
+
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';" /> -->
   <!-- error above tag -->
   <!-- http-equiv: https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Security-Policy -->
   <!-- more.. Content-Security-Policy: https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta name="theme-color" content="#4285f4" />
-  <meta name="color-scheme" content="dark light"> -->
+  <!-- Android Chrome -->
+  <meta name="theme-color" content="#4285f4" />
+  <!-- notification color theme for browser -->
+  <meta name="color-scheme" content="dark light">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KJKZP3KDW"></script>
@@ -102,6 +108,7 @@
       </tfoot>
     </table>
 
+
     <h2>try</h2>
     <pre><code>
       &lt;template&gt;
@@ -117,10 +124,11 @@
     <p>shadowrootmode属性を渡すと既存HTMLが隠れてしまう..</p>
   </main>
 
+
   <iframe src="/blog.html" frameborder="0" style="width: 70%;margin: 0 auto;display: block;"></iframe>
 
-  <footer>
 
+  <footer>
   </footer>
 </body>
 
