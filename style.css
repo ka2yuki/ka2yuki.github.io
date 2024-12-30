@@ -10,8 +10,10 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 0;
-  width: 97%;
+  /* Not add width to body
+  - 最大幅を個別にそれ以上広げれなく。
+  - ex: 流れるnewsなど
+   */
 }
 
 a {
@@ -25,8 +27,31 @@ ul {
 }
 
 li {
-  list-style: none;
+  list-style-type: circle;
 }
+
+/* head line news */
+header {
+  /* border: #99f6e4 solid; */
+  font-size: 14px;
+  width: 90%;
+  margin: .5rem auto;
+}
+
+header ul {
+  /* border: black solid 1px; */
+  padding: 0;
+  margin: 0;
+}
+
+header ul li {
+  /* border: saddlebrown solid 1px; */
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ▲ head line news */
 
 header nav ul li a {
   padding: .5rem 1rem;
@@ -43,7 +68,8 @@ header nav ul li a:hover {
 main {
   padding: 0;
   margin: 0 auto;
-  /* width: 97%; */
+  width: 97%;
+  max-width: 1000px;
   /* border: 5px solid #607D8B; */
 }
 
@@ -54,7 +80,7 @@ table {
 }
 
 caption {
-  caption-side: bottom;
+  /* caption-side: bottom; */
   padding: 10px;
   font-weight: bold;
 }
@@ -69,6 +95,23 @@ table tr td ul {
   display: flex;
   flex-direction: column;
 }
+
 table tr td ul li {
-  list-style: decimal;
+  /* list-style: decimal; */
+}
+
+/* START attached CLASS NAME */
+li span.tag {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0 220 130);
+  /* border-color: sandybrown; */
+  border-radius: 10px;
+  font-size: .7rem;
+  padding: .2rem .5rem;
+  margin-right: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {}
 }

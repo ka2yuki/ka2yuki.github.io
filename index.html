@@ -4,23 +4,27 @@
 <head> <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/head#%E9%96%A2%E9%80%A3%E6%83%85%E5%A0%B1 -->
   <title>larn-html</title>
 
-  <base href="https://ka2yuki.github.io" />
-  <!-- <base href="http://localhost:5500" /> -->
+
+  <!-- <base href="https://ka2yuki.github.io" /> -->
+  <base href="http://localhost:3000" />
   <!-- link で css が 読み込まれなくなったので http://localhost を追加した -->
   <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/base -->
 
+
   <link rel="stylesheet" href="/style.css">
 
+
   <style></style>
+
 
   <!-- name属性: content属性; 文書のメタデータを 名前:値 の ペアで提供 -->
   <!-- meta: https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta -->
   <meta charset="utf-8">
   <!-- <meta name="application-name" content=""> --> <!-- Simple web pages shouldn't define an application-name. -->
   <meta name="author" content="Katsuyuki Mori">
-  <meta name="description" content="ホームページ作成, html/css">
+  <meta name="description" content="">
   <meta name="generator">
-  <meta name="keyword" name="">
+  <meta name="keyword" name="ホームページ, html/css">
 
 
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';" /> -->
@@ -53,6 +57,27 @@
 <body>
 
   <!-- <iframe src="/header.html" frameborder="0"></iframe> -->
+  <!-- <object data="/header.html" type="text/html" width="" height=""></object> -->
+
+  <header id="container"></header>
+
+  <template id="template">
+    <ul>
+      <li><span class="tag">VSCode拡張機能</span><a
+          href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live-Server</a>
+        : HTML/CSSの変更をリアルタイムに反映する</li>
+      <li></li>
+      <li></li>
+    </ul>
+  </template>
+
+  <script>
+    const container = document.getElementById("container");
+    const template = document.getElementById("template");
+    const firstClone = template.content.cloneNode(true);
+    container.appendChild(firstClone);
+    // console.log("clone: ", firstClone)
+  </script>
 
   <main>
     <h2><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element#content">Element</a></h2>
@@ -125,7 +150,18 @@
   </main>
 
 
-  <iframe src="/blog.html" frameborder="0" style="width: 70%;margin: 0 auto;display: block;"></iframe>
+  <!-- <iframe src="/blog.html" frameborder="0" style="width: 70%;margin: 0 auto;display: block;"></iframe> -->
+  <!-- <object data="/blog.html" type="text/html" width="" height=""></object> -->
+  <div class="blog">
+    <h1>blog</h1>
+    <ul>
+      <li> <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>から <a
+          href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live
+          Preview</a>に変更しました | 2024.12.29 <span class="tag">VSCode拡張機能</span>
+      </li>
+      <li></li>
+    </ul>
+  </div>
 
 
   <footer>
