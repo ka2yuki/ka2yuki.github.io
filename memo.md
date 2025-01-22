@@ -1,0 +1,12 @@
+- gist
+- qiita
+
+- Swiper：
+  - card boxの画像
+  - size: 
+    - img / backbround
+      - img:
+        - カード全体の横幅の問題
+          - image sizeにカードBoｘを合わせる必要があるが結構難しかしかった。。
+      - background:
+        - Swiperのサイズ計測を考慮

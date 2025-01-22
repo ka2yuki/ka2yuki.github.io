@@ -1,171 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 
-<head> <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/head#%E9%96%A2%E9%80%A3%E6%83%85%E5%A0%B1 -->
-  <title>larn-html</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webサイト作成備忘録</title>
+    <style>
+        a {
+            text-decoration: none;
+            display: block;
+        }
 
+        ul li {
+            list-style: none;
+        }
 
-  <!-- <base href="https://ka2yuki.github.io" /> -->
-  <base href="http://localhost:3000" />
-  <!-- link で css が 読み込まれなくなったので http://localhost を追加した -->
-  <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/base -->
+        header nav {
+            width: 100vw;
+        }
 
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0 1rem;
+        }
 
-  <link rel="stylesheet" href="/style.css">
+        header nav ul li a {
+            display: block;
+            padding: 1rem 2rem;
+        }
 
+        main ul {
+            display: flex;
+        }
 
-  <style></style>
+        main ul li a {
+            padding: 1rem 1rem;
+        }
 
-
-  <!-- name属性: content属性; 文書のメタデータを 名前:値 の ペアで提供 -->
-  <!-- meta: https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta -->
-  <meta charset="utf-8">
-  <!-- <meta name="application-name" content=""> --> <!-- Simple web pages shouldn't define an application-name. -->
-  <meta name="author" content="Katsuyuki Mori">
-  <meta name="description" content="">
-  <meta name="generator">
-  <meta name="keyword" name="ホームページ, html/css">
-
-
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';" /> -->
-  <!-- error above tag -->
-  <!-- http-equiv: https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Content-Security-Policy -->
-  <!-- more.. Content-Security-Policy: https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Android Chrome -->
-  <meta name="theme-color" content="#4285f4" />
-  <!-- notification color theme for browser -->
-  <meta name="color-scheme" content="dark light">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KJKZP3KDW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-2KJKZP3KDW');
-  </script>
-
-  <noscript></noscript> <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/noscript -->
-  <template></template> <!-- https://developer.mozilla.org/ja/docs/Web/HTML/Element/template -->
+        main ul li a:hover {}
+    </style>
 </head>
 
 <body>
-
-  <!-- <iframe src="/header.html" frameborder="0"></iframe> -->
-  <!-- <object data="/header.html" type="text/html" width="" height=""></object> -->
-
-  <header id="container"></header>
-
-  <template id="template">
-    <ul>
-      <li><span class="tag">VSCode拡張機能</span><a
-          href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live-Server</a>
-        : HTML/CSSの変更をリアルタイムに反映する</li>
-      <li></li>
-      <li></li>
-    </ul>
-  </template>
-
-  <script>
-    const container = document.getElementById("container");
-    const template = document.getElementById("template");
-    const firstClone = template.content.cloneNode(true);
-    container.appendChild(firstClone);
-    // console.log("clone: ", firstClone)
-  </script>
-
-  <main>
-    <h2><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element#content">Element</a></h2>
-    <table class="table table-primary">
-      <caption>
-        <a
-          href="https://developer.mozilla.org/ja/docs/Web/HTML/Element#%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B3%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%8D%E3%83%B3%E3%83%88">ウェブコンポーネント</a>
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">要素</th>
-          <th scope="col">説明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="">
-          <td scope="row">
-            <code><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/template">&lt;template&gt;</a></code>
-          </td>
-          <td>
+    <header>
+        <nav>
             <ul>
-              <li>ページが読み込まれたとき：すぐにレンダリングされない。</li>
-              <li>実行時：JavaScript を使って後からインスタンス化することができる</li>
-              <li>HTMLを保持するためのメカニズム</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.wantedly.com/id/katsuyuki_mori_">About</a></li>
             </ul>
-          </td>
-        </tr>
-        <tr class="">
-          <td scope="row">
-            <code><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/slot">&lt;slot&gt;</a></code>
-          </td>
-          <td>
-            <ul>
-              <li><a href="https://developer.mozilla.org/ja/docs/Web/API/Web_components">ウェブコンポーネント</a> 技術群の一部</li>
-              <li>この要素は、ウェブコンポーネント内のプレースホルダーで、自分自身でマークアップを埋めることができ、別個の DOM ツリーを作成して一緒に表示することができる。</li>
-            </ul>
-            <code>
-              &lt;span slot="desc"&gt;挿入される概要&lt;/span&gt;<br>
-              &lt;template&gt;<br>
-              &nbsp;&nbsp;&lt;slot name="desc"&gt;defo DESCRIPTION&lt;/slot&gt;<br>
-              &lt;/template&gt;
-            </code>
-          </td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th scope="row" colspan="2">
-            ウェブコンポーネントは要するに、独自の要素を作成して通常の HTML 要素であるかのように使用できる、HTML 関連技術です。
+        </nav>
+    </header>
 
-          </th>
-        </tr>
-      </tfoot>
-    </table>
-
-
-    <h2>try</h2>
-    <pre><code>
-      &lt;template&gt;
-        this template is not shadow
-      &lt;/template&gt;
-    </code></pre>
-    <h3></h3>
-    <pre><code>
-      &lt;template shadowrootmode="open"&gt;
-        this template is shadow
-      &lt;/template&gt;
-    </code></pre>
-    <p>shadowrootmode属性を渡すと既存HTMLが隠れてしまう..</p>
-  </main>
-
-
-  <!-- <iframe src="/blog.html" frameborder="0" style="width: 70%;margin: 0 auto;display: block;"></iframe> -->
-  <!-- <object data="/blog.html" type="text/html" width="" height=""></object> -->
-  <div class="blog">
-    <h1>blog</h1>
-    <ul>
-      <li> <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>から <a
-          href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live
-          Preview</a>に変更しました | 2024.12.29 <span class="tag">VSCode拡張機能</span>
-      </li>
-      <li></li>
-    </ul>
-  </div>
-
-
-  <footer>
-  </footer>
+    <main>
+        <ul>
+            <li><a href="https://chatgpt.com/">ChatGPT</a></li>
+            <li><a href="https://wordpress.org/documentation/">WordPress</a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </main>
 </body>
 
 </html>
