@@ -6,6 +6,7 @@ html {
   scrollbar-color: #ccfbf1 #99f6e4;
   scrollbar-width: thin;
   overflow: visible;
+  --main-color: rgb(15 23 42);
 }
 
 body {
@@ -14,10 +15,18 @@ body {
   - 最大幅を個別にそれ以上広げれなく。
   - ex: 流れるnewsなど
    */
+  background-color: var(--main-color);
 }
+
+/* body::before {
+  content: "";
+  background-image: url("assets/images/bg-new..png");
+  filter: blur(7px);
+} */
 
 a {
   text-decoration: none;
+  color: rgb(226 232 240);
 }
 
 ul {
@@ -55,14 +64,13 @@ header ul li {
 
 header nav ul li a {
   padding: .5rem 1rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--main-color);
   border-radius: 10px;
-  box-shadow: 2px 2px gainsboro;
 }
 
 header nav ul li a:hover {
   opacity: .9;
-  border: dashed darkcyan;
+  border: 1px dashed darkcyan;
 }
 
 main {
