@@ -1015,20 +1015,698 @@ footer .wrap .copyright {
     font-size: .9rem;
 }
 
-@keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
+/*
+ * section css 
+ */
+main {}
 
-    to {
-        transform: translateX(-100%);
-    }
+main section {
+    background-color: white;
 }
 
-.scroll-left {
-    animation: scroll-left 70s infinite linear 0.5s;
+main section>.wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 5rem 0;
 }
 
-.scroll-left:hover {
-    animation-play-state: paused;
+main section .shadow {
+    box-shadow: 5px 5px 5px rgb(202, 202, 202);
+}
+
+main section .title {
+    text-align: center;
+}
+
+main section .title .ja {
+    font-weight: bold;
+    color: #515151;
+    margin: 0;
+    line-height: 1;
+    font-size: 1rem;
+}
+
+main section .title .en {
+    margin: 13px 0 .5rem;
+    font-size: 2.5rem;
+    color: #313131;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+main section .title .discription {
+    font-size: 1.5rem;
+}
+
+/* max-width for each section */
+body#top main section.about .wrap,
+body#top main section.service .wrap {
+    max-width: 1400px;
+}
+
+body#top main section .wrap {
+    max-width: 950px;
+}
+
+/*
+ * first section no name
+ */
+main section.first .wrap {
+    max-width: 790px;
+}
+
+body#top main section.first .content {
+    display: flex;
+    background: url("../images/top/support-bg.png") bottom repeat-x;
+    background-color: #f3f7f8;
+}
+
+/*
+ * about
+ */
+main section.about .wrap .col2 {
+    display: flex;
+    padding: 8rem 0;
+    margin: 0 auto;
+}
+
+main section.about .wrap .col2 .r-area,
+main section.about .wrap .col2 .l-area {
+    width: 50%;
+}
+
+main section.about .wrap .col2 .l-area .title {
+    text-align: left;
+}
+
+main section.about .wrap .col2 .l-area .title .border {
+    margin: 0;
+    width: 100px;
+}
+
+main section.about .wrap .col2 .l-area .content p {
+    line-height: 2;
+}
+
+main section.about .wrap .col2 .l-area .content .discription {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+main section.about .wrap .wrap-kadai {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main section.about .wrap .wrap-kadai h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+main section.about .wrap .wrap-kadai h2 .left-b,
+main section.about .wrap .wrap-kadai h2 .right-b {
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 40px;
+}
+
+main section.about .wrap .wrap-kadai h2 .left-b {
+    transform: rotate(45deg);
+}
+
+main section.about .wrap .wrap-kadai h2 .right-b {
+    transform: rotate(135deg);
+}
+
+main section.about .wrap .wrap-kadai ul.kadai-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem;
+}
+
+main section.about .wrap .wrap-kadai .kadai-list li {
+    border-bottom: 2px dashed #d5d7d5;
+    padding-bottom: .5rem;
+    display: flex;
+}
+
+main section.about .wrap .wrap-kadai .kadai-list li img {
+    width: 22px;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+main section.about .wrap .our-feature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 5rem;
+    box-shadow: 4px 4px #dbdbdb;
+    border-radius: 15px;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    background-color: #F3F7F8;
+}
+
+main section.about .wrap .our-feature-box .title {
+    border-right: 2px dashed var(--green-smork);
+    width: 40%;
+    text-align: left;
+}
+
+main section.about .wrap .our-feature-box .title .en {
+    font-size: 1rem;
+    color: var(--green-smork);
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+main section.about .wrap .our-feature-box .title .ja {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+main section.about .wrap .our-feature-box .detail {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+main section.about .wrap .col3-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 0;
+    box-shadow: 2px 3px 1px #dbdbdb;
+}
+
+main section.about .wrap .col3-area .point {
+    border-right: 1.5px solid #d1d1d1;
+    padding: 1rem;
+}
+
+main section.about .wrap .col3-area .point .title {
+    width: 20%;
+}
+
+main section.about .wrap .col3-area .point p {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--txt-c);
+}
+
+main section.about .wrap .col3-area .point:last-child {
+    border-right: none;
+}
+
+main section.about .wrap .col3-area img:first-child {
+    width: 100%;
+}
+
+main section.about .wrap .col3-area img:last-child {
+    width: fit-content;
+}
+
+main section.about .wrap .aboutus-contact-area {
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+main section.about .wrap .aboutus-contact-area p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main section.about .wrap .aboutus-contact-area .btn-area {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section.about .wrap .aboutus-contact-area .btn-area button {
+    width: 40%;
+    margin: 0;
+}
+
+/*
+ * Title:
+ *  sapppro & area
+ */
+main section.sapppro .wrap .title,
+main section.area .wrap .title {
+    text-align: left;
+}
+
+/*
+ * Title: eng
+ */
+main section.service .wrap .title .en {
+    line-height: 1;
+    margin: 0 auto 0;
+}
+
+main section.plan .wrap .title .en {
+    line-height: 1;
+    margin: 7px auto 4px;
+}
+
+main section.sapppro .wrap .title .en,
+main section.area .wrap .title .en {
+    line-height: 1;
+    margin: .3rem auto 0;
+}
+
+/*
+ * Transform: center 
+ *  service & plan
+ */
+main section.service .wrap .title .border,
+main section.plan .wrap .title .border {
+    margin: 0 auto;
+}
+
+/*
+ * Border:
+ */
+main section.service .wrap .title .border {
+    width: 5%;
+}
+
+main section.plan .wrap .title .border {
+    width: 11%;
+    margin-top: .2rem;
+}
+
+main section .wrap .title .border {
+    width: 110px;
+}
+
+/*
+ * Wrapper Size
+ */
+main section.sapppro .wrap,
+main section.area .wrap {
+    max-width: 1200px;
+    padding: 3rem 0;
+}
+
+body#top main section.area .wrap {
+    padding: 0 0 4.5rem;
+}
+
+
+/*
+ * plan
+ */
+body#top main section.plan img {
+    margin: 0 auto;
+    display: block;
+}
+
+main section.plan button {
+    margin: 3rem auto 1rem;
+}
+
+body#top main section.plan {
+    background-image: url("../images/top/plan-bg.png");
+    background-size: cover;
+}
+
+
+/*
+ * works & voices
+ */
+main section.works .wrap,
+main section.voices .wrap {
+    display: flex;
+    max-width: 780px;
+    padding-bottom: 2rem;
+}
+
+main section.voices .wrap .l-area,
+main section.voices .wrap .r-area,
+main section.works .wrap .l-area,
+main section.works .wrap .r-area {
+    width: 50%;
+}
+
+main section.voices .wrap .l-area .title,
+main section.works .wrap .l-area .title {
+    width: 30%;
+    text-align: left;
+}
+
+main section.voices .wrap .r-area button,
+main section.works .wrap .r-area button {
+    margin-left: auto;
+    width: 100%;
+}
+
+main section.voices .auto-scroll-posts {
+    display: flex;
+    gap: 0 27px;
+    justify-content: center;
+}
+
+main section.voices .auto-scroll-posts .post,
+main section.works .auto-scroll-posts .post {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 300px; */
+    /* box-shadow: 0 3px 1px #C4C7C5; */
+}
+
+main section.voices .auto-scroll-posts .post .img-wrap img {
+    border-left: 2px solid #C4C7C5;
+    border-right: 2px solid #C4C7C5;
+    border-top: 2px solid #C4C7C5;
+}
+
+main section.voices .auto-scroll-posts .post .cat-list,
+main section.works .auto-scroll-posts .post .cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .5rem .9rem;
+}
+
+main section.works .auto-scroll-posts .post .cat-list span {
+    background-color: #313131;
+    border-radius: 50px;
+    color: whitesmoke;
+    padding: .2rem .7rem;
+    margin: .2rem;
+    display: block;
+    width: fit-content;
+    font-size: .7rem;
+}
+
+main section.works .auto-scroll-posts .post .contents .cat,
+main section.voices .auto-scroll-posts .post .contents .cat {
+    color: red;
+}
+
+main section.works .auto-scroll-posts .post .contents p,
+main section.voices .auto-scroll-posts .post .contents p {
+    margin: .3rem 0 .5rem;
+}
+
+
+/*
+ * voices
+ */
+main section.voices .auto-scroll-posts .post .contents {
+    padding: .5rem .7rem;
+}
+
+main section.voices .auto-scroll-posts .post .contents .date {
+    font-size: .9rem;
+}
+
+body#top main section.voices {
+    background-color: #f3f7f8;
+}
+
+
+/*
+ * service  
+ */
+main section.service {
+    background: transparent;
+    /* height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin; */
+}
+
+main section.service>.wrap {
+    padding-bottom: 7rem;
+}
+
+main section.service .wrap .title .discription {
+    margin-top: 1.5rem;
+}
+
+main section.service .wrap>.contents {
+    display: flex;
+}
+
+main section.service .wrap .contents .left,
+main section.service .wrap .contents .right {
+    width: 50%;
+    padding: 0 5rem;
+}
+
+
+main section.service .wrap .contents .right {
+    padding: 0;
+}
+
+main section.service .wrap .contents .left {
+    position: relative;
+    padding: 0;
+}
+
+main section.service .wrap .contents .left .img-wrap {
+    transition: all 1s;
+}
+
+main section.service .wrap .contents .left img {
+    position: absolute;
+    top: 2rem;
+    max-width: 72%;
+    padding: 2rem;
+    display: block;
+}
+
+main section.service .contents .right .box {
+    background-color: white;
+    padding: 2rem 4.5rem;
+    border-radius: 2px;
+    margin: 7rem 0;
+}
+
+main section.service .contents .right .box:first-child {
+    margin-top: 5rem;
+}
+
+main section.service .contents .right .box {
+    position: relative;
+}
+
+main section.service .contents .right .box .wrap img {
+    position: absolute;
+    top: -20%;
+    right: 22px;
+    width: 180px;
+    padding: 0;
+}
+
+main section.service .contents .right .box .title {
+    text-align: left;
+    font-weight: bold;
+}
+
+main section.service .contents .right .box .title .en {
+    color: red;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+main section.service .contents .right .box .title .ja {
+    color: #313131;
+    font-size: 1.7rem;
+    margin: 10px 0 1.5rem;
+}
+
+main section.service .contents .right .box .content {
+    display: block;
+}
+
+main section.service .contents .right .box .content .discription {
+    font-size: 1.2rem;
+}
+
+main section.service .contents .right .box .content p {
+    line-height: 2;
+}
+
+main section.service .wrap .step-wrap .content .right button {
+    margin: 2.5rem auto;
+    width: 39%;
+}
+
+main section.service .wrap .step-wrap .content .right button .arr-right img {
+    width: 100%;
+    padding: 0;
+}
+
+
+
+
+/*
+ * column
+ */
+main section.column {
+    background-image: url("../images/top/bg-column.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section.column>.wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+}
+
+main section.column .wrap .l-area {
+    width: 100%;
+}
+
+main section.column .wrap .l-area .title {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+main section.column .wrap .l-area .title .border {
+    margin: 0;
+    width: 120px;
+}
+
+main section.column .wrap .l-area .content {
+    font-size: .9rem;
+    padding-top: 1.5rem;
+}
+
+main section.column .wrap .l-area .content .discription {
+    line-height: 2;
+}
+
+main section.column .wrap .l-area .content img {
+    width: 50%;
+    margin: 1rem auto 0 2rem;
+}
+
+/*
+ * contact
+ */
+main section.contact {
+    background-color: transparent;
+}
+
+main section.contact .wrap {
+    max-width: 1200px;
+    padding: 7rem 0;
+}
+
+main section.contact .wrap .title .discription {
+    font-size: 1.2rem;
+}
+
+main section.contact .wrap .content {
+    display: flex;
+    justify-content: center;
+}
+
+main section.contact .wrap .content .tell {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+main section.contact .wrap .content .tell span {
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+main section.contact .wrap .content button {
+    width: 230px;
+}
+
+
+/*
+ * sapppro & area
+ */
+main section.sapppro,
+main section.area {}
+
+main section.sapppro .wrap .contents {
+    padding: 1rem 3rem 2.5rem;
+    color: var(--txt-c);
+    border-bottom: 2px solid gainsboro;
+}
+
+main section.sapppro .wrap .contents h3 {
+    border-left: 5px solid var(--green-smork);
+    padding-left: .5rem;
+}
+
+main section.sapppro .wrap .contents p {
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+main section.sapppro .wrap .contents button {
+    margin: 2rem 0 0;
+    background-color: white;
+    border: 3px solid rgb(223, 223, 223)
+}
+
+main section.sapppro .wrap .contents button .crcle {
+    margin-right: .7rem;
+    margin-bottom: 2.5px;
+}
+
+main section.area .wrap .contents {
+    padding-top: 2rem;
+    font-size: .9rem;
+}
+
+main section.area .wrap .contents ul {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 15px;
+}
+
+main section.area .wrap .contents ul li a {
+    color: var(--txt-c);
+}
+
+
+main section.sapppro .wrap .hidden-content.open,
+main section.sapppro .wrap .contents button .fa-plus,
+main section.sapppro .wrap .contents button.open .fa-minus {
+    display: block;
+}
+
+main section.sapppro .wrap .hidden-content,
+main section.sapppro .wrap .contents button.open .fa-plus,
+main section.sapppro .wrap .contents button .fa-minus {
+    display: none;
+}
+
+main section.sapppro .wrap .contents button .open-state-icon {
+    margin-left: auto;
+    margin-bottom: 1px;
+}
+
+main section.sapppro .wrap .contents .hidden-content>hr {
+    border: none;
+    border-top: 3px dashed gainsboro;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+main section.sapppro .wrap .contents .hidden-content ul li {
+    list-style: disc;
 }
