@@ -1,0 +1,1034 @@
+/*
+ * created by https://ka2yuki.github.io
+ * 2025.01.30 
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --green-smork: #88b3a3;
+    --txt-c: #56534c;
+    --max-width: 1200px;
+    --column-max-width: 1080px;
+    --light-gray: #e1e1e1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img-shadow {
+    box-shadow: 0px 3px 1px rgb(202, 202, 202);
+}
+
+/* Header */
+header .header-wrap {
+    max-width: var(--max-width);
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/*
+ * 共通css: Header Nav
+ */
+header nav {
+    position: fixed !important;
+    width: 100%;
+    transition: background-color 1s;
+    z-index: 999;
+}
+
+header nav.scrolled-mv {
+    background-color: #ddd !important;
+}
+
+header nav ul {
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    padding: 1.2rem 3.5rem;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:last-child {
+    background-color: #fbbf24;
+    border-radius: 50px;
+}
+
+header nav ul li a {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    display: block;
+    color: var(--txt-c);
+    font-weight: bold;
+}
+
+header nav ul li a:last-child {
+    padding: .5rem 1.5rem;
+    color: #1A1A1A;
+}
+
+header nav li.submenu {
+    position: relative;
+}
+
+header nav li.submenu>ul {
+    display: none;
+}
+
+header nav li.submenu:hover>ul {
+    display: block;
+}
+
+header nav li.submenu:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header nav li.submenu:hover ul li a {
+    padding: .5rem 1.2rem;
+    width: 100%;
+}
+
+header nav li.submenu:hover ul li a:hover {
+    opacity: .7;
+}
+
+header nav li.submenu:hover ul li:last-child {
+    background-color: transparent !important;
+}
+
+/* Border in nav of header */
+header nav ul li a .border {
+    display: block;
+    width: 0;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    transition: all .5s;
+}
+
+header nav ul li a:hover .border {
+    width: 100%;
+}
+
+
+
+/*
+ *  News in header
+ */
+body#top header .news {
+    min-width: 700px;
+    padding: .5rem;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 5px rgb(160, 161, 160);
+    font-size: .9rem;
+    background-color: white;
+}
+
+body#top header .news ul {
+    padding: 0;
+}
+
+body#top header .news ul li {
+    display: flex;
+    align-items: center;
+}
+
+header .news .tag,
+header .news .txt {
+    color: rgb(56, 56, 56);
+}
+
+header .news .tag {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+header .news .txt {
+    font-weight: bold;
+}
+
+header .news .date {}
+
+header .news .cat {
+    color: brown;
+}
+
+header .news ul li span {
+    margin-left: .5rem;
+}
+
+body#top header .news ul li img.arr {
+    width: 15px;
+    margin: 0 1rem 0 auto;
+}
+
+header {
+    overflow: hidden;
+    height: 100vh;
+}
+
+header nav {}
+
+header img.mv {
+    position: absolute;
+    width: 50%;
+    max-width: 650px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+}
+
+body#top header .wrap {
+    /* position: relative;
+    max-width: 1200px;
+    height: 95vh;
+    margin: 0 auto; */
+}
+
+body#feature,
+body#flow {
+    position: relative;
+}
+
+/*
+ * 動画 
+ */
+body header .video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+body#top header .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*
+ * ぱんくず: Page: feature/flow
+ */
+body main .breadcrumbs {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+body main .breadcrumbs .wrap {
+    max-width: var(--max-width);
+    padding: 10px 0;
+}
+
+body main .breadcrumbs span {
+    padding: 0 .5rem;
+    color: var(--txt-c);
+}
+
+body#flow main section {
+    background-color: #F3F7F8;
+}
+
+/*
+ * Header: 
+ *  feature/flow/faq
+ */
+body#plan header,
+body#faq header,
+body#feature header,
+body#flow header {
+    background: radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end));
+    height: 45vh;
+}
+
+body#plan header nav,
+body#faq header nav,
+body#feature header nav,
+body#flow header nav {
+    position: absolute;
+    background: #ffffff61;
+    right: 0;
+    width: 100%;
+    border-bottom: 2px solid rgb(226, 226, 226);
+}
+
+body#plan header nav .wrap,
+body#faq header nav .wrap,
+body#top header nav .wrap,
+body#feature header nav .wrap,
+body#flow header nav .wrap {
+    /* max-width: 1500px; */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: .2rem 0;
+    padding-left: 30px;
+}
+
+body#plan header>.wrap .contents-wrap,
+body#feature header>.wrap .contents-wrap,
+body#faq header>.wrap .contents-wrap,
+body#flow header>.wrap .contents-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+}
+
+body#top header nav .logo-wrap {
+    transform: scale(0, 0);
+}
+
+body#plan header nav .logo-wrap,
+body#faq header nav .logo-wrap,
+body#top header nav .logo-wrap,
+body#feature header nav .logo-wrap,
+body#flow header nav .logo-wrap {
+    width: 200px;
+    /* transform: scale(0, 0); */
+    transition: transform ease .3s;
+}
+
+body#plan header nav .logo-wrap.fade-in,
+body#faq header nav .logo-wrap.fade-in,
+body#top header nav .logo-wrap.fade-in,
+body#feature header nav .logo-wrap.fade-in,
+body#flow header nav .logo-wrap.fade-in {
+    transform: scale(1, 1);
+}
+
+body#plan header>.wrap,
+body#faq header>.wrap,
+body#feature header>.wrap,
+body#flow header>.wrap {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body#plan header>.wrap .ja,
+body#faq header>.wrap .ja,
+body#feature header>.wrap .ja,
+body#flow header>.wrap .ja {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #464646;
+}
+
+body#plan header>.wrap .en,
+body#faq header>.wrap .en,
+body#faq header>.wrap .en,
+body#feature header>.wrap .en,
+body#flow header>.wrap .en {
+    font-size: 5rem;
+    margin: 0;
+    color: #2a2a2a;
+    line-height: 1;
+}
+
+
+/*
+ * ==============
+ *  <main> area 
+ * ==============
+ */
+body main section .wrap .col2 {
+    display: flex;
+}
+
+body#feature main,
+body#flow main {
+    width: 100%;
+}
+
+body#feature main .flow .wrap,
+body#flow main .flow-overviews .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body#flow main .flow-details .wrap {
+    max-width: 1000px;
+}
+
+
+body#top main .column .wrap,
+body#feature main .column .wrap,
+body#flow main .column .wrap {
+    max-width: var(--column-max-width);
+}
+
+body#flow main .flow-details .wrap .description {
+    margin: 0 auto 2.5rem;
+    max-width: 930px;
+    color: var(--txt-c);
+    line-height: 1.7;
+}
+
+body#feature main .flow .wrap .step,
+body#flow main .flow-details .wrap .step,
+body#flow main .flow-overviews .wrap .step {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/*
+ * Box-size: width; 
+ */
+body#feature main .flow .wrap .step .disc-box,
+body#flow main .flow-overviews .wrap .step .disc-box {
+    width: 47%;
+}
+
+/*
+ * Flow: detail steps 
+ */
+body#flow main .flow-details .wrap .step .img-box {
+    width: 17%;
+    padding: 1rem;
+}
+
+body#flow main .flow-details .wrap .step .desc-box {
+    width: 80%;
+}
+
+body#flow main .flow-overviews .wrap .step .img-box {
+    width: 35%;
+}
+
+body#flow main .flow-overviews .wrap .step .desc-box {
+    width: 70%;
+    padding: 15px 0 0 4.5rem;
+}
+
+body#feature main .flow .wrap .step .img-box {
+    width: 53%;
+}
+
+body#feature main .flow .wrap .step:nth-child(even) .desc-box {
+    padding-left: 2rem;
+}
+
+body#feature main .flow .wrap .step:nth-child(odd) .desc-box {
+    padding-right: 2rem;
+}
+
+body#feature main .flow .wrap .step .desc-box .disc .ja {
+    font-size: 25px;
+}
+
+/* 
+ * 文字の色
+ */
+body#flow main .flow-details .wrap .step .desc-box,
+body#feature main .flow .wrap .step .desc-box,
+body#feature main .flow .wrap .step .img-box {
+    color: var(--txt-c);
+}
+
+body#feature main .flow .wrap .step .desc-box .title {
+    text-align: left;
+    width: 19%;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .title img,
+body#feature main .flow .wrap .step .desc-box .title img {
+    margin: 1.5rem 0 0;
+}
+
+body#feature main .flow .wrap .step .desc-box .title div:first-child {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--txt-c);
+}
+
+body#feature main .flow .wrap .step .desc-box .disc p {
+    line-height: 1.7;
+}
+
+body#top header .scroll-navigation {
+    position: absolute;
+    bottom: 7%;
+    left: 0%;
+    color: rgb(57 56 56);
+    border-bottom: 1px solid rgb(109, 109, 109);
+    line-height: 1;
+    transform: rotate(90deg);
+    padding: 0 15% 0 0;
+    margin: 0;
+}
+
+
+/*
+ * PAGE: Flow 
+ */
+body#flow main .flow-details .wrap .step-wrap {
+    margin-top: 3rem;
+}
+
+body#flow main .flow-details .wrap .step-wrap .step {
+    border-bottom: 2px solid rgb(223, 223, 223);
+    padding: 2rem 2rem 1rem;
+    margin: 0;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .en {
+    font-size: 16px;
+    margin: 0px auto 15px;
+    color: #5d91e1;
+    letter-spacing: 0px;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .ja {
+    font-size: 25px;
+    margin: 0;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .title {
+    text-align: left;
+}
+
+body#flow main .flow-details .wrap .step .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .desc {
+    font-size: .9rem;
+    line-height: 2;
+    letter-spacing: -.5px;
+}
+
+body main hr.separate-border {
+    border: 1px solid #D0D0D0;
+    margin: 0;
+}
+
+/*
+ * #flow overviews 
+ */
+body#flow main .flow-overviews .wrap .title {
+    text-align: left;
+}
+
+body#flow main .flow-overviews .wrap .title .en {
+    margin: 5px 0 0;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap {
+    margin-top: 2rem;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step {
+    border-bottom: 2px solid #8ea191;
+    padding: 0 3rem 1rem;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step:nth-child(4) {
+    margin-bottom: 0;
+}
+
+/* 途中説明 */
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei .img-wrap {
+    max-width: 110px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei p {
+    font-size: 25px;
+    color: var(--txt-c);
+    padding-left: 15px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title {
+    display: flex;
+    align-items: end;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title .step-num-box {
+    color: #074099;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title .step-num-box .fs-s {
+    font-size: 1rem;
+    display: block;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title img {
+    width: 40px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title h3 {
+    font-size: 30px;
+    margin: 0 0 0 11px;
+    color: var(--txt-c);
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .desc {
+    color: var(--txt-c);
+    line-height: 2;
+    font-size: 14px;
+}
+
+/* FQA */
+body#faq main .faq-yokuaru {
+    color: var(--txt-c);
+}
+
+body#faq main .faq-yokuaru .wrap {
+    max-width: 950px;
+}
+
+body#faq main .faq-yokuaru .wrap .wrap2 {
+    margin: 0 2rem;
+}
+
+body#faq main .faq-yokuaru .wrap:nth-child(1) {
+    padding-bottom: 0;
+}
+
+body#faq main .faq-yokuaru .wrap:nth-child(2) {
+    padding-top: 0;
+}
+
+body#faq main hr.separate-border {
+    margin: 3rem auto;
+}
+
+body#faq main .faq-yokuaru .wrap .title {
+    text-align: left;
+}
+
+body#faq main .faq-yokuaru .wrap .title .ja {
+    font-size: 27px;
+    margin-bottom: 2.5px;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap {
+    margin-top: 2rem;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step {
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .question,
+body#faq main .faq-yokuaru .wrap .step-wrap .step .answer {
+    display: flex;
+    align-items: center;
+    padding: 20px 2rem;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .question .img-wrap,
+body#faq main .faq-yokuaru .wrap .step-wrap .step .answer .img-wrap {
+    min-width: 3%;
+    margin-right: 9px;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .answer {
+    border-top: 2px solid var(--light-gray);
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step:nth-child(3) .answer {
+    align-items: start;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step:nth-child(3) .answer ul {
+    padding: 20px 30px;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step:nth-child(3) .answer li {
+    list-style: disc;
+    line-height: 1.7;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .answer .img-wrap {
+    padding-bottom: 15px;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .question h3 {
+    margin: 0;
+}
+
+body#faq main .faq-yokuaru .wrap .step-wrap .step .answer p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* PLAN */
+body#plan main {
+    /* background-color: #464646; */
+}
+
+body#plan main .main-inner {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+body#plan main section .wrap .col2.hajimeni {
+    margin: 2.5rem 3rem;
+}
+
+body#plan main section .wrap .col2 .l-area {
+    width: 45%;
+    padding-right: 2rem;
+}
+
+body#plan main section .wrap .col2 .r-area {
+    max-width: 55%;
+}
+
+body#plan main section .wrap .col2 .l-area .title {
+    text-align: left;
+}
+
+body#plan main section .wrap .col2 .l-area .title h2.sub {
+    color: #024b81;
+    font-size: 18px;
+    margin: 0;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-left: 4.5px solid #024b81;
+}
+
+body#plan main section .wrap .col2 .l-area .title h2.main {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/*
+ * plan.html
+ */
+main section .wrap-title {
+    margin: 0 auto;
+}
+
+main section .wrap-title h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+main section .wrap-title h2 .left-b {
+    transform: rotate(45deg);
+}
+
+main section .wrap-title h2 .right-b {
+    transform: rotate(135deg);
+}
+
+main section .wrap-title h2 .left-b,
+main section .wrap-title h2 .right-b {
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 40px;
+}
+
+body main .wrap-mokuteki-list {
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+body main .wrap-mokuteki-list .step {
+    display: flex;
+    justify-content: center;
+    padding: 23px 37px 15px;
+    margin: 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 2px rgb(223, 223, 223);
+}
+
+body main .wrap-mokuteki-list .step .img-box {
+    width: 24%;
+}
+
+body main .wrap-mokuteki-list .step .desc-box {
+    width: 80%;
+    color: var(--txt-c);
+    padding: 20px 0 0 37px;
+}
+
+body main .wrap-mokuteki-list .step .desc-box .title {
+    text-align-last: left;
+}
+
+body main .wrap-mokuteki-list .step .desc-box .title .ja {
+    font-size: 23px;
+}
+
+body main .wrap-mokuteki-list .step .desc-box .desc {
+    color: var(--txt-c);
+    line-height: 2;
+    font-size: 15px;
+}
+
+/*
+ * section: market price  
+ */
+main section.market-price .wrap .contents {
+    padding: 26px 0;
+    margin: 0 50px;
+    border-bottom-style: dashed;
+}
+
+main section.market-price .wrap .contents h3,
+main section.market-price .wrap .contents p {
+    margin: 0;
+}
+
+main section.market-price .wrap .contents h3 {
+    margin-bottom: 20px;
+}
+
+main section.market-price .wrap-case-list {
+    margin-top: 50px;
+    color: var(--txt-c);
+    display: flex;
+}
+
+main section.market-price .case-list {
+    width: 33%;
+    text-align: center;
+    margin-top: 22px;
+}
+
+main section.market-price .case-list .case-title {
+    background-color: #fbd79e;
+    padding: 8px;
+}
+
+main section.market-price .case-list:nth-child(2) .case-title {
+    background-color: #7addb0;
+}
+
+main section.market-price .case-list:last-child .case-title {
+    background-color: #ffc1ca;
+}
+
+main section.market-price .case-list .case-title .en {
+    color: white;
+}
+
+main section.market-price .case-list .case-title .ja {
+    font-size: 23px;
+}
+
+main section.market-price .case-list .case-contents {
+    border-right: 2px solid gainsboro;
+}
+
+main section.market-price .case-list:last-child .case-contents {
+    border: none;
+}
+
+main section.market-price .case-list .case-contents .cell {
+    padding: 15px;
+}
+
+main section.market-price .case-list .case-contents .cell .label {
+    color: var(--green-smork);
+    font-size: 15px;
+}
+
+main section.market-price .case-list .case-contents .cell:first-child .value {
+    font-size: 22px;
+}
+
+main section.market-price .case-list .case-contents .cell:nth-child(2) .value {
+    color: rgb(199, 199, 31);
+}
+
+main section.market-price .case-list .case-contents .cell:nth-child(5) .value {
+    font-size: 25px;
+}
+
+main section.market-price .case-list .case-contents .cell:last-child .value {
+    text-align: left;
+    font-size: 14px;
+}
+
+body#plan main section.plan {
+    background-color: transparent;
+}
+
+body#plan main section.point {
+    background-color: white;
+}
+
+body#plan main section .wrap .title .border {
+    margin: 0 auto;
+}
+
+
+/*
+ * footer 
+ */
+footer {
+    background: linear-gradient(180deg, #00a0e1, #024b81);
+}
+
+footer img.footer-img {
+    background-color: white;
+}
+
+footer .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0 3.5rem;
+}
+
+footer .wrap .logo-disc-area {
+    display: flex;
+    border-bottom: 1px solid #d7d6d6;
+    padding-bottom: 35px;
+}
+
+footer .wrap .logo-disc-area .img-wrap {
+    width: 39%;
+}
+
+footer .wrap .logo-disc-area .discription {
+    width: 60%;
+    color: white;
+    padding: 1rem 0 1rem 3rem;
+    font-size: .9rem;
+    letter-spacing: -1px;
+}
+
+footer .wrap .logo-disc-area .img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+footer .wrap .logo-disc-area .img-wrap img {
+    width: 65%;
+}
+
+footer .wrap .logo-disc-area .discription {
+    border-left: 1px solid white;
+}
+
+footer .wrap .footer-menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 3rem 0;
+    border-bottom: 1px solid #d7d6d6;
+}
+
+footer .wrap .footer-menu ul {
+    margin-left: 2rem;
+}
+
+footer .wrap .footer-menu ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+footer .wrap .footer-menu ul li img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+footer .wrap .footer-menu .service li:not(:first-child),
+footer .wrap .footer-menu ul:last-child li:last-child {
+    font-size: .9rem;
+    padding-bottom: .7rem;
+    padding-left: 1rem;
+}
+
+footer .wrap .footer-menu ul:last-child li:last-child {
+    padding-left: 0;
+}
+
+footer .wrap .copyright {
+    text-align: end;
+    color: white;
+    margin: 1.5rem 7rem 0 auto;
+    font-size: .9rem;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-left {
+    animation: scroll-left 70s infinite linear 0.5s;
+}
+
+.scroll-left:hover {
+    animation-play-state: paused;
+}
