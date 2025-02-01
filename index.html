@@ -45,17 +45,34 @@
 
         main ul li a:hover {}
     </style>
+    <script src="https://kit.fontawesome.com/14e7d786cb.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
     <!-- <link rel="stylesheet" href="https://ka2yuki.github.io/css/buttons.css"> -->
     <link rel="stylesheet" href="./css/buttons.css">
+
+    <style>
+        html {
+            --main-color: rgb(15 23 42);
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
                 <li><a href="https://www.wantedly.com/id/katsuyuki_mori_">About</a></li>
+                <li><a href="dev"><i class="fa-solid fa-house"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -71,6 +88,47 @@
     <button>
         <a href="">button</a>
     </button>
+
+    <div class="presentBox">
+        <!-- https://ka2yuki.github.io -->
+        <div class="code josefin-sans">M6G8AV6P</div>
+        <div class="wrap-img">
+            <img src="povo.jpg" alt="povo紹介コード">
+        </div>
+
+        <script>
+            const style = document.createElement("style");
+            style.textContent = `
+            /* https://ka2yuki.github.io */
+            .presentBox {
+                margin: 20px 7px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .josefin-sans {
+                font-family: "Josefin Sans", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .presentBox .code {
+                background-color: white;
+                color: var(--main-color);
+                text-align: center;
+                padding: 15px 0 8px;
+                font-size: 30px;
+            }
+            `;
+            const presentCode = document.createElement("div");
+            presentCode.classList.add("code", "josefin-sans");
+            presentCode.textContent = "M6G8AV6P";
+
+            document.getElementsByClassName("presentBox").item(0).appendChild(style);
+            // document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
+        </script>
+    </div>
 </body>
 
 </html>

@@ -1,12 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   scrollbar-color: #ccfbf1 #99f6e4;
   scrollbar-width: thin;
   overflow: visible;
-  --main-color: rgb(15 23 42);
 }
 
 body {
