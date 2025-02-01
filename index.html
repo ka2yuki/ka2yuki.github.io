@@ -71,7 +71,7 @@
     <header>
         <nav>
             <ul>
-                <li><i style="color:white;" class="fa-solid fa-house"></i></li>
+                <!-- <li><i style="color:white;" class="fa-solid fa-house"></i></li> -->
                 <li><a href="https://www.wantedly.com/id/katsuyuki_mori_">About</a></li>
                 <li><a href="https://www.buymeacoffee.com/yourusername" target="_blank">
                         <img src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a Coffee"
@@ -105,10 +105,10 @@
             style.textContent = `
             /* https://ka2yuki.github.io */
             .presentBox {
-margin: 20px auto;
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 970px;
+                margin: 20px auto;
+                border-radius: 10px;
+                overflow: hidden;
+                max-width: 970px;
             }
 
             .josefin-sans {
@@ -133,7 +133,19 @@ margin: 20px auto;
             document.getElementsByClassName("presentBox").item(0).appendChild(style);
             // document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
         </script>
+
+
+        <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ka2yuki"
+            data-description="Support me on Buy me a coffee!" data-message="" data-color="#42b883" data-position="Right"
+            data-x_margin="18" data-y_margin="18"></script>
     </div>
+
+    <footer>
+        <div style="width:150px;position:fixed;bottom:0;left:2px;">
+            <img src="bmc_qr.png" alt="qrl-image-buymyacoffee">
+        </div>
+    </footer>
 </body>
 
 </html>
