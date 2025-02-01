@@ -90,6 +90,8 @@
             <li><a href="https://fontawesome.com/">fontawesome.com</a></li>
         </ul>
     </main>
+
+
     <!-- <button>
         <a href="">button</a>
     </button> -->
@@ -97,9 +99,10 @@
 
 
 
-    <div class="presentBox">
+    <!-- プレゼント -->
+    <section class="presentBox">
         <div class="wrap-title">
-            <h2 class="ja noto-sans-jp-regular">無料で貰えるモバイルデータ</h2>
+            <h2 class="ja noto-sans-jp-regular">無料で貰えるモバイルデータ | povo.jp</h2>
             <h2 class="en josefin-sans-regular ">mobile data</h2>
             <style>
                 .wrap-title {
@@ -124,15 +127,17 @@
                 <a href="https://povo.jp/spec/povo_friends/">
                     <img src="povo.jpg" alt="povo紹介コード">
                 </a>
+                <span style="color:white;text-align:right;font-size:12px;">povo.jp by kddi</span>
             </div>
         </div>
-
         <script>
             const style = document.createElement("style");
             style.textContent = `
             .present-code-wrap {
               border-radius: 10px;
               overflow: hidden;
+              max-width: 1000px;
+              margin: 0 auto;
             }
             /* https://ka2yuki.github.io */
             .presentBox {
@@ -158,23 +163,24 @@
             document.getElementsByClassName("presentBox").item(0).appendChild(style);
             //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
         </script>
-    </div>
-
-
-    <!-- buy me a coffee: widget -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-        data-id="ka2yuki" data-description="Support me on Buy me a coffee!" data-message="" data-color="#42b883"
-        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    <!-- buy me a coffee:  -->
-    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button"
-        data-slug="ka2yuki" data-color="#40DCA5" data-emoji="" data-font="Lato" data-text="Buy me a coffee"
-        data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
+    </section>
 
 
     <footer>
         <div style="width:150px;position:fixed;bottom:0;left:2px;">
             <img src="bmc_qr.png" alt="qrl-image-buymyacoffee">
         </div>
+
+        <!-- buy me a coffee: widget -->
+        <script data-name="BMC-Widget" data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ka2yuki"
+            data-description="Support me on Buy me a coffee!" data-message="" data-color="#42b883" data-position="Right"
+            data-x_margin="18" data-y_margin="18"></script>
+        <!-- buy me a coffee:  -->
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="ka2yuki" data-color="#40DCA5" data-emoji="" data-font="Lato"
+            data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff"
+            data-coffee-color="#FFDD00"></script>
     </footer>
 </body>
 
