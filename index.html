@@ -84,50 +84,60 @@
 
     <main>
         <ul>
+            <li><i class="fa-solid fa-bookmark" style="color:white;"></i></li>
             <li><a href="https://chatgpt.com/">ChatGPT</a></li>
             <li><a href="https://wordpress.org/documentation/">WordPress</a></li>
             <li><a href="https://fontawesome.com/">fontawesome.com</a></li>
-            <li><a href=""></a></li>
         </ul>
     </main>
     <!-- <button>
         <a href="">button</a>
     </button> -->
 
+
+
+
     <div class="presentBox">
-        <div class="wrap-title ">
+        <div class="wrap-title">
             <h2 class="ja noto-sans-jp-regular">無料で貰えるモバイルデータ</h2>
             <h2 class="en josefin-sans-regular ">mobile data</h2>
+            <style>
+                .wrap-title {
+                    color: whitesmoke;
+                    text-align: center;
+                    padding-bottom: 7px;
+                }
+
+                .wrap-title h2 {
+                    margin: 0;
+                }
+
+                .wrap-title .en {
+                    font-size: 15px;
+                }
+            </style>
         </div>
-        <style>
-            .presentBox .wrap-title {
-                color: whitesmoke;
-                text-align: center;
-                padding-bottom: 10px;
-            }
 
-            .presentBox .wrap-title h2 {
-                margin: 0;
-            }
-
-            .presentBox .wrap-title .en {
-                font-size: 15px;
-            }
-        </style>
-        <!-- https://ka2yuki.github.io -->
-        <div class="code josefin-sans-re">M6G8AV6P</div>
-        <div class="wrap-img">
-            <a href="https://povo.jp/spec/povo_friends/">
-                <img src="povo.jpg" alt="povo紹介コード">
-            </a>
+        <div class="present-code-wrap">
+            <div class="code josefin-sans-re">M6G8AV6P</div>
+            <div class="wrap-img">
+                <a href="https://povo.jp/spec/povo_friends/">
+                    <img src="povo.jpg" alt="povo紹介コード">
+                </a>
+            </div>
         </div>
 
         <script>
             const style = document.createElement("style");
             style.textContent = `
+            .present-code-wrap {
+              border-radius: 10px;
+              overflow: hidden;
+            }
             /* https://ka2yuki.github.io */
             .presentBox {
-                margin: 20px auto;
+                margin: 18px auto 30px;
+                padding: 0 10px;
                 border-radius: 10px;
                 overflow: hidden;
                 max-width: 970px;
@@ -148,14 +158,14 @@
             document.getElementsByClassName("presentBox").item(0).appendChild(style);
             //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
         </script>
-
-
-        <script data-name="BMC-Widget" data-cfasync="false"
-            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ka2yuki"
-            data-description="Support me on Buy me a coffee!" data-message="" data-color="#42b883" data-position="Right"
-            data-x_margin="18" data-y_margin="18"></script>
     </div>
 
+
+    <!-- buy me a coffee: widget -->
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="ka2yuki" data-description="Support me on Buy me a coffee!" data-message="" data-color="#42b883"
+        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <!-- buy me a coffee:  -->
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button"
         data-slug="ka2yuki" data-color="#40DCA5" data-emoji="" data-font="Lato" data-text="Buy me a coffee"
         data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
