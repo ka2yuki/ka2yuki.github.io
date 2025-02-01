@@ -89,50 +89,42 @@
             <li><a href="https://wordpress.org/documentation/">WordPress</a></li>
             <li><a href="https://fontawesome.com/">fontawesome.com</a></li>
         </ul>
-    </main>
 
 
-    <!-- <button>
-        <a href="">button</a>
-    </button> -->
+        <!-- プレゼント -->
+        <section class="presentBox">
+            <div class="wrap-title">
+                <h2 class="ja noto-sans-jp-regular">無料で貰えるモバイルデータ</h2>
+                <h2 class="en josefin-sans-regular ">mobile data</h2>
+                <style>
+                    .wrap-title {
+                        color: whitesmoke;
+                        text-align: center;
+                        padding-bottom: 7px;
+                    }
 
+                    .wrap-title h2 {
+                        margin: 0;
+                    }
 
-
-
-    <!-- プレゼント -->
-    <section class="presentBox">
-        <div class="wrap-title">
-            <h2 class="ja noto-sans-jp-regular">無料で貰えるモバイルデータ | povo.jp</h2>
-            <h2 class="en josefin-sans-regular ">mobile data</h2>
-            <style>
-                .wrap-title {
-                    color: whitesmoke;
-                    text-align: center;
-                    padding-bottom: 7px;
-                }
-
-                .wrap-title h2 {
-                    margin: 0;
-                }
-
-                .wrap-title .en {
-                    font-size: 15px;
-                }
-            </style>
-        </div>
-
-        <div class="present-code-wrap">
-            <div class="code josefin-sans-re">M6G8AV6P</div>
-            <div class="wrap-img">
-                <a href="https://povo.jp/spec/povo_friends/">
-                    <img src="povo.jpg" alt="povo紹介コード">
-                </a>
-                <span style="color:white;text-align:right;font-size:12px;">povo.jp by kddi</span>
+                    .wrap-title .en {
+                        font-size: 15px;
+                    }
+                </style>
             </div>
-        </div>
-        <script>
-            const style = document.createElement("style");
-            style.textContent = `
+
+            <div class="present-code-wrap">
+                <div class="code josefin-sans-re">M6G8AV6P</div>
+                <div class="wrap-img">
+                    <a href="https://povo.jp/spec/povo_friends/" target="_blank">
+                        <img src="povo.jpg" alt="povo紹介コード">
+                    </a>
+                </div>
+                <p style="color:white;text-align:right;font-size:12px;">povo.jp by kddi</p>
+            </div>
+            <script>
+                const style = document.createElement("style");
+                style.textContent = `
             .present-code-wrap {
               border-radius: 10px;
               overflow: hidden;
@@ -156,14 +148,21 @@
                 font-size: 30px;
             }
             `;
-            const presentCode = document.createElement("div");
-            presentCode.classList.add("code", "josefin-sans");
-            presentCode.textContent = "M6G8AV6P";
+                const presentCode = document.createElement("div");
+                presentCode.classList.add("code", "josefin-sans");
+                presentCode.textContent = "M6G8AV6P";
 
-            document.getElementsByClassName("presentBox").item(0).appendChild(style);
-            //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
-        </script>
-    </section>
+                document.getElementsByClassName("presentBox").item(0).appendChild(style);
+                //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
+            </script>
+        </section>
+
+    </main>
+
+
+    <!-- <button>
+        <a href="">button</a>
+    </button> -->
 
 
     <footer>

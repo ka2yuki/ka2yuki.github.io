@@ -18,6 +18,8 @@ a {
 
 ul {
     margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 li {
@@ -28,14 +30,19 @@ img {
     max-width: 100%;
 }
 
+p {
+    margin: 0;
+}
+
 section {
     margin: 0 auto;
 }
 
 @media screen and (max-width: 640px) {
     body {
-        max-width: 95vw;
-        margin: 0 auto;
+        max-width: 97vw;
+        margin: 5px auto;
+        padding: 10px 0;
         position: relative;
     }
 }
