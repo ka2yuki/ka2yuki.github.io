@@ -162,7 +162,9 @@ li span.tag {
   margin-right: .5rem;
 }
 
-/*  */
+.qp_bmc{width:150px;position:fixed;bottom:0;left:2px;}
+
+
 @media screen and (max-width: 540px) {
   body {
     border: 1px solid rgb(183 183 183 / 65%);
