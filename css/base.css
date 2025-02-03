@@ -6,10 +6,12 @@
 }
 
 body {
-    /* max-width: 940px; */
-    /* body内に max-width は設定しない */
+    /* 
+     * body内に max-width は設定しない. bg-image/movieなど敷くカスタムの為 
+     * paddingも0: fixedで隙間が空く為
+     */
     margin: 0 auto;
-    padding: 2px 6px 6px;
+    padding: 0;
     /* border: 1px solid white; */
 }
 
