@@ -18,7 +18,7 @@
 | 計 |  |  |  | - |  | **46,000円** | 30 |
 
 上記期間：2025年1月2日~2025年1月31日: 1月分  
-url: https://webadvance.vercel.app/v1
+url: https://webadvance.vercel.app
 
 ## SP版内訳
 | 完了/着手中/未着手 | 対象デバイス  | どのページ | page数 | デザインの有無 | デザインデータ種類 | 金額 |
