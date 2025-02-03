@@ -11,10 +11,11 @@ button {
 }
 
 button a {
+    font-size: 15px;
     color: rgb(58, 58, 58);
     display: flex;
-    align-items: center;
-    padding: .9rem 1.2rem;
+    align-items: baseline;
+    padding: 17px 1.2rem;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -68,13 +69,38 @@ button .arr-right {
 }
 
 
+/* ２つの場合 */
+.btn-area,
+.btn-wrap,
+.btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+}
+
+.btn-area button,
+.btn-wrap button,
+.btn-box button {
+    margin: 0;
+    width: 40%;
+    /* ２つの場合 40% */
+}
+
 @media screen and (max-width: 640px) {
-    .btn-area {
+
+    .btn-area,
+    .btn-wrap,
+    .btn-box {
         display: block;
+        padding: 5px 0;
     }
 
-    .btn-area button {
-        max-width: 70%;
+    .btn-area button,
+    .btn-wrap button,
+    .btn-box button {
+        max-width: 75%;
         width: 100%;
         margin: 15px auto;
     }
