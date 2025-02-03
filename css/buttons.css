@@ -66,3 +66,16 @@ button .arr-right {
     display: flex;
     align-items: center;
 }
+
+
+@media screen and (max-width: 640px) {
+    .btn-area {
+        display: block;
+    }
+
+    .btn-area button {
+        max-width: 70%;
+        width: 100%;
+        margin: 15px auto;
+    }
+}
