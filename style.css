@@ -1,3 +1,50 @@
+
+        html {
+            --main-color: rgb(15 23 42);
+        }
+
+       a {
+            text-decoration: none;
+            display: block;
+            color: #334155;
+        }
+
+        a:hover {
+            color: #cbd5e1;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        header nav {
+            width: 100vw;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            display: block;
+            padding: 1rem 2rem;
+        }
+
+        main ul {
+            display: flex;
+        }
+
+        main ul li a {
+            padding: 1rem 1rem;
+        }
+
+        main ul li a:hover {}
+
+
+
+
 html {
   scrollbar-color: #ccfbf1 #99f6e4;
   scrollbar-width: thin;
