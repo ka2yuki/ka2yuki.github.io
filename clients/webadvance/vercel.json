@@ -1,0 +1,14 @@
+{
+    "redirects": [
+        {
+            "source": "/v1/:path*",
+            "destination": "https://v1.webadvance.vercel.app/:path*",
+            "permanent": false
+        },
+        {
+            "source": "/v2/:path*",
+            "destination": "https://v2.webadvance.vercel.app/:path*",
+            "permanent": false
+        }
+    ]
+}

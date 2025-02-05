@@ -1,0 +1,149 @@
+/*
+ * Page: flow: detail steps 
+ */
+
+/*
+ * PAGE: Flow.html
+ */
+body.flow main .flow-details .wrap {
+    max-width: 1000px;
+}
+
+
+body#flow main .flow-details .wrap .description {
+    margin: 0 auto 2.5rem;
+    max-width: 930px;
+    color: var(--txt-c);
+    line-height: 1.7;
+}
+
+/* #flow overviews */
+body#flow main .flow-overviews .wrap .title {
+    text-align: left;
+}
+
+body#flow main .flow-overviews .wrap .title .en {
+    margin: 5px 0 0;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap {
+    margin-top: 2rem;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step {
+    border-bottom: 2px solid #8ea191;
+    padding: 0 3rem 1rem;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step:nth-child(4) {
+    margin-bottom: 0;
+}
+
+/* flow 途中説明 */
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei .img-wrap {
+    max-width: 110px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .totyuusetumei p {
+    font-size: 25px;
+    color: var(--txt-c);
+    padding-left: 15px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title {
+    display: flex;
+    align-items: end;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title .step-num-box {
+    color: #074099;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title .step-num-box .fs-s {
+    font-size: 1rem;
+    display: block;
+    line-height: 1;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title img {
+    width: 40px;
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title h3 {
+    font-size: 30px;
+    margin: 0 0 0 11px;
+    color: var(--txt-c);
+}
+
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .desc {
+    color: var(--txt-c);
+    line-height: 2;
+    font-size: 14px;
+}
+
+body#flow main .flow-details .wrap .step-wrap {
+    margin-top: 3rem;
+}
+
+body#flow main .flow-details .wrap .step-wrap .step {
+    border-bottom: 2px dashed rgb(223, 223, 223);
+    padding: 2rem 2rem 1rem;
+    margin: 0;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .en {
+    font-size: 16px;
+    margin: 0px auto 15px;
+    color: #5d91e1;
+    letter-spacing: 0px;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .ja {
+    font-size: 25px;
+    margin: 0;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .title {
+    text-align: left;
+}
+
+body#flow main .flow-details .wrap .step .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+body#flow main .flow-details .wrap .step .desc-box .desc {
+    font-size: .9rem;
+    line-height: 2;
+    letter-spacing: -.5px;
+}
+
+body#flow main .flow-details .wrap .step .img-box {
+    width: 17%;
+    padding: 1rem;
+}
+
+body#flow main .flow-details .wrap .step .desc-box {
+    width: 80%;
+}
+
+body#flow main .flow-overviews .wrap .step .img-box {
+    width: 35%;
+}
+
+body#flow main .flow-overviews .wrap .step .desc-box {
+    width: 70%;
+    padding: 15px 0 0 4.5rem;
+}

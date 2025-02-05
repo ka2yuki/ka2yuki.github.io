@@ -1,0 +1,107 @@
+/*
+ * sapppro & area
+ */
+
+main section.sapppro .wrap,
+main section.area .wrap {
+    max-width: 1200px;
+    padding: 3rem 0;
+}
+
+main section.sapppro .wrap .title .en,
+main section.area .wrap .title .en {
+    line-height: 1;
+    margin: .3rem auto 0;
+}
+
+
+body#top main section.area .wrap {
+    padding: 0 0 4.5rem;
+}
+
+main section.sapppro,
+main section.area {}
+
+main section.sapppro .wrap .contents {
+    padding: 1rem 3rem 2.5rem;
+    color: var(--txt-c);
+    border-bottom: 2px solid gainsboro;
+}
+
+main section.sapppro .wrap .contents h3 {
+    border-left: 5px solid var(--green-smork);
+    padding-left: .5rem;
+}
+
+main section.sapppro .wrap .contents p {
+    line-height: 1.7;
+    font-size: .9rem;
+}
+
+main section.sapppro .wrap .contents button {
+    margin: 2rem 0 0;
+    background-color: white;
+    border: 2px solid rgb(223, 223, 223);
+    width: 230px;
+    font-size: 12px;
+}
+
+main section.sapppro .wrap .contents button:hover a {
+    color: white;
+}
+
+main section.sapppro .wrap .contents button a {
+    color: var(--txt-c);
+    padding: 14px 15px;
+}
+
+main section.sapppro .wrap .contents button .crcle {
+    margin-right: .7rem;
+    margin-bottom: 2.5px;
+}
+
+main section.area .wrap .contents {
+    padding-top: 2rem;
+    font-size: .9rem;
+}
+
+main section.area .wrap .contents ul {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 15px;
+}
+
+main section.area .wrap .contents ul li a {
+    color: var(--txt-c);
+}
+
+
+main section.sapppro .wrap .hidden-content.open,
+main section.sapppro .wrap .contents button .fa-plus,
+main section.sapppro .wrap .contents button.open .fa-minus {
+    display: block;
+}
+
+main section.sapppro .wrap .hidden-content,
+main section.sapppro .wrap .contents button.open .fa-plus,
+main section.sapppro .wrap .contents button .fa-minus {
+    display: none;
+}
+
+main section.sapppro .wrap .contents button .open-state-icon {
+    margin-left: auto;
+    margin-bottom: 1px;
+}
+
+main section.sapppro .wrap .contents .hidden-content>hr {
+    border: none;
+    border-top: 3px dashed gainsboro;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+main section.sapppro .wrap .contents .hidden-content ul li {
+    list-style: disc;
+}
