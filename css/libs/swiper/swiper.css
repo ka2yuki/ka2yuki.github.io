@@ -1,14 +1,13 @@
 /*
  - .swiper.swiper-img-mask
  */
-
-.swiper .swiper-slide .img-wrap img {
-    transition: all .5s;
-}
-
 .swiper.swiper-img-mask .swiper-slide .img-wrap {
     overflow: hidden;
     position: relative;
+}
+
+.swiper.swiper-img-mask .swiper-slide .img-wrap img {
+    transition: all .5s;
 }
 
 .swiper.swiper-img-mask .swiper-slide:hover .img-wrap img {
