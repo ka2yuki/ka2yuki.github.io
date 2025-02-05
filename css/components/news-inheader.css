@@ -30,13 +30,13 @@ body.top header .news ul {
 body.top header .news ul li {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
 body.top header .news .tag {
     font-size: 1.2em;
     font-weight: bold;
 }
-
 
 body.top header .news .txt {
     font-weight: bold;

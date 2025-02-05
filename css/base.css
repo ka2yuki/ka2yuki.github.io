@@ -32,6 +32,8 @@ li {
 
 img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 p {
@@ -40,6 +42,11 @@ p {
 
 section {
     margin: 0 auto;
+    background: white;
+}
+
+.pc {
+    display: block;
 }
 
 .sp {
@@ -67,10 +74,196 @@ section {
 
 .df {
     display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .w {
     width: 100%;
+}
+
+.m0a {
+    margin: 0 auto;
+}
+
+.m0 {
+    margin: 0;
+}
+
+header {
+    overflow: hidden;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end));
+}
+
+header .header-wrap {
+    max-width: var(--max-width);
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/*
+ * 動画 
+ */
+body header .video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/*
+ * 共通css: Header Nav
+ */
+header nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    transition: background-color 1s;
+    z-index: 999;
+}
+
+header nav.scrolled-mv {
+    background-color: #ddd !important;
+}
+
+header nav ul {
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    padding: 1.2rem 3.5rem;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:last-child {
+    background-color: #fbbf24;
+    border-radius: 50px;
+}
+
+header nav ul li a {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    display: block;
+    color: var(--txt-c);
+    font-weight: bold;
+}
+
+header nav ul li a:last-child {
+    padding: .5rem 1.5rem;
+    color: #1A1A1A;
+}
+
+header nav li.submenu {
+    position: relative;
+}
+
+header nav li.submenu>ul {
+    display: none;
+}
+
+header nav li.submenu:hover>ul {
+    display: block;
+}
+
+header nav li.submenu:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header nav li.submenu:hover ul li a {
+    padding: .5rem 1.2rem;
+    width: 100%;
+}
+
+header nav li.submenu:hover ul li a:hover {
+    opacity: .7;
+}
+
+header nav li.submenu:hover ul li:last-child {
+    background-color: transparent !important;
+}
+
+/* Border in nav of Header */
+header nav ul li a .border {
+    display: block;
+    width: 0;
+    height: 1px;
+    border-bottom: 1px solid #000;
+    transition: all .5s;
+}
+
+header nav ul li a:hover .border {
+    width: 100%;
+}
+
+
+/* base */
+main section>.wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+/* custum max-width for each section */
+body.top main section.about>.wrap {
+    /* max-width: 1000px; */
+}
+
+body.top main section.service>.wrap {
+    /* max-width: 1200px; */
+}
+
+main section .wrap .l-area,
+main section .wrap .r-area {
+    width: 50%;
+}
+
+main section .title {
+    text-align: center;
+}
+
+main section .title .ja {
+    font-weight: bold;
+    color: #515151;
+    margin: 0;
+    line-height: 1;
+    font-size: 1rem;
+}
+
+main section .title .en {
+    margin: 13px 0 .5rem;
+    font-size: 2.5rem;
+    color: #313131;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+main section .wrap-title {
+    margin: 0 auto;
+}
+
+main section .wrap-title h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 640px) {
@@ -98,10 +291,20 @@ section {
         display: none;
     }
 
+    /* all page: common-style*/
+    main section .wrap {
+        width: 95vw;
+        max-width: 95vw;
+        margin: 0 auto;
+        padding: 50px 0;
+        /* border: 1px solid; */
+    }
+
     .top header>.img-wrap {
         width: 90vw;
         position: absolute;
         top: 50%;
         left: 50%;
     }
+
 }

@@ -1,8 +1,17 @@
 button {
+    /* btns　を複数で使用することがある為 
+     * - margin 操作しない。
+     * - 親要素で　justify/align の効果がなくなる為
+     */
     display: flex;
     justify-content: center;
-    width: 200px;
-    max-width: 250px;
+    width: 240px;
+    /* max-width: 250px; */
+    /* height: 60px; */
+    /* marginを付けないとheightを指定しないといけない。親boxに対して高さが出てしまう */
+    /* margin: 0 auto; */
+    /* マージン付けると親ボックスで justify の効果がなくなる */
+    /* margin-right:0;などで右寄せ左寄せ */
     border: none;
     background-color: rgb(223, 223, 223);
     font-weight: bold;
@@ -27,7 +36,7 @@ button a:after {
     position: absolute;
     top: 50%;
     left: 10%;
-    width: 100px;
+    width: 120px;
     height: 100px;
     background-color: #000;
     border-radius: 50%;
@@ -89,6 +98,11 @@ button .arr-right {
 }
 
 @media screen and (max-width: 640px) {
+    button {
+        max-width: 100%;
+        width: 70%;
+        /* border: solid; */
+    }
 
     .btn-area,
     .btn-wrap,
@@ -103,5 +117,10 @@ button .arr-right {
         max-width: 75%;
         width: 100%;
         margin: 15px auto;
+    }
+
+    /* each placed button */
+    body.top main section.plan button {
+        margin: 50px auto;
     }
 }
