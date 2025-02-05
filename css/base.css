@@ -170,6 +170,10 @@ header nav li.submenu>ul {
     display: none;
 }
 
+header nav li.submenu>ul li {
+    align-self: start;
+}
+
 header nav li.submenu:hover>ul {
     display: block;
 }
