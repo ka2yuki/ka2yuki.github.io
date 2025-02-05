@@ -1,9 +1,0 @@
-.first .content img {
-    height: 240px;
-    max-width: none;
-    pointer-events: none;
-}
-
-main section.service .wrap .contents .left img {
-    max-width: 504px;
-}
