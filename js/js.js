@@ -15,11 +15,11 @@ function setBgImg(selector, url) {
 }
 
 function setImg(selector, url) {
- const selected = document.querySelector(selector) || null;
+  const selected = document.querySelector(selector) || null;
     // ts.
     // const selector:HTMLDivElement = document.querySelector('palams') || null;
- if (!selected) return;
- selected.src = url;
- selected.loading = "lazy";
+  if (!selected) return;
+  selected.src = url;
+  selected.loading = "lazy";
 }
 
