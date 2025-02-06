@@ -13,3 +13,13 @@ function setBgImg(selector, url) {
     // alert(`set ${url}`);
     // console.info(`set ${url}`);
 }
+
+function setImg(selector, url) {
+ const selected = document.querySelector(selector) || null;
+    // ts.
+    // const selector:HTMLDivElement = document.querySelector('palams') || null;
+ if (!selected) return;
+ selected.src = url;
+ selected.loading = "lazy";
+}
+
