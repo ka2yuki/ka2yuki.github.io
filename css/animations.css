@@ -29,3 +29,18 @@
         opacity: 1;
     }
 }
+
+.setButtom {
+    position: absolute !important;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+}
+
+.fixed.fadein {
+    position: sticky !important;
+    top: 100px;
+    left: 20%;
+    width: 100%;
+    /* z-index: -1; */
+}
