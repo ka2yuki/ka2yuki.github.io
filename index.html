@@ -19,6 +19,33 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <style>
+        /* base.css reset. base.css for corpolate-site style */
+        header {
+            height: auto;
+        }
+
+        header nav {
+            position: unset !important;
+        }
+
+        header nav ul {
+            margin: 0 auto;
+        }
+
+        header nav ul li a {
+            color: white !important;
+        }
+
+        header nav ul li:last-child {
+            background-color: unset;
+        }
+
+        main section .wrap-title h2 {
+            /* color: rgb(15 23 42); */
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body class="cw">
@@ -46,7 +73,7 @@
 -->
 
 
-        <ul class="cw db">
+        <!-- <ul class="cw db">
             <li>ホームページ運用管理</li>
             <li>
                 <ul>
@@ -57,8 +84,8 @@
             <li></li>
         </ul>
 
-        <h2 class="cw">HPパフォーマンス計測の例：</h2>
-        <img loading="lazy" src="assets/images/lighthouse-img.png" lazy=true />
+        <h2 class="cw">HPパフォーマンス計測の例：</h2> -->
+        <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" lazy=true /> -->
 
         <!-- プレゼント -->
         <section class="presentBox">
@@ -91,7 +118,6 @@
                         <img src="povo.jpg" alt="povo紹介コード" lazy="true">
                     </a>
                 </div>
-                <p style="color:white;text-align:right;font-size:12px;">povo.jp by kddi</p>
             </div>
             <script>
                 const style = document.createElement("style");
@@ -105,10 +131,11 @@
             /* https://ka2yuki.github.io */
             .presentBox {
                 margin: 18px auto 30px;
-                padding: 0 10px;
+                padding: 0px;
                 border-radius: 10px;
                 overflow: hidden;
                 max-width: 970px;
+                background: unset;
             }
 
             .presentBox .code {
@@ -137,7 +164,7 @@
 
 
     <footer>
-        <div class="pc qr-bmc">
+        <div class="pc qr-bmc" style="width: 150px;">
             <img loading="lazy" src="bmc_qr.png" alt="qrl-img-buymyacoffee" />
         </div>
 
