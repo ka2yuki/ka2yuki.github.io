@@ -232,6 +232,12 @@ body.top main section.service>.wrap {
     /* max-width: 1200px; */
 }
 
+main section .wrap .title .border {
+    width: 110px;
+    margin: 5px auto 20px;
+    padding: 0;
+}
+
 main section .wrap .l-area,
 main section .wrap .r-area {
     width: 50%;
@@ -250,7 +256,7 @@ main section .title .ja {
 }
 
 main section .title .en {
-    margin: 13px 0 .5rem;
+    margin: 13px auto 0;
     font-size: 2.5rem;
     color: #313131;
     letter-spacing: 3px;
