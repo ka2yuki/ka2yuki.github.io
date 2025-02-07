@@ -96,6 +96,13 @@ header {
     background: radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end));
 }
 
+/*
+ * 下層ページのHeader:
+ */
+body:not(.top) header {
+    height: 45vh;
+}
+
 header .header-wrap {
     max-width: var(--max-width);
     position: relative;
@@ -129,6 +136,7 @@ header nav {
     position: fixed !important;
     top: 0;
     width: 100%;
+    background-color: transparent;
     transition: background-color 1s;
     z-index: 999;
 }
@@ -137,13 +145,22 @@ header nav.scrolled-mv {
     background-color: #e7e7e7;
 }
 
-header nav ul {
+header nav .wrap {
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 25px;
+}
+
+header nav .wrap ul,
+header nav .wrap .menu {
     width: fit-content;
     display: flex;
     margin-left: auto;
-    padding: 1.2rem 30px;
-    padding-left: 0;
+    padding: 1.2rem 0px;
 }
+
 
 /* メニュー文字が2行で幅が苦しくなるのを回避 */
 @media screen and (max-width: 1300px) {
