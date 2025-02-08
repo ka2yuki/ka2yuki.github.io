@@ -24,7 +24,7 @@
          * - base.css reset. base.css for corpolate-site style 
          */
         header {
-            height: auto;
+            height: auto !important;
         }
 
         header nav {
@@ -51,18 +51,17 @@
 </head>
 
 <body class="cw">
- <header>
-  <nav>
-    <ul>
-     <!-- <li><i style="color:white;" class="fa-solid fa-house"></i></li> -->
-      <li><a href="https://www.buymeacoffee.com/ka2yuki" target="_blank">
-        <img 
-src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a Coffee"
+    <header>
+        <nav>
+            <ul>
+                <!-- <li><i style="color:white;" class="fa-solid fa-house"></i></li> -->
+                <li><a href="https://www.buymeacoffee.com/ka2yuki" target="_blank">
+                        <img src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a Coffee"
                             style="height: 50px; width: auto;">
-         </a></li>
-   </ul>
-  </nav>
- </header>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <!--
@@ -75,7 +74,7 @@ src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a C
 -->
 
 
-<!-- 
+        <!-- 
   <ul class="cw db">
             <li>ホームページ運用管理</li>
             <li>
@@ -88,26 +87,21 @@ src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a C
    </ul>
    <h2 class="cw">HPパフォーマンス計測の例：</h2> 
 -->
-<!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
+        <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
 
-<ul class="bookmark">
- <li class="df">
-  <style>
-   .bookmark{
-    content: "<i class="fa-solid fa-bookmark cw"></i>";
-   }
-  </style>
-  
-<a
-  href="https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette">
-  CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ</a></li>
+        <ul class="bookmark">
+            <li class="df">
+                <a class="i-bookmark"
+                    href="https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette">
+                    CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ</a>
+            </li>
 
-<li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li>
+            <li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li>
 
- <!-- 
+            <!-- 
   <li><a href=""></a></li>
  -->
-</ul>
+        </ul>
 
         <!-- プレゼント -->
         <section class="presentBox">
@@ -158,6 +152,8 @@ src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a C
                 overflow: hidden;
                 max-width: 970px;
                 background: unset;
+                position: fixed;
+                bottom: 0;
             }
 
             .presentBox .code {
@@ -184,10 +180,10 @@ src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a C
         <a href="">button</a>
     </button> -->
 
-<footer style="margin: 30px auto;">
- <div class="pc qr-bmc" style="width: 150px;margin: 0px auto;">
-  <img loading="lazy" src="bmc_qr.png" alt="qrl-img-buymyacoffee" />
- </div>
+    <footer style="margin: 30px auto;">
+        <div class="pc qr-bmc" style="width: 150px;margin: 0px auto;">
+            <img loading="lazy" src="bmc_qr.png" alt="qrl-img-buymyacoffee" />
+        </div>
 
         <!-- buy me a coffee: widget -->
         <!-- <script data-name="BMC-Widget" data-cfasync="false"
@@ -197,19 +193,12 @@ src="https://media.giphy.com/media/TDQOtnWgsBx99cNoyH/giphy.gif" alt="Buy Me a C
         <!-- buy me a coffee: button -->
 
 
-<script type="text/javascript"
-  src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-  data-name="bmc-button"  
-  data-slug="ka2yuki"
-  data-color="#40DCA5"
-  data-emoji=""
-  data-font="Lato"
-  data-text="Buy me a coffee"
-  data-outline-color="#000000"
-  data-font-color="#ffffff"
-  data-coffee-color="#FFDD00"></script>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="ka2yuki" data-color="#40DCA5" data-emoji="" data-font="Lato"
+            data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff"
+            data-coffee-color="#FFDD00"></script>
 
-</footer>
+    </footer>
 </body>
 
 </html>
