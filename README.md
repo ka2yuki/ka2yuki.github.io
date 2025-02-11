@@ -1,4 +1,4 @@
-clients/webadvance/price.md
+https://github.com/ka2yuki/ka2yuki.github.io/blob/price/clients/webadvance/price.md
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
   
 <!--
