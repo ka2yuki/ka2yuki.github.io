@@ -13,6 +13,9 @@ body {
     margin: 0 auto;
     padding: 0;
     /* border: 1px solid white; */
+
+    /* 変数：基本テーマ毎に上書きする。定義しない場合・時間的考慮を含めいちお定義 */
+    --main-color: black;
 }
 
 a {
