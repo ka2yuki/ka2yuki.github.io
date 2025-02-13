@@ -8,10 +8,13 @@ button {
     width: 240px;
     /* max-width: 250px; */
     /* height: 60px; */
-    /* marginを付けないとheightを指定しないといけない。親boxに対して高さが出てしまう */
-    /* margin: 0 auto; */
-    /* マージン付けると親ボックスで justify の効果がなくなる */
+    /* marginを付けないとheightを指定しないといけない。親boxに対して高さが出てしまう..? |webadvance
+     * 基本 centering | daiei
+     */
+    margin: 0 auto;
+    /* マージン付けると justify の効果がなくなる 親ボックスで */
     /* margin-right:0;などで右寄せ左寄せ */
+    padding: 0;
     border: none;
     background-color: rgb(223, 223, 223);
     font-weight: bold;
@@ -30,7 +33,25 @@ button a {
     z-index: 2;
 }
 
-button a:after {
+button a img {
+    width: 20px;
+}
+
+button a .img-wrap {
+    width: 20px;
+}
+
+/* むしろ a の直下に contents wrap が必要かも。 
+ * - 文字/img
+*/
+button a .wrap {
+    width: 80%;
+}
+
+/* 装飾は必ず親属性に名前を付ける
+ * 常に 擬似要素 を付けなくてok だから。
+ */
+button.cover a:after {
     content: "";
     display: block;
     position: absolute;
@@ -47,15 +68,15 @@ button a:after {
     z-index: -1;
 }
 
-button:hover a:after {
+button.cover:hover a:after {
     transform: translate(-50%, -50%) scale(5.1, 5.1);
 }
 
-button:hover {
+button.cover:hover {
     background-color: transparent;
 }
 
-button:hover a {
+button.cover:hover a {
     color: white;
 }
 

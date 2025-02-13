@@ -30,6 +30,10 @@ li {
     list-style-type: none;
 }
 
+/* 別にwrap しないで直接 px 指定しても (-0-)みたいにならかったりする。
+ * けど　どこかで　なった気がする。。
+ * display:flex; align-items:unset; の時に height 付けないと 膨らむ。
+ */
 img {
     max-width: 100%;
     width: 100%;
@@ -90,11 +94,49 @@ section {
     margin: 0;
 }
 
+.bgi {
+    background-image: url(../assets/images/azarashi.png);
+    /* path は 都度*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgg {
+    background: linear-gradient(180deg, #00a0e1, #024b81);
+}
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 header {
+    position: relative;
     overflow: hidden;
     height: 100vh;
     background: radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end));
+    /* border: solid; */
 }
+
+/* 画像とのセンタリングが合った場合 */
+header>.wrap .img-wrap {
+    position: relative;
+}
+
+header>.wrap .img-wrap h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    letter-spacing: 12px;
+    font-size: 42px;
+    text-shadow: 3px 5px 6px #494949;
+}
+
+/* end: 画像とのセンタリングが合った場合 */
 
 /*
  * 下層ページのHeader:
@@ -182,7 +224,7 @@ header nav .wrap .menu {
     header nav .wrap ul {
         padding: 20px 0px;
         margin: 0 auto;
-        gap: 0px 10px;
+        gap: 0px 20px;
     }
 
     header nav ul li a,
