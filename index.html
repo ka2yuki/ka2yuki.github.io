@@ -61,6 +61,7 @@
                             style="height: 50px; width: auto;">
                     </a>
                 </li>
+                <li><a href="amazon.html">Amazon買い物リスト🔗</a></li>
             </ul>
         </nav>
     </header>
@@ -91,11 +92,28 @@
         <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
 
         <ul class="bookmark">
-            <li class="df">
-                <a class="i-bookmark"
-                    href="https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette">
-                    CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ</a>
-            </li>
+            <li></li>
+            <script>
+                const hrefs = [
+                    {
+                        siteName: 'coliss',
+                        title: '参考にしたくなるデザインがいっぱい！ デザインの目的や意図まで詳しく解説されたデザイン書 -ブランディングデザイン',
+                        url: 'https://coliss.com/articles/book-review/isbn-9784798179063.html'
+                    },
+                    {
+                        siteName: 'coliss',
+                        title: 'CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ',
+                        url: 'https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette'
+                    },
+                ];
+                hrefs.forEach((href) => {
+                    const a = document.createElement('a');
+                    a.href = href.url;
+                    a.textContent = href.title
+                    a.classList.add('i-bookmark');
+                    document.querySelector('.bookmark li').appendChild(a);
+                });
+            </script>
             <!-- <li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li> -->
             <!--  <li><a href=""></a></li> -->
         </ul>

@@ -36,8 +36,13 @@ main ul {
 }
 
 main ul li a {
-  padding: 1rem 1rem;
+  padding: 3px 0;
 }
+
+main ul li a:before {
+  padding-right: 5px;
+}
+
 
 main ul li a:hover {}
 
