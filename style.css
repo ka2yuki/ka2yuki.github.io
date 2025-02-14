@@ -176,7 +176,7 @@ li span.tag {
 
 @media screen and (max-width: 540px) {
   body {
-    border: 1px solid rgb(183 183 183 / 65%);
+    /* border: 1px solid rgb(183 183 183 / 65%); */
     margin: 10px !important;
     border-radius: 10px;
   }

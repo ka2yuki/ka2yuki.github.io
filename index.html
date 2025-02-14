@@ -92,7 +92,12 @@
         <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
 
         <ul class="bookmark">
-            <li></li>
+            <li style="margin: 0 auto;">
+                <a style="padding-left:15px;" href="https://learn.microsoft.com/en-us/windows/powertoys/">
+                    おすすめWindowsTool 「PowerToys」
+                    <img src="./assets/images/pwoerToys.png" alt="" style="max-width:500px;display: block;">
+                </a>
+            </li>
             <script>
                 const hrefs = [
                     {
@@ -107,11 +112,13 @@
                     },
                 ];
                 hrefs.forEach((href) => {
+                    const li = document.createElement('li');
                     const a = document.createElement('a');
                     a.href = href.url;
                     a.textContent = href.title
                     a.classList.add('i-bookmark');
-                    document.querySelector('.bookmark li').appendChild(a);
+                    li.appendChild(a);
+                    document.querySelector('.bookmark ul').appendChild(li);
                 });
             </script>
             <!-- <li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li> -->
