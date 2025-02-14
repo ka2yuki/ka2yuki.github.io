@@ -33,6 +33,10 @@ button a {
     z-index: 2;
 }
 
+button a:after {
+    transition-duration: .25s;
+}
+
 button a img {
     width: 20px;
 }
@@ -54,6 +58,21 @@ button.square {
     border: 1px solid var(--main-color);
     border-radius: 0px;
 }
+
+button.square a {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+button.square a .wrap {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: initial;
+}
+
 
 /* 装飾は必ず親属性に名前を付ける
  * 常に 擬似要素 を付けなくてok だから。
