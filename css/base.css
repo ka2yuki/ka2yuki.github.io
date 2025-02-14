@@ -302,7 +302,7 @@ header nav li.submenu:hover ul li:last-child {
     background-color: transparent !important;
 }
 
-/* Border in nav of Header */
+/* Border in Nav of Header */
 header nav ul li a .border {
     display: block;
     width: 0;
@@ -323,6 +323,7 @@ header nav ul li a:hover .border {
 main .breadcrumbs span {
     padding: 0 10px 0 0;
     color: var(--txt-c);
+    font-size: 16px;
 }
 
 main .breadcrumbs .wrap span::after {
@@ -336,7 +337,7 @@ main .breadcrumbs .wrap span::after {
 main section>.wrap {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 100px 0;
 }
 
 /* custum max-width for each section */
