@@ -10,31 +10,23 @@
 　※2カラム以上の時に各カラムで幅%を使う。[slack link](https://ktuk-dev.slack.com/archives/C082W8CGZE0/p1738211417663199?thread_ts=1735755985.323739&cid=C082W8CGZE0)
 
 
-# パンくず
+パンくずcode
 ```html
 <section class="breadcrumbs">
     <div class="wrap">
-        <i class="fa-solid fa-house"></i><span>ホーム</span><span>...</span><span>Webアドバンスの特長</span>
-    </div>
-</section>
-
-<section class="breadcrumbs">
-    <div class="wrap">
-        <span><a href="index.html" style="color: unset;">
-                <i class="fa-solid fa-house"></i>
-            </a></span>
-        <span>...</span>
-        <span>Webアドバンスの特長</span>
-    </div>
-</section>
-
-<section class="breadcrumbs">
-    <div class="wrap">
         <span>
-            <i class="fa-solid fa-house"></i>
+            <a href="/" style="color: unset;">
+                トップページ
+                <!-- <i class="fa-solid fa-house" aria-hidden="true"></i> -->
+            </a>
         </span>
-        <span>...</span>
-        <span>Webアドバンスの特長</span>
+        <span>お問い合わせ</span>
+        <span>お問い合わせ確認</span>
+        <span>お問い合わせ完了</span>
     </div>
 </section>
+```
+```html
+```
+```html
 ```

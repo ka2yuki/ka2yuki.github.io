@@ -1,0 +1,19 @@
+footer .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+footer .wrap .footer-menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 3rem 0;
+}
+
+footer .wrap .footer-menu ul li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 18px;
+}

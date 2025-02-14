@@ -48,6 +48,13 @@ button a .wrap {
     width: 80%;
 }
 
+button.square {
+    width: 220px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+}
+
 /* 装飾は必ず親属性に名前を付ける
  * 常に 擬似要素 を付けなくてok だから。
  */
