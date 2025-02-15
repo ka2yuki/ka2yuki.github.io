@@ -14,6 +14,7 @@ body {
     margin: 0 auto;
     padding: 0;
     /* border: 1px solid white; */
+    --max-width: 1500px;
 }
 
 a {
@@ -335,7 +336,7 @@ main .breadcrumbs .wrap span::after {
 
 /* base */
 main section>.wrap {
-    max-width: 1300px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: 100px 0;
 }
