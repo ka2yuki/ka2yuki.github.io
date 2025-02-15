@@ -332,7 +332,7 @@ main .breadcrumbs span {
     font-size: 16px;
 }
 
-main .breadcrumbs .wrap span::after {
+main .breadcrumbs .wrap span:not(:last-child)::after {
     content: "＞";
     padding-left: 10px;
 }

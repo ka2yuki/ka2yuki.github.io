@@ -1,0 +1,27 @@
+.confirm-page main section form input {
+    padding: 15px 155px;
+
+    /* 【 icon 】 */
+    /* background: white url("./assets/images/works/bt-arrow.png") no-repeat center left 18px; */
+    /* background-size: 13px auto; */
+
+    color: white;
+    /* border: 1.5px solid var(--main-color); */
+    border: none;
+    cursor: pointer;
+}
+
+.confirm-page main section form tr th {
+    /* text-align: left; */
+    width: 250px;
+    background: var(--main-color);
+    color: white;
+    padding: 15px 10px;
+}
+
+.confirm-page main section form tr td {
+    width: 500px;
+    background: #f6f7f8;
+    color: black;
+    padding-left: 20px;
+}
