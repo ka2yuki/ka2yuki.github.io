@@ -48,7 +48,7 @@ p {
 
 section {
     margin: 0 auto;
-    background: white;
+    /* background: white; */
 }
 
 .pc {
@@ -371,7 +371,8 @@ main section .title {
 
 main section .title .ja {
     font-weight: bold;
-    color: #515151;
+    /* color: #515151; */
+    /* 特有の色 */
     margin: 0;
     line-height: 1;
     font-size: 1rem;
