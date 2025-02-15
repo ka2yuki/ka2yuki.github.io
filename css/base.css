@@ -32,9 +32,18 @@ li {
     list-style-type: none;
 }
 
-/* 別にwrap しないで直接 px 指定しても (-0-)みたいにならかったりする。
- * けど　どこかで　なった気がする。。
- * display:flex; align-items:unset; の時に height 付けないと 膨らむ。
+/* 
+ * wrap しないで直接 px 指定しても (-0-)みたいに ならかったりする。けど　どこかで　なった気がする。。
+ * たぶん display:flex; align-items:unset; の時に height 付けないと 膨らんだきがする。。その際は width:100% で wrapする方向。
+ *
+ * img { 100% } は 親ボックス を はみ出さないので　便利。 => 組んだサイトで 100%　を外してみて試して再確認。 
+ * 　その他にも　下記で便利
+ * - display: flex;
+ * - display: grid; 
+ *　　img {　100%　}　だと　grid-template-columnsの repeate(3, 1fr) が　均等に。
+ *
+ * icon など　スマホ < PC で画像が　変化する必要がない場合： <img width="20" /> として使用する。
+ * その為 img に 100% は指定せず、。
  */
 img {
     max-width: 100%;
@@ -406,6 +415,50 @@ main section .wrap-title h2 {
     font-weight: normal;
     margin-bottom: 3rem;
 }
+
+/* ============
+ * = card box = 
+ * ============ */
+main .card-box {
+    max-width: 500px;
+}
+
+main .card-box .contents p {
+    margin: .3rem 0 .5rem;
+}
+
+main .card-box .contents .cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .5rem .9rem;
+}
+
+main .card-box .contents .cat-list span {
+    background-color: #313131;
+    border-radius: 50px;
+    color: whitesmoke;
+    padding: .2rem .7rem;
+    margin: .2rem;
+    display: block;
+    width: fit-content;
+    font-size: .7rem;
+}
+
+/* 
+<div class="card-box">
+    <div class="img-wrap">
+        <img src="./assets/images/top/dummy.png" loading="lazy" />
+    </div>
+    <div class="contents">
+        <div class="cat">カテゴリー１</div>
+        <p>投稿タイトルがはいります。投稿タイトルがはいります。投稿タイトルがはいります。投稿タイトルが…</p>
+        <div class="cat-list">
+            <span>オリジナルデザイン</span><span>保守</span><span>運用</span><span>SEO対策</span><span>MEO対策</span>
+        </div>
+    </div>
+</div> 
+*/
+
 
 /* コーポレートサイト用 menuが多い為 menu幅が苦しくなる前に display:none; で sp layoutへ */
 @media screen and (max-width: 777px) {
