@@ -146,7 +146,7 @@ header>.wrap .img-wrap h1 {
 /* end: 画像とのセンタリングが合った場合 */
 
 /*
- * 下層ページのHeader:
+ * サブページのHeader:
  */
 body:not(.top) header {
     height: 45vh;
@@ -158,6 +158,8 @@ header .header-wrap {
     height: 100vh;
     margin: 0 auto;
 }
+
+
 
 /*
  * 動画 
@@ -200,6 +202,11 @@ header nav .wrap {
     align-items: center;
     margin: 0 auto;
     padding: 0px 25px;
+}
+
+/* ロゴ */
+header nav .wrap .logo-wrap {
+    width: 200px;
 }
 
 header nav .wrap ul,
