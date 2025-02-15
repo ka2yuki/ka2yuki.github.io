@@ -48,7 +48,8 @@ p {
 
 section {
     margin: 0 auto;
-    background: white;
+    /* section bg-c は 個別して portfolio時 その部分だけ白くなる */
+    /* background: white; */
 }
 
 .pc {
