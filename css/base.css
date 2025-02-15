@@ -74,6 +74,10 @@ section {
     border: 1px solid;
 }
 
+.br {
+    border-radius: 10px;
+}
+
 .db {
     display: block;
 }

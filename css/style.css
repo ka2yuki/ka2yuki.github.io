@@ -15,3 +15,37 @@
 .i-camera::after {
     content: "📷";
 }
+
+
+/*  */
+.img-scale-mask .img-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-scale-mask .img-wrap img {
+    transition: all .5s;
+    /* scaleでサイズ変化させる為 */
+}
+
+/* どの部分を hover したら変化するか */
+.img-scale-mask .img-wrap:hover::after {
+    opacity: 1;
+}
+
+.img-scale-mask .img-wrap:hover img {
+    transform: scale(1.1);
+}
+
+/* 準備: hover時にopacity:1; */
+.img-scale-mask .img-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2 2 2 / 20%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}

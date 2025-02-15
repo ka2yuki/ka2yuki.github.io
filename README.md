@@ -12,3 +12,6 @@ Class List
 
 buttons
 - square
+
+img
+- img-scale-mask | .img-wrapに対して
