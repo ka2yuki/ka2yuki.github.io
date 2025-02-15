@@ -69,17 +69,19 @@
     </header>
 
     <main>
-        <!--
+
+<!--
         <ul>
             <li><i class="fa-solid fa-bookmark" style="color:white;"></i></li>
             <li><a href="https://chatgpt.com/">ChatGPT</a></li>
             <li><a href="https://wordpress.org/documentation/">WordPress</a></li>
             <li><a href="https://fontawesome.com/">fontawesome.com</a></li>
         </ul>
-        -->
+-->
 
-        <!-- 
-        <ul class="cw db">
+
+<!-- 
+ <ul class="cw db">
             <li>ホームページ運用管理</li>
             <li>
                 <ul>
@@ -93,37 +95,37 @@
         -->
         <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
 
-        <ul class="bookmark">
-            <li style="margin: 0 auto;">
-                <a style="padding-left:15px;" href="https://learn.microsoft.com/en-us/windows/powertoys/">
+ <ul class="bookmark">
+   <li style="margin: 0 auto;">
+     <a style="padding-left:15px;" href="https://learn.microsoft.com/en-us/windows/powertoys/">
                     おすすめWindowsTool 「PowerToys」
-                    <img src="./assets/images/pwoerToys.png" alt="" style="max-width:500px;display: block;">
-                    <!-- めも：感想の記事を書きたい。 -->
-                </a>
-            </li>
-            <script>
-                const hrefs = [
-                    {
-                        siteName: 'coliss',
-                        title: '参考にしたくなるデザインがいっぱい！ デザインの目的や意図まで詳しく解説されたデザイン書 -ブランディングデザイン',
-                        url: 'https://coliss.com/articles/book-review/isbn-9784798179063.html'
-                    },
-                    {
-                        siteName: 'coliss',
-                        title: 'CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ',
-                        url: 'https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette'
-                    },
-                ];
-                hrefs.forEach((href) => {
-                    const li = document.createElement('li');
-                    const a = document.createElement('a');
-                    a.href = href.url;
-                    a.textContent = href.title
-                    a.classList.add('i-bookmark');
-                    li.appendChild(a);
-                    document.querySelector('.bookmark ul').appendChild(li);
-                });
-            </script>
+        <img src="./assets/images/pwoerToys.png" alt="" style="max-width:500px;display: block;">
+        <!-- めも：感想の記事を書きたい。 -->
+      </a>
+    </li>
+    <script>
+    const hrefs = [
+     {
+       siteName: 'coliss',
+       title: '参考にしたくなるデザインがいっぱい！ デザインの目的や意図まで詳しく解説されたデザイン書 -ブランディングデザイン',
+       url: 'https://coliss.com/articles/book-review/isbn-9784798179063.html'
+      },
+      {
+        siteName: 'coliss',
+        title: 'CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ',
+        url: 'https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette'
+       },
+     ];
+     hrefs.forEach((href) => {
+       const li = document.createElement('li');
+       const a = document.createElement('a');
+       a.href = href.url;
+       a.textContent = href.title
+       a.classList.add('i-bookmark');
+       li.appendChild(a);
+       document.querySelector('.bookmark ul').appendChild(li);
+     });
+   </script>
             <!-- <li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li> -->
             <!--  <li><a href=""></a></li> -->
         </ul>
@@ -151,6 +153,7 @@
                     }
                 </style>
             </div>
+
 
             <div class="present-code-wrap">
                 <div class="code josefin-sans-re">M6G8AV6P</div>
