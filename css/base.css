@@ -19,7 +19,8 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    /* 基本背景色は白。なので white　をデフォにしない。 */
 }
 
 ul {
@@ -71,6 +72,12 @@ section {
 
 .col2-pc {
     display: flex;
+}
+
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
 }
 
 .grid3 {
