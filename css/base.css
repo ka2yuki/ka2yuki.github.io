@@ -479,6 +479,57 @@ main .card-box .contents .cat-list span {
 */
 
 
+/* Thubnail in Posts */
+main section.posts main {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.posts article a {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    color: #5d5d5d;
+}
+
+main section.posts article a .thumbnail {
+    background-color: #edede8;
+    /* background-image: url("https://ka2yuki.github.io/assets/images/dummy.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main section.posts article a .contents {
+    border-bottom: 1px dashed gray;
+}
+
+main section.posts article a .contents h2 {
+    padding: 10px 0 5px;
+    margin: 0;
+    font-size: 18px;
+}
+
+main section.posts article a .contents p {
+    padding: 10px 0;
+}
+
+main section.posts article a .contents>div {
+    font-size: 13px;
+}
+
+main section.posts article a .contents .tag-list {
+    background-color: var(--main-color);
+    color: white;
+    padding: 3px 20px;
+}
+
+aside {
+    /* border: solid; */
+}
+
+
 /* コーポレートサイト用 menuが多い為 menu幅が苦しくなる前に display:none; で sp layoutへ */
 @media screen and (max-width: 777px) {
     body {
