@@ -49,8 +49,11 @@ button a {
     justify-content: center;
     /* 基本 center. styleなどでunset */
 
-    /* padding: 17px 1.2rem; */
-    padding: 0px 0;
+    padding: 20px 0;
+    /* 
+      基本buttonに padding は 設定する方向にで。
+      style に応じて 変更する。
+    */
     width: 100%;
     position: relative;
     z-index: 2;
