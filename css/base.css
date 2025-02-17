@@ -88,11 +88,21 @@ section {
     gap: 20px 20px;
 }
 
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cb {
+    color: black;
+}
+
 .grid3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem 3rem;
 }
+
 
 .tac {
     text-align: center;
@@ -118,6 +128,13 @@ section {
     align-items: center;
 }
 
+.dfc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .aib {
     align-items: baseline;
 }
@@ -132,6 +149,24 @@ section {
 
 .m0 {
     margin: 0;
+}
+
+.ptb {
+    padding: 1rem 0;
+}
+
+.ptb2 {
+    padding: 2rem 0;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+.j-c,
+.jus-c {
+    justify-content: center;
+    justify-items: center;
 }
 
 .bgi {
@@ -457,6 +492,10 @@ main .card-box .contents p {
     margin: .3rem 0 .5rem;
 }
 
+main .card-box .contents {
+    color: black;
+}
+
 main .card-box .contents .cat-list {
     display: flex;
     flex-wrap: wrap;
@@ -486,7 +525,56 @@ main .card-box .contents .cat-list span {
             <span>オリジナルデザイン</span><span>保守</span><span>運用</span><span>SEO対策</span><span>MEO対策</span>
         </div>
     </div>
-</div> 
+</div>
+
+支店など
+<div class="card-wrap grid3">
+<div class="card-box">
+    <div class="img-wrap">
+        <img src="./assets/images/company/company-1.png" loading="lazy" />
+    </div>
+    <div class="contents">
+        <div class="cat">本社</div>
+        <address>
+            〒000-0000<br>
+            ○○
+            <a href="tel:" class="db cb">TEL　000-000-0000</a>
+            <span>FAX　000-000-0000</span><br>
+            <span>FAX　000-000-0000</span><br>
+        </address>
+    </div>
+</div>
+<div class="card-box">
+    <div class="img-wrap">
+        <img src="./assets/images/company/company-1.png" loading="lazy" />
+    </div>
+    <div class="contents">
+        <div class="cat">○○支店</div>
+        <address>
+            〒000-0000<br>
+            ○○
+            <a href="tel:" class="db cb">TEL　000-000-0000</a>
+            <span>FAX　000-000-0000</span><br>
+            <span>FAX　000-000-0000</span><br>
+        </address>
+    </div>
+</div>
+<div class="card-box">
+    <div class="img-wrap">
+        <img src="./assets/images/company/company-1.png" loading="lazy" />
+    </div>
+    <div class="contents">
+        <div class="cat">○○営業所</div>
+        <address>
+            〒000-0000<br>
+            ○○
+            <a href="tel:" class="db cb">TEL　000-000-0000</a>
+            <span>FAX　000-000-0000</span><br>
+            <span>FAX　000-000-0000</span><br>
+        </address>
+    </div>
+</div>
+</div>
 */
 
 
