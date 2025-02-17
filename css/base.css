@@ -20,7 +20,14 @@ body {
 a {
     text-decoration: none;
     /* color: white; */
-    /* 基本背景色は白。なので white　をデフォにしない。 */
+    /* 基本背景色が　白　の時に困るんで。color: white　をデフォにしないと思ったが blue。の時はあまりないので　見つけやすい． */
+
+    /* footerなど背景を敷くことが多いので white で　ok */
+}
+
+footer a {
+    /* footerなど背景を敷くことが多いので white で　ok */
+    color: white;
 }
 
 ul {
