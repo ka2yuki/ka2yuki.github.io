@@ -100,7 +100,7 @@ section {
 
 /* short hande class */
 .b {
-    border: 1px solid;
+    border: solid;
 }
 
 .br {
@@ -114,7 +114,12 @@ section {
 .df {
     display: flex;
     justify-items: center;
+    justify-content: center;
     align-items: center;
+}
+
+.aib {
+    align-items: baseline;
 }
 
 .w {
@@ -415,7 +420,13 @@ main section .title .ja {
 }
 
 main section .title .en {
-    margin: 13px auto 0;
+    /* margin: 13px auto 0; */
+    margin: 0;
+    /* 
+      margin: 0 auto; じゃなくて text-align:center; n:405
+      カラムを横並びにしたら margin の影響がでる為 text-align にて センタリング。 n:405
+    */
+    padding-top: 13px;
     font-size: 2.5rem;
     color: #313131;
     letter-spacing: 3px;
