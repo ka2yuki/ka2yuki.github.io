@@ -1,4 +1,7 @@
 button {
+    display: block;
+    /* margin: 0 auto; を有効にするため display: block; */
+
     /* btns　を複数で使用することがある為 
      * - margin 操作しない。
      * - 親要素で　justify/align の効果がなくなる為

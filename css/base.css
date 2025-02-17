@@ -25,6 +25,7 @@ a {
     /* footerなど背景を敷くことが多いので white で　ok */
 }
 
+section.contact a,
 footer a {
     /* footerなど背景を敷くことが多いので white で　ok */
     color: white;
@@ -91,6 +92,10 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem 3rem;
+}
+
+.tac {
+    text-align: center;
 }
 
 /* short hande class */
