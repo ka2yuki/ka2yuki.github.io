@@ -177,7 +177,7 @@ header>.wrap .img-wrap h1 {
  * サブページのHeader:
  */
 body:not(.top) header {
-    height: 45vh;
+    height: 40vh;
 }
 
 header .header-wrap {
