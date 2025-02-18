@@ -108,9 +108,16 @@ section {
     text-align: center;
 }
 
-/* short hande class */
+/* 開発用 */
 .b {
     border: solid;
+}
+
+.border {
+    width: 100px;
+    display: block;
+    border: solid 1px;
+    margin: 0 auto;
 }
 
 .br {
@@ -447,11 +454,12 @@ main section .title {
 
 main section .title .ja {
     font-weight: bold;
-    /* color: #515151; */
-    /* 特有の色 */
+    color: var(--main-color);
+    /* 大体メインカラー それぞれで調整 */
     margin: 0;
     line-height: 1;
-    font-size: 1rem;
+    /* font-size: reset; */
+    /* h2/h3　のサイズから～　それぞれで調整 */
 }
 
 main section .title .en {
