@@ -70,7 +70,7 @@
 
     <main>
 
-<!--
+        <!--
         <ul>
             <li><i class="fa-solid fa-bookmark" style="color:white;"></i></li>
             <li><a href="https://chatgpt.com/">ChatGPT</a></li>
@@ -80,7 +80,7 @@
 -->
 
 
-<!-- 
+        <!-- 
  <ul class="cw db">
             <li>ホームページ運用管理</li>
             <li>
@@ -95,43 +95,44 @@
         -->
         <!-- <img loading="lazy" src="assets/images/lighthouse-img.png" /> -->
 
- <ul class="bookmark">
-   <li style="margin: 0 auto;">
-     <a style="padding-left:15px;" href="https://learn.microsoft.com/en-us/windows/powertoys/">
+        <ul class="bookmark">
+            <li style="margin: 0 auto;">
+                <a style="padding-left:15px;" href="https://learn.microsoft.com/en-us/windows/powertoys/">
                     おすすめWindowsTool 「PowerToys」
-        <img src="./assets/images/pwoerToys.png" alt="" style="max-width:500px;display: block;">
-        <!-- めも：感想の記事を書きたい。 -->
-      </a>
-    </li>
-    <script>
-    const hrefs = [
-     {
-       siteName: 'coliss',
-       title: '参考にしたくなるデザインがいっぱい！ デザインの目的や意図まで詳しく解説されたデザイン書 -ブランディングデザイン',
-       url: 'https://coliss.com/articles/book-review/isbn-9784798179063.html'
-      },
-      {
-        siteName: 'coliss',
-        title: 'CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ',
-        url: 'https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette'
-       },
-     ];
-     hrefs.forEach((href) => {
-       const li = document.createElement('li');
-       const a = document.createElement('a');
-       a.href = href.url;
-       a.textContent = href.title
-       a.classList.add('i-bookmark');
-       li.appendChild(a);
-       document.querySelector('.bookmark ul').appendChild(li);
-     });
-   </script>
+                    <img src="./assets/images/pwoerToys.png" alt="" style="max-width:500px;display: block;">
+                    <!-- めも：感想の記事を書きたい。 -->
+                </a>
+            </li>
+            <script>
+                const hrefs = [
+                    {
+                        siteName: 'coliss',
+                        title: '参考にしたくなるデザインがいっぱい！ デザインの目的や意図まで詳しく解説されたデザイン書 -ブランディングデザイン',
+                        url: 'https://coliss.com/articles/book-review/isbn-9784798179063.html'
+                    },
+                    {
+                        siteName: 'coliss',
+                        title: 'CSS Flexboxの使い方・バグ情報・グリッドやコンポーネントのフレームワークなど、有用なリソースのまとめ',
+                        url: 'https://coliss.com/articles/build-websites/operation/css/flexbox-tutorials-and-frameworks.html#google_vignette'
+                    },
+                ];
+                hrefs.forEach((href) => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = href.url;
+                    a.textContent = href.title
+                    a.classList.add('i-bookmark');
+                    li.appendChild(a);
+                    document.querySelector('.bookmark ul').appendChild(li);
+                });
+            </script>
             <!-- <li><a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element/a">a</a></li> -->
             <!--  <li><a href=""></a></li> -->
         </ul>
 
+
         <!-- プレゼント -->
-        <section class="presentBox">
+        <!-- <section class="presentBox">
             <div class="wrap-title">
                 <h2 class="ja noto-sans-jp-regular" style="display: flex;justify-content:center;">今なら無料で貰える<br
                         class="sp">モバイルデータ<span class="pc" style="transform: rotate(17deg);margin-left:2px;">!!</span>
@@ -152,20 +153,20 @@
                         font-size: 15px;
                     }
                 </style>
-            </div>
+            </div> -->
 
 
-            <div class="present-code-wrap">
-                <div class="code josefin-sans-re">M6G8AV6P</div>
+        <div class="present-code-wrap">
+            <!-- <div class="code josefin-sans-re">M6G8AV6P</div>
                 <div class="wrap-img">
                     <a href="https://povo.jp/spec/povo_friends/" target="_blank">
                         <img src="povo.jpg" alt="povo紹介コード" lazy="true">
                     </a>
-                </div>
-            </div>
-            <script>
-                const style = document.createElement("style");
-                style.textContent = `
+                </div> -->
+        </div>
+        <script>
+            const style = document.createElement("style");
+            style.textContent = `
             .present-code-wrap {
               border-radius: 10px;
               overflow: hidden;
@@ -192,13 +193,13 @@
                 font-size: 30px;
             }
             `;
-                const presentCode = document.createElement("div");
-                presentCode.classList.add("code", "josefin-sans");
-                presentCode.textContent = "M6G8AV6P";
+            const presentCode = document.createElement("div");
+            presentCode.classList.add("code", "josefin-sans");
+            presentCode.textContent = "M6G8AV6P";
 
-                document.getElementsByClassName("presentBox").item(0).appendChild(style);
-                //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
-            </script>
+            //document.getElementsByClassName("presentBox").item(0).appendChild(style);
+            //document.getElementsByClassName("presentBox").item(0).appendChild(presentCode).appendChild(style).prepend(presentCode);
+        </script>
         </section>
 
     </main>
