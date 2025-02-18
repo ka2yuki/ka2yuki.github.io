@@ -113,7 +113,7 @@ section {
     border: solid;
 }
 
-.border {
+.border-static {
     width: 100px;
     display: block;
     border: solid 1px;
