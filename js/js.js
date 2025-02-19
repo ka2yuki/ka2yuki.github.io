@@ -2,7 +2,11 @@
 function setScrollTopBtn(path) {
     window.innerHeight;
     const img = document.createElement('img');
-    img.src = path | "https://fontawsome.com/hoge.pnig";
+    // img.src = path | undefined;
+    // これだとpath末尾に 0 が代入される..
+    img.src = path;
+    // alert(path);
+    // alert(img.src);
     img.style = "position: fixed; right: 10px;bottom: 10px; width: 120px; cursor: pointer;z-index:999;";
     img.classList.add('fade');
     img.addEventListener("click", function () {
