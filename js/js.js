@@ -1,8 +1,8 @@
 // Topに戻るボタン
-function setScrollTopBtn() {
+function setScrollTopBtn(path) {
     window.innerHeight;
     const img = document.createElement('img');
-    img.src = "./assets/images/top/bt-top.png";
+    img.src = path | "https://fontawsome.com/hoge.pnig";
     img.style = "position: fixed; right: 10px;bottom: 10px; width: 120px; cursor: pointer;z-index:999;";
     img.classList.add('fade');
     img.addEventListener("click", function () {
