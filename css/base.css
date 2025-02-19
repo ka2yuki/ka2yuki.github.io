@@ -15,6 +15,11 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* スムースにしない場合：個別の unset など */
+}
+
 body {
     /* 
      * body内に max-width は設定しない. bg-image/movieなど敷くカスタムの為 
