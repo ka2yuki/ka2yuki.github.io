@@ -1,0 +1,9 @@
+header .swiper .swiper-slide img {
+    width: 100vw;
+    /* ビューポートの幅いっぱい */
+    height: 100vh;
+    /* ビューポートの高さいっぱい */
+    /* navも考慮している 要素内いっぱい と同じ. height100% じゃなくてok. */
+    object-fit: cover;
+    /* 画面全体を埋めるように調整 */
+}

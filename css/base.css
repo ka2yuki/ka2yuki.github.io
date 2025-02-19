@@ -189,6 +189,11 @@ section {
     font-weight: bold;
 }
 
+.flc,
+.fdc {
+    flex-direction: column;
+}
+
 .j-c,
 .jus-c {
     justify-content: center;
@@ -468,8 +473,17 @@ main section .wrap .r-area {
 }
 
 main section .title {
-    /* 必ずしもセンターではなく、スタートも */
-    /* text-align: center; */
+    /* - textalign: center; */
+    /* 子要素に 文字の場合もあるので 必ずしもセンターではなく、align:startもあるため設定しない */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* - alignitems: baseline; */
+    /* 画像の底面を合わせるた場合 baseline. 
+     * fontsで初期値が baseline にないので設定しない。 
+     * 個別に padding 調整
+     */
+    gap: 10px;
 }
 
 main section .title .ja,
@@ -494,10 +508,12 @@ main section .title .en {
       margin: 0 auto; じゃなくて text-align:center; n:405
       カラムを横並びにしたら margin の影響がでる為 text-align にて センタリング。 n:405
     */
-    padding-top: 13px;
     font-size: 2.5rem;
-    color: #313131;
-    letter-spacing: 3px;
+    color: var(--main-color);
+    /* ◇ site別 設定
+     * - paddin
+     * - letterSpacing: 3px; 
+    */
     line-height: 1;
 }
 

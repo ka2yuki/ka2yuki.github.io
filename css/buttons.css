@@ -206,6 +206,17 @@ button .arr-right {
     </a>
 </ul> */
 
+
+.fade {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+
 @media screen and (max-width: 640px) {
     button {
         max-width: 100%;

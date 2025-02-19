@@ -22,4 +22,4 @@ layout:
 - grid3
 
 ## js
-- scrollTopBtn()
+- `setScrollTopBtn()`
