@@ -47,3 +47,10 @@
     opacity: .7;
     /* background-color: #0056b3; */
 }
+
+/* ボタンが imageだった場合: 大体センタリング */
+.btn-img {
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+}
