@@ -1,5 +1,5 @@
 // Topに戻るボタン
-function scrollTopBtn() {
+function setScrollTopBtn() {
     const img = document.createElement('img');
     img.src = "./assets/images/top/bt-top.png";
     img.style = "position: fixed; right: 10px;bottom: 10px; width: 120px; cursor: pointer;";

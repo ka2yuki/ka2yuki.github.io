@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <script src="https://kit.fontawesome.com/14e7d786cb.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+    <main>
+
+        <section>
+            <div class="wrap">
+                <div class="title">
+                    <h2 class="ja">addEventListener ロードの順番</h2>
+                </div>
+                <div class="contents">
+
+                    <div class="controls">
+                        <button id="reload" type="button">再読み込み</button>
+                    </div>
+
+                    <div class="event-log">
+                        <label for="eventLog">イベントログ:</label>
+                        <textarea readonly class="event-log-contents" rows="8" cols="30" id="eventLog"></textarea>
+                    </div>
+                    <script>
+                        const log = document.querySelector(".event-log-contents");
+                        const reload = document.querySelector("#reload");
+
+                        reload.addEventListener("click", () => {
+                            log.textContent = "";
+                            setTimeout(() => {
+                                window.location.reload(true);
+                            }, 200);
+                        });
+
+                        // 変わらない。
+                        // 4
+                        window.addEventListener("load", (event) => {
+                            alert(event.type)
+                            log.textContent += "load\n";
+                        });
+
+                        // 1,3
+                        document.addEventListener("readystatechange", (event) => {
+                            alert(event.type)
+                            log.textContent += `readystate: ${document.readyState}\n`;
+                        });
+                        // 2
+                        document.addEventListener("DOMContentLoaded", (event) => {
+                            alert(event.type)
+                            log.textContent += "DOMContentLoaded\n";
+                        });
+
+                    </script>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

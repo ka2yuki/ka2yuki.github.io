@@ -9,13 +9,18 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     /* 
      * body内に max-width は設定しない. bg-image/movieなど敷くカスタムの為 
      * paddingも0: fixedで隙間が空く為
      */
     margin: 0 auto;
-    padding: 0;
     /* border: 1px solid white; */
     --max-width: 1500px;
 }
@@ -166,6 +171,10 @@ section {
 
 .m0 {
     margin: 0;
+}
+
+.mb10 {
+    margin-bottom: 10px;
 }
 
 .ptb {
@@ -459,6 +468,12 @@ main section .wrap .r-area {
 }
 
 main section .title {
+    /* 必ずしもセンターではなく、スタートも */
+    /* text-align: center; */
+}
+
+main section .title .ja,
+main section .title .en {
     text-align: center;
 }
 
