@@ -158,12 +158,12 @@ section {
 }
 
 .aib {
-    align-items: baseline;
+    align-items: baseline !important;
 }
 
 .w {
     width: 100%;
-}
+}s
 
 .m0a {
     margin: 0 auto;
