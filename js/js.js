@@ -1,6 +1,6 @@
 // Topに戻るボタン
 function setScrollTopBtn(path) {
-    window.innerHeight;
+    // window.innerHeight; commetnout2025年2月21日
     const img = document.createElement('img');
     // img.src = path | undefined;
     // これだとpath末尾に 0 が代入される..
@@ -12,7 +12,9 @@ function setScrollTopBtn(path) {
     img.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
     document.body.appendChild(img);
+
     window.addEventListener("scroll", () => {
         if (window.innerHeight < window.scrollY) {
             img.classList.add('show');

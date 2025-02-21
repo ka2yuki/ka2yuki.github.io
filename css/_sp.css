@@ -2,11 +2,20 @@
 @import url("./sp/nav.css");
 
 @media screen and (max-width: 640px) {
+  .sp-dn {
+    display: none !important;
+  }
 
   /* width */
   .w80-sp,
   .sp-w80 {
-    width: 80%;
+    width: 80% !important;
+  }
+
+  /* max-width */
+  .spmax-w90 {
+    max-width: 90%;
+    /* wrap担当なので　センタリング はこれではしない。 */
   }
 
   /* padding */
@@ -34,27 +43,32 @@
     align-items: center !important;
   }
 
+  .fcc-sp,
+  .dfc-sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* gap */
   .spgap10 {
     gap: 10px;
-  }
-
-  .spgap20 {
-    gap: 20px;
   }
 
   .card-wrap {
     flex-wrap: wrap;
   }
 
+  /* grid */
+  .spgap20 {
+    gap: 20px;
+  }
+
   .sp-grid1,
+  .grid1-sp,
   .spgrid1 {
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
-  .spmax-w90 {
-    max-width: 90%;
-    /* wrap担当なので　センタリング はこれではしない。 */
-  }
 
 }
