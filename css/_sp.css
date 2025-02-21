@@ -1,0 +1,60 @@
+@import url("./components/hamburger.css");
+@import url("./sp/nav.css");
+
+@media screen and (max-width: 640px) {
+
+  /* width */
+  .w80-sp,
+  .sp-w80 {
+    width: 80%;
+  }
+
+  /* padding */
+  .sp-py20,
+  .py20-sp {
+    padding: 20px 0;
+  }
+
+  .pb20-sp {
+    padding-bottom: 20px;
+  }
+
+  /* margin */
+  .m0a-sp {
+    margin: 0 auto;
+  }
+
+  /* text */
+  .tac-sp {
+    text-align: center;
+  }
+
+  /* flex */
+  .aic-sp {
+    align-items: center !important;
+  }
+
+  /* gap */
+  .spgap10 {
+    gap: 10px;
+  }
+
+  .spgap20 {
+    gap: 20px;
+  }
+
+  .card-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sp-grid1,
+  .spgrid1 {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .spmax-w90 {
+    max-width: 90%;
+    /* wrap担当なので　センタリング はこれではしない。 */
+  }
+
+}

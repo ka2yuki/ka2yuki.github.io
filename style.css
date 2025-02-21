@@ -1,5 +1,9 @@
-html {
-  --main-color: rgb(15 23 42);
+* {
+  --main-color: var(--nuxt-c);
+}
+
+body {
+  background-color: var(--main-color);
 }
 
 a {

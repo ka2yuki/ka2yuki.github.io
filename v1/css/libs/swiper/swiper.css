@@ -1,0 +1,37 @@
+/*
+ - 親要素に 何をするか　付ける方針。
+ - .swiper.swiper-img-mask
+ */
+
+.swiper.swiper-img-mask .swiper-slide .img-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper.swiper-img-mask .swiper-slide .img-wrap img {
+    transition: all .5s;
+    /* scaleでサイズ変化させる為 */
+}
+
+
+/* 準備: hover時にopacity:1; */
+.swiper.swiper-img-mask .swiper-slide .img-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2 2 2 / 20%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* どの部分を hover したら変化するか */
+.swiper.swiper-img-mask .swiper-slide:hover .img-wrap::after {
+    opacity: 1;
+}
+
+.swiper.swiper-img-mask .swiper-slide:hover .img-wrap img {
+    transform: scale(1.1);
+}

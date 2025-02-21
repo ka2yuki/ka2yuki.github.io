@@ -1,0 +1,16 @@
+@media screen and (max-width: 640px) {
+    header nav .wrap {
+        display: flex;
+        max-width: 96%;
+    }
+
+    header nav .logo-wrap {
+        /* padding: 10px 0; */
+        /* 基本：header nav .wrapの paddingで　調整 */
+    }
+
+    header nav .menu {
+        flex-direction: column;
+    }
+
+}

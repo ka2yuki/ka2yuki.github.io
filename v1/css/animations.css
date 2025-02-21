@@ -1,0 +1,64 @@
+img.scroll-left {
+    animation: scroll-left 70s infinite linear 0.5s;
+    width: auto;
+    max-width: unset;
+    /* height: 240px; */
+    /* pointer-events: none; */
+}
+
+.scroll-left:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.fadein {
+    animation: fadein 1s ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: .1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeout {
+    animation: fadeout 1s ease;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .1;
+    }
+}
+
+.setButtom {
+    position: absolute !important;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+}
+
+.fixed.fadein {
+    position: sticky !important;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    /* z-index: -1; */
+}

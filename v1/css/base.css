@@ -204,14 +204,6 @@ section {
     flex-direction: column;
 }
 
-.gap10 {
-    gap: 10px;
-}
-
-.gap20 {
-    gap: 20px;
-}
-
 .j-c,
 .jus-c {
     justify-content: center;
@@ -240,21 +232,13 @@ header {
     position: relative;
     overflow: hidden;
 
-    /* height100vh */
+    /* height: 100vh; */
     /* 必ず header が 100vhとは 限らない */
 
-    /* background radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end)) */
+    /* background: radial-gradient(circle at 50% 115%, var(--g-start), var(--g-end)); */
     /* 必ず header が gradient する必要はない */
 
     /* border: solid; */
-}
-
-.vh {
-    height: 100vh;
-}
-
-.dvh {
-    height: 100dvh;
 }
 
 
@@ -332,8 +316,7 @@ header nav .wrap {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    /* padding: 0px 25px; */
-    /* 基本：max-wiで */
+    padding: 0px 25px;
 }
 
 /* ロゴ */
@@ -343,8 +326,7 @@ header nav .wrap .logo-wrap {
 
 header nav .wrap ul,
 header nav .wrap .menu {
-    /* width: fit-content; */
-
+    width: fit-content;
     display: flex;
     margin-left: auto;
     padding: 1.2rem 0px;
@@ -354,13 +336,13 @@ header nav .wrap .menu {
 /* メニュー文字が2行で幅が苦しくなるのを回避 */
 @media screen and (max-width: 1300px) {
     header nav>.wrap {
-        /* display: block !important; */
-        /* padding: 0 !important; */
+        display: block !important;
+        padding: 0 !important;
     }
 
-    header nav .logo-wrap {
-        /* display: none; */
-        /* margin: 20px auto 0; */
+    header nav>.wrap>.logo-wrap {
+        display: none;
+        margin: 20px auto 0;
         /* transform: unset !important; */
     }
 
@@ -380,8 +362,7 @@ header nav .wrap .menu {
     }
 
     header nav ul li:last-child a {
-        /* padding: 10px 20px 10px !important; */
-        /* 上記のpaddingは　個別 */
+        padding: 10px 20px 10px !important;
     }
 }
 
@@ -392,10 +373,8 @@ header nav ul li {
 }
 
 header nav ul li:last-child {
-    /* background-color: #fbbf24; */
-    /* 色は 個別 */
-    /* border-radius: 50px; */
-    /* radiusも 個別 */
+    background-color: #fbbf24;
+    border-radius: 50px;
 }
 
 header nav ul li a {
@@ -738,8 +717,8 @@ aside {
         display: block;
     }
 
-    header nav .menu {
-        /* display: none !important; */
+    header nav {
+        display: none;
     }
 
     /* all page: common-style*/

@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+body {
+    --main-color: rgb(209, 66, 44);
+    --txt-c: #56534c;
+    /* --max-width: 1080px; */
+    --column-max-width: 1080px;
+    --light-gray: #e1e1e1;
+    color: var(--txt-c);
+    --table-border-c: #65839f;
+    --black: #333;
+}
+
+/* Fonts一括指定 */
+body.feature .flow .wrap .step .desc-box .title .stepnum,
+body#flow main .flow-overviews .wrap .step-wrap .step .desc-box .title .step-num-box,
+body.service main section.main .img-box .title .en,
+body.plan main section.market-price>.wrap .title .en {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 
+ * 文字の色: 特定の場所
+ */
+body#feature main .flow .wrap .step .img-box {
+    color: var(--txt-c);
+}
+
+header h1 {
+    color: white;
+}
+
+
+.bgg-gray {
+    /* background-color: #f6f7f6 !important; */
+}
+
+body#feature,
+body#flow {
+    position: relative;
+}
+
+
+/*
+ * ぱんくず: Page: feature/flow
+ */
+body main .breadcrumbs {
+    /* background-color: whitesmoke; */
+    width: 100%;
+    font-size: 13px;
+}
+
+body main .breadcrumbs .wrap {
+    max-width: var(--max-width);
+    padding: 10px 0;
+}
+
+/* 
+ * Header 
+ */
+header {
+    background-color: #fda889;
+}
+
+header nav {
+    background-color: white;
+    border-bottom: 3px solid var(--main-color);
+}
+
+header nav .wrap {
+    padding: 10px 0;
+}
+
+header nav .wrap ul {
+    padding: 0;
+}
+
+header nav ul li a .border {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+}
+
+header>.wrap {
+    width: var(--max-width);
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header>.wrap .img-wrap {
+    margin-top: 85px;
+}
+
+body#plan header>.wrap .contents-wrap,
+body#feature header>.wrap .contents-wrap,
+body#faq header>.wrap .contents-wrap,
+body#flow header>.wrap .contents-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+}
+
+body#plan header nav .logo-wrap.fade-in,
+body#faq header nav .logo-wrap.fade-in,
+body#top header nav .logo-wrap.fade-in,
+body#feature header nav .logo-wrap.fade-in,
+body#flow header nav .logo-wrap.fade-in {
+    transform: scale(1, 1);
+}
+
+body#plan header>.wrap,
+body#faq header>.wrap,
+body#feature header>.wrap,
+body#flow header>.wrap {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body#plan header>.wrap .ja,
+body#faq header>.wrap .ja,
+body#feature header>.wrap .ja,
+body#flow header>.wrap .ja {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #464646;
+}
+
+body#plan header>.wrap .en,
+body#faq header>.wrap .en,
+body#faq header>.wrap .en,
+body#feature header>.wrap .en,
+body#flow header>.wrap .en {
+    font-size: 5rem;
+    margin: 0;
+    color: #2a2a2a;
+    line-height: 1;
+}
+
+header nav .wrap ul li a span:first-child,
+header nav .wrap ul li a span:nth-child(2) {
+    display: block;
+    text-align: center;
+}
+
+/*
+ *  <main> area 
+ */
+body.top main section.about>.wrap {
+    /* max-width: 1000px; */
+}
+
+body.top main section.service>.wrap {
+    /* max-width: 1200px; */
+}
+
+body.top main section.plan>.wrap {
+    max-width: 1050px;
+}
+
+body.feature main .flow .wrap,
+body.flow main .flow-overviews .wrap {
+    max-width: 1100px;
+}
+
+main section .title .en {
+    color: var(--main-color);
+}
+
+main section .shadow {
+    box-shadow: 5px 5px 5px rgb(202, 202, 202);
+}
+
+main section .title .discription {
+    font-size: 1.5rem;
+}
+
+main section .wrap-title h2 .left-b {
+    transform: rotate(45deg);
+}
+
+main section .wrap-title h2 .right-b {
+    transform: rotate(135deg);
+}
+
+main section .wrap-title h2 .left-b,
+main section .wrap-title h2 .right-b {
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 40px;
+}
+
+
+body#feature main .flow .wrap .step,
+body#flow main .flow-details .wrap .step,
+body#flow main .flow-overviews .wrap .step {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Swiper */
+.works .swiper .swiper-slide {
+    border-bottom: 1px solid #d7d9d9;
+}
+
+/*
+ * Box-size: width; 
+ * - feature/flow
+ */
+body#feature main .flow .wrap .step .disc-box,
+body#flow main .flow-overviews .wrap .step .disc-box {
+    width: 47%;
+}
+
+
+body#flow main .flow-details .wrap .step .desc-box .title img,
+body#feature main .flow .wrap .step .desc-box .title img {
+    margin: 1.5rem 0 0;
+}
+
+
+body main hr.separate-border {
+    border: 1px solid #D0D0D0;
+    margin: 0;
+}
+
+
+/*
+ * first section no name
+ */
+main section.first .wrap {
+    max-width: 790px;
+}
+
+body#top main section.first .content {
+    display: flex;
+    background: url("../images/top/support-bg.png") bottom repeat-x;
+    background-color: #f3f7f8;
+}
+
+/*
+ * about
+ */
+main section.about .wrap .col2 {
+    display: flex;
+    padding: 8rem 0;
+    margin: 0 auto;
+}
+
+main section.about .wrap .col2 .r-area,
+main section.about .wrap .col2 .l-area {
+    width: 50%;
+}
+
+main section.about .wrap .col2 .l-area .title {
+    text-align: left;
+}
+
+main section.about .wrap .col2 .l-area .title .border {
+    margin: 0;
+    width: 100px;
+}
+
+main section.about .wrap .col2 .l-area .content p {
+    line-height: 2;
+}
+
+main section.about .wrap .col2 .l-area .content .discription {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+main section.about .wrap .wrap-kadai {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main section.about .wrap .wrap-kadai h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+main section.about .wrap .wrap-kadai h2 .left-b,
+main section.about .wrap .wrap-kadai h2 .right-b {
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 40px;
+}
+
+main section.about .wrap .wrap-kadai h2 .left-b {
+    transform: rotate(45deg);
+}
+
+main section.about .wrap .wrap-kadai h2 .right-b {
+    transform: rotate(135deg);
+}
+
+main section.about .wrap .wrap-kadai ul.kadai-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem;
+}
+
+main section.about .wrap .wrap-kadai .kadai-list li {
+    border-bottom: 2px dashed #d5d7d5;
+    padding-bottom: .5rem;
+    display: flex;
+}
+
+main section.about .wrap .wrap-kadai .kadai-list li img {
+    width: 22px;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+main section.about .wrap .our-feature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 5rem;
+    box-shadow: 4px 4px #dbdbdb;
+    border-radius: 15px;
+    max-width: 1200px;
+    padding: 2rem 1rem;
+    background-color: #F3F7F8;
+}
+
+main section.about .wrap .our-feature-box .title {
+    border-right: 2px dashed var(--green-smork);
+    width: 40%;
+    text-align: left;
+}
+
+main section.about .wrap .our-feature-box .title .en {
+    font-size: 1rem;
+    color: var(--green-smork);
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+main section.about .wrap .our-feature-box .title .ja {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+main section.about .wrap .our-feature-box .detail {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+main section.about .wrap .col3-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem 0;
+    box-shadow: 2px 3px 1px #dbdbdb;
+}
+
+main section.about .wrap .col3-area .point {
+    border-right: 1.5px solid #d1d1d1;
+    padding: 1rem;
+}
+
+main section.about .wrap .col3-area .point .title {
+    width: 20%;
+}
+
+main section.about .wrap .col3-area .point p {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--txt-c);
+}
+
+main section.about .wrap .col3-area .point:last-child {
+    border-right: none;
+}
+
+main section.about .wrap .col3-area img:first-child {
+    width: 100%;
+}
+
+main section.about .wrap .col3-area img:last-child {
+    width: fit-content;
+}
+
+main section.about .wrap .aboutus-contact-area {
+    max-width: 700px;
+    margin: 3rem auto;
+}
+
+main section.about .wrap .aboutus-contact-area p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/*
+ *  sapppro & area
+ */
+main section.sapppro .wrap .title,
+main section.area .wrap .title {
+    text-align: left;
+}
+
+/*
+ * Title: eng
+ */
+main section.service .wrap .title .en {
+    line-height: 1;
+    margin: 10px auto 0;
+}
+
+main section.plan .wrap button {
+    margin: 50px auto 20px;
+}
+
+/*
+ * column は共通
+ */
+main section.column {
+    background-image: url("../images/top/bg-column.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section.column .wrap {
+    max-width: var(--column-max-width);
+}
+
+main section.column>.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+main section.column .wrap .l-area {
+    width: 60%;
+    padding: 40px;
+}
+
+main section.column .wrap .r-area {
+    width: 40%;
+}
+
+main section.column .wrap .l-area .title {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+main section.column .wrap .l-area .title .en {
+    margin-left: 0;
+}
+
+main section.column .wrap .l-area .title .border {
+    margin: 0;
+    width: 120px;
+}
+
+main section.column .wrap .l-area .content {
+    font-size: .9rem;
+    padding-top: 1.5rem;
+}
+
+main section.column .wrap .l-area .content .discription {
+    line-height: 2;
+}
+
+main section.column .wrap .l-area .content .img-wrap {
+    width: 300px;
+    margin: 20px;
+}
+
+
+/*
+ * contact　は共通
+ */
+main section.contact {
+    /* background-color: transparent; */
+}
+
+main section.contact .wrap {
+    max-width: 1200px;
+    padding: 7rem 0;
+}
+
+main section.contact .wrap .title {
+    flex-direction: column;
+}
+
+main section.contact .wrap .title .ja {
+    font-size: 35px;
+}
+
+main section.contact .wrap .title .en {
+    font-size: 22px;
+}
+
+main section.contact .wrap .title .ja,
+main section.contact .wrap .title .en {
+    letter-spacing: 1px;
+}
+
+
+main section.contact .wrap .title .discription {
+    font-size: 1.2rem;
+    margin-top: 35px;
+}
+
+main section.contact .wrap .content {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 30px;
+}
+
+main section.contact .wrap .content .tell {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+main section.contact .wrap .content .tell span {
+    font-size: .9rem;
+    font-family: 'Noto Sans JP';
+    font-weight: normal;
+}
+
+main section.contact .wrap .content button {
+    /* width: 230px; */
+    /* height: 55px; */
+}
+
+
+/*
+ * footer 
+ */
+footer {
+    background-image: url(../images/top/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 590px;
+}
+
+footer .wrap {
+    max-width: 1200px;
+}
+
+footer .wrap .footer-menu ul {
+    margin-left: 2rem;
+}
+
+footer .wrap .footer-menu ul li img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+footer .wrap .footer-menu .service li:not(:first-child),
+footer .wrap .footer-menu ul:last-child li:last-child {
+    font-size: .9rem;
+    padding-bottom: .7rem;
+    padding-left: 1rem;
+}
+
+footer .wrap .footer-menu ul:last-child li:last-child {
+    padding-left: 0;
+}
+
+footer .wrap .copyright {
+    text-align: end;
+    color: white;
+    margin: 1.5rem 7rem 0 auto;
+    font-size: .9rem;
+}

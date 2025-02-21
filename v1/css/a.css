@@ -1,0 +1,56 @@
+/* 
+<a href="https://example.com" class="btn-icon">
+  <span>ボタン</span>
+  <img src="icon.png" alt="アイコン" class="icon">
+</a> 
+*/
+.btn {
+    background-color: #007bff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 左右に要素を配置 */
+    width: 250px;
+    /* ボタンの幅を固定 */
+    padding: 10px 5px;
+    background-color: #007bff;
+    color: var(--main-color);
+    text-decoration: none;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.btn-icon span {
+    flex-grow: 1;
+    /* テキストエリアを最大化 */
+    text-align: center;
+    /* テキストを中央揃え */
+}
+
+.btn-icon .icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    /* アイコンのサイズを固定 */
+    margin-left: auto;
+    /* 右端に配置 */
+}
+
+.btn-icon:hover {
+    opacity: .7;
+    /* background-color: #0056b3; */
+}
+
+/* ボタンが imageだった場合: 大体センタリング */
+.btn-img {
+    width: 350px;
+    margin: 20px auto;
+    display: block;
+}

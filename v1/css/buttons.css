@@ -1,0 +1,246 @@
+/* 
+button は javascript で扱う
+ */
+button {
+    display: block;
+    /* margin: 0 auto; を有効にするため display: block; */
+
+    /* btns　を複数で使用することがある為 
+     * - margin 操作しない。
+     * - 親要素で　justify/align の効果がなくなる為
+     */
+    /* display: flex;
+    justify-content: center; */
+    min-width: 240px;
+    /* ※ボタンに width は指定しない. min-はOK： font-sizeで可変させる為。 */
+
+    /* height: 60px; */
+    /* heightは 内部a の paddingで */
+
+    /* marginを付けないとheightを指定しないといけない。親boxに対して高さが出てしまう..? |webadvance
+     * 基本 centering | daiei
+     */
+    margin: 0 auto;
+    /* マージン付けると justify の効果がなくなる 親ボックスで */
+    /* margin-right:0;などで右寄せ左寄せ */
+    padding: 0;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    /* いまのところ：基本色をつける. 任意で unset で外す */
+    border-radius: 50px;
+    /* いまのところ：基本round 任意で外す */
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+button.round {
+    border-radius: 50px;
+    background-color: rgb(223, 223, 223);
+}
+
+button.reset {
+    background-color: unset;
+    border-radius: unset;
+}
+
+button a {
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+    display: flex;
+    /* align-items: baseline; */
+    align-items: center;
+    justify-content: center;
+    /* 基本 center. styleなどでunset */
+
+    padding: 20px 0;
+    /* 
+      基本buttonに padding は 設定する方向にで。
+      style に応じて 変更する。
+    */
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+button img,
+button a img {
+    width: 20px;
+}
+
+
+button a:after {
+    transition-duration: .25s;
+}
+
+
+button a .img-wrap {
+    width: 20px;
+}
+
+/* むしろ a の直下に contents wrap が必要かも。 
+ * - 文字/img
+*/
+button a .wrap {
+    width: 80%;
+}
+
+button.square {
+    width: 220px;
+    background-color: white;
+    border: 1.5px solid var(--main-color);
+    border-radius: 0px;
+}
+
+button.square a {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+button.square a .wrap {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: initial;
+}
+
+
+/* 装飾は必ず親属性に名前を付ける
+ * 常に 擬似要素 を付けなくてok だから。
+ */
+button.cover a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 120px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0, 0);
+    transition-property: all;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
+    z-index: -1;
+}
+
+button.cover:hover a:after {
+    transform: translate(-50%, -50%) scale(5.1, 5.1);
+}
+
+button.cover:hover {
+    background-color: transparent;
+}
+
+button.cover:hover a {
+    color: white;
+}
+
+button .crcle {
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+button .arr-right {
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ２つの場合 */
+.btn-area,
+.btn-wrap,
+.btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 35px 0;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+}
+
+.btn-area button,
+.btn-wrap button,
+.btn-box button {
+    margin: 0;
+    width: 40%;
+    /* ２つの場合 40% */
+}
+
+/*
+ * Pagenation 
+ */
+.posts ul.pagenation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.posts ul.pagenation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/* <ul class="pagenation">
+    <li class="">1</li>
+    <a href="/">
+        <li>2</li>
+    </a>
+    <a href="/">
+        <li>3</li>
+    </a>
+    <a href="/">
+        <li><i class="fas fa-chevron-right"></i></li>
+    </a>
+</ul> */
+
+
+.fade {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 640px) {
+    button {
+        max-width: 100%;
+        width: 70%;
+        /* border: solid; */
+    }
+
+    .btn-area,
+    .btn-wrap,
+    .btn-box {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .btn-area button,
+    .btn-wrap button,
+    .btn-box button {
+        max-width: 75%;
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    /* each placed button */
+    body.top main section.plan button {
+        margin: 50px auto;
+    }
+}
