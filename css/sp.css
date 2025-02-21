@@ -12,10 +12,36 @@
         width: 80% !important;
     }
 
+    .sp100vw {
+        width: 100vw;
+    }
+
     /* max-width */
     .spmax-w90 {
         max-width: 90%;
         /* wrap担当なので　センタリング はこれではしない。 */
+    }
+
+    /* none */
+    .dn-sp,
+    .sp {
+        display: none;
+    }
+
+    /* height */
+    .sp-20vh,
+    .sp20vh {
+        height: 20vh !important;
+    }
+
+    .sp-25vh,
+    .sp25vh {
+        height: 25vh !important;
+    }
+
+    /* pixel */
+    .fs2rem-sp {
+        font-size: 2rem;
     }
 
     /* padding */
