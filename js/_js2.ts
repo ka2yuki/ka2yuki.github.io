@@ -20,7 +20,7 @@ function setImg(url: string, alt?: string) {
   // const selector:HTMLDivElement = document.querySelector('palams') || null;
   img.src = url;
   img.loading = "lazy";
-  img.alt = alt | undefined;
+  // img.alt = alt;
 }
 
 function bmc() {

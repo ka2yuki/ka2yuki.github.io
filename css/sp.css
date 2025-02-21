@@ -29,6 +29,11 @@
     }
 
     /* height */
+    /* 
+    　　今のところ：高さは 100vh　だけ使用する。
+    　　指定したくなった際は　padding　で行う。
+    　　予期せぬ　余り・背景色　が　出てくる。
+     */
     .sp-20vh,
     .sp20vh {
         height: 20vh !important;

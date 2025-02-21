@@ -280,7 +280,8 @@ header>.wrap .img-wrap h1 {
  * サブページのHeader:
  */
 body:not(.top) header {
-    height: 40vh;
+    /* height: 40vh; */
+    /* heightを指定せずに　あいだ　が必要であれば　padding の方が良さそう。 */
 }
 
 header .header-wrap {
@@ -315,13 +316,20 @@ body header .video-wrapper .background-video {
  * 共通css: Header Nav
  */
 header nav {
-    position: fixed !important;
-    top: 0;
     width: 100%;
     background-color: transparent;
     transition: background-color 1s;
     z-index: 999;
 }
+
+/*
+  scroll したら fixed　にしようと思ったので
+　fixed を css から当てれないように気を付ける
+*/
+/* header nav.fixed {
+    position: fixed !important;
+    top: 0;
+} */
 
 header nav.scrolled-mv {
     background-color: #e7e7e7;
