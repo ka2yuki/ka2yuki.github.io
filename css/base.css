@@ -157,6 +157,8 @@ section {
     justify-items: center;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap がないと 子要素に *-width系が　あると　レスポンシブ時に　はみ出す */
 }
 
 .dfc {
@@ -491,6 +493,13 @@ main .breadcrumbs span {
 main .breadcrumbs .wrap span:not(:last-child)::after {
     content: "＞";
     padding-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    main .breadcrumbs span {
+        font-size: 14px;
+    }
+
 }
 
 

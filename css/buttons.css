@@ -12,7 +12,10 @@ button {
     /* display: flex;
     justify-content: center; */
     min-width: 240px;
-    /* ※ボタンに width は指定しない. min-はOK： font-sizeで可変させる為。 */
+    /* ※ボタンに 通常width は指定しない. 
+       min-widthはOK： font-sizeで可変させる為。
+       flex-wrap: wrap;でwrap するしかない。
+    */
 
     /* height: 60px; */
     /* heightは 内部a の paddingで */

@@ -91,24 +91,28 @@
     /* gap */
     .sp-gap10,
     .spgap10 {
-        gap: 10px;
+        gap: 10px !important;
     }
 
     .sp-gap20,
     .spgap20 {
-        gap: 20px;
+        gap: 20px !important;
     }
 
     .card-wrap {
         flex-wrap: wrap;
     }
 
-    /* grid */
-
+    /* grid/col */
     .sp-grid1,
+    .sp-col1,
     .grid1-sp,
     .spgrid1 {
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .sp-col1-flex {
+        flex-direction: column;
     }
 
     .sp-col2 {
