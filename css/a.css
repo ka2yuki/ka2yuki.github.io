@@ -18,8 +18,11 @@
     align-items: center;
     justify-content: space-between;
     /* 左右に要素を配置 */
-    width: 250px;
-    /* ボタンの幅を固定 */
+    /* width: 250px; */
+    /* 
+    ※ボタンの幅は　固定　しない！ 
+      - 連続するボタン 3col の際に　その幅を維持して　はみ出すため。
+    */
     padding: 10px 5px;
     background-color: #007bff;
     color: var(--main-color);

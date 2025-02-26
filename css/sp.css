@@ -89,8 +89,14 @@
     }
 
     /* gap */
+    .sp-gap10,
     .spgap10 {
         gap: 10px;
+    }
+
+    .sp-gap20,
+    .spgap20 {
+        gap: 20px;
     }
 
     .card-wrap {
@@ -98,9 +104,6 @@
     }
 
     /* grid */
-    .spgap20 {
-        gap: 20px;
-    }
 
     .sp-grid1,
     .grid1-sp,
