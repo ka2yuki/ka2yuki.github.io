@@ -7,8 +7,11 @@
     }
 
     /* width */
-    .w80-sp,
     .sp-w80 {
+        /* 
+        命名： w80-spは NG。 
+        - 急いでる時　sp-* と分かりやすく。
+         */
         width: 80% !important;
     }
 
@@ -23,9 +26,12 @@
     }
 
     /* none */
-    .dn-sp,
-    .sp {
+    .dn-sp {
         display: none;
+    }
+
+    .sp {
+        display: block;
     }
 
     /* height */
@@ -99,6 +105,12 @@
     .grid1-sp,
     .spgrid1 {
         grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .sp-col2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
     }
 
 

@@ -5,7 +5,8 @@
 </a> 
 */
 .btn {
-    background-color: #007bff;
+    /* background-color　#007bff */
+    /* 初期カラーは付けない。割り合ったかを知る際には別の方法。 */
 }
 
 .btn:hover {
