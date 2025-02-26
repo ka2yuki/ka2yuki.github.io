@@ -2,9 +2,6 @@
 @import url("./sp/nav.css");
 
 @media screen and (max-width: 640px) {
-    .sp-dn {
-        display: none !important;
-    }
 
     /* width */
     .sp-w80 {
@@ -28,6 +25,10 @@
     /* none */
     .dn-sp {
         display: none;
+    }
+
+    .sp-dn {
+        display: none !important;
     }
 
     .sp {
@@ -110,6 +111,13 @@
     .sp-col2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
+    }
+
+    .col2 {
+        /* display grid だと 画像だった場合 1:1 で間延びか 隙間が空く為 display:flexで flex-direc: colmun */
+        display: flex;
+        flex-direction: column;
         gap: 20px 20px;
     }
 
