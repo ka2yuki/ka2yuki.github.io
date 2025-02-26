@@ -765,7 +765,8 @@ aside {
     }
 
     /* all page: common-style*/
-    main section .wrap {
+    main section>.wrap {
+        /* wrap は　複数あるので > を付与 */
         width: 95vw;
         max-width: 85vw;
         margin: 0 auto;
