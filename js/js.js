@@ -1,3 +1,13 @@
+// 作業中バナー
+window.addEventListener('DOMContentLoaded', function (params) {
+    // コーダー: https:ka2yuki.github.io
+    const div = this.document.createElement('div');
+    div.style = "position:fixed; bottom:0; width:100vw; text-align:center; padding: 20px 0;background: #33333378; z-index: 999;color:white;";
+    div.innerHTML = "開発中";
+    div.title = 'https://ka2yuki.github.io';
+    this.document.body.prepend(div);
+});
+
 // Topに戻るボタン
 function setScrollTopBtn(path) {
     // window.innerHeight; commetnout2025年2月21日
@@ -26,11 +36,3 @@ function setScrollTopBtn(path) {
     // <a href="#"><img src="./assets/images/top/bt-top.png" alt="" style="position: fixed; right: 10px;bottom: 10px; width: 120px; cursor: pointer;"></a>
 }
 
-window.addEventListener('DOMContentLoaded', function (params) {
-    // コーダー: https:ka2yuki.github.io
-    const div = this.document.createElement('div');
-    div.style = "position:fixed; bottom:0; width:100vw; text-align:center; padding: 20px 0;background: #33333378; z-index: 999;color:white;";
-    div.innerHTML = "開発中";
-    div.title = '開発者サイト：https:ka2yuki.github.io';
-    this.document.body.prepend(div);
-})

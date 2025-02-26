@@ -54,6 +54,7 @@
 
         #menu-toggle:checked~.menu {
             right: 0 !important;
+            z-index: 990;
         }
 
         #menu-toggle:checked~.menu-btn span:nth-child(1) {

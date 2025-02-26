@@ -689,6 +689,15 @@ main section.posts article a {
     color: #5d5d5d;
 }
 
+@media screen and (max-width: 640px) {
+
+    main section.posts article a {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* 2行に */
+    }
+}
+
 main section.posts article a .thumbnail {
     background-color: #edede8;
     /* background-image: url("https://ka2yuki.github.io/assets/images/dummy.png"); */
