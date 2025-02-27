@@ -13,6 +13,9 @@
 
 
 ```
+# return vanilla html
+curl "https://www.google.com/search?q=your+search+query"
+# text bace browser
 lynx "https://www.google.com/search?q=your+search+query"
 googler your search query
 open "https://www.google.com/search?q=your+search+query"
