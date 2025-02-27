@@ -10,6 +10,13 @@
 
 # bookmark
 - [docker-pure-ftpd](https://github.com/stilliard/docker-pure-ftpd)
+
+
+```
+lynx "https://www.google.com/search?q=your+search+query"
+googler your search query
+open "https://www.google.com/search?q=your+search+query"
+```
 ---
 # my lib
 
