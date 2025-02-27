@@ -5,6 +5,11 @@
 -->  
 <img src="https://avatars.githubusercontent.com/in/29110?s=15" /> [security/dependabot](https://github.com/ka2yuki/ka2yuki.github.io/security/dependabot)
 
+# favo
+- [git-ftp](https://github.com/git-ftp/git-ftp?tab=readme-ov-file)
+
+# bookmark
+- [docker-pure-ftpd](https://github.com/stilliard/docker-pure-ftpd)
 ---
 # my lib
 
