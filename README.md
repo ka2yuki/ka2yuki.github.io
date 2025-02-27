@@ -1,3 +1,6 @@
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ka2yuki&label=Profile%20views&color=0e75b6&style=flat" alt="ka2yuki" /> </p>
+
+
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
   
 <!--
