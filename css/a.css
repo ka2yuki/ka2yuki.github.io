@@ -5,56 +5,84 @@
 </a> 
 */
 .btn {
-    /* background-color　#007bff */
-    /* 初期カラーは付けない。割り合ったかを知る際には別の方法。 */
+  /* background-color　#007bff */
+  /* 初期カラーは付けない。割り合ったかを知る際には別の方法。 */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 250px;
+  border: solid;
+  color: inherit;
+  padding: 10px 0;
 }
+
+/* 
+<a href="#" class="btn">
+  <div class="crcle">
+    <img class="icon" src="./assets/images/top/bt-circle.svg">
+  </div>
+  サービス案内
+  <div class="arr-right">
+    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+  </div>
+</a>
+*/
 
 .btn:hover {
-    background-color: #0056b3;
+  opacity: .7;
 }
 
+
+
+.btn .icon {
+  /* max-width 50px;
+     - img は wrap したら 初期サイズが異なる
+     */
+}
+
+/* with icon */
 .btn-icon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* 左右に要素を配置 */
-    /* width: 250px; */
-    /* 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 左右に要素を配置 */
+  /* width: 250px; */
+  /* 
     ※ボタンの幅は　固定　しない！ 
       - 連続するボタン 3col の際に　その幅を維持して　はみ出すため。
     */
-    padding: 10px 5px;
-    background-color: #007bff;
-    color: var(--main-color);
-    text-decoration: none;
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
+  padding: 10px 5px;
+  background-color: #007bff;
+  color: var(--main-color);
+  text-decoration: none;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
 }
 
 .btn-icon span {
-    flex-grow: 1;
-    /* テキストエリアを最大化 */
-    text-align: center;
-    /* テキストを中央揃え */
+  flex-grow: 1;
+  /* テキストエリアを最大化 */
+  text-align: center;
+  /* テキストを中央揃え */
 }
 
 .btn-icon .icon {
-    width: 25px;
-    height: 25px;
-    flex-shrink: 0;
-    /* アイコンのサイズを固定 */
-    margin-left: auto;
-    /* 右端に配置 */
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  /* アイコンのサイズを固定 */
+  margin-left: auto;
+  /* 右端に配置 */
 }
 
 .btn-icon:hover {
-    opacity: .7;
-    /* background-color: #0056b3; */
+  opacity: .7;
+  /* background-color: #0056b3; */
 }
 
 /* ボタンが imageだった場合: 大体センタリング */
 .btn-img {
-    width: 350px;
-    margin: 20px auto;
-    display: block;
+  width: 350px;
+  margin: 20px auto;
+  display: block;
 }

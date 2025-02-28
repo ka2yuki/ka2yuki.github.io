@@ -119,6 +119,22 @@
     margin: 0;
 }
 
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt70 {
+    margin-top: 70px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
 .mb10 {
     margin-bottom: 10px;
 }
@@ -131,9 +147,34 @@
     padding: 2rem 0;
 }
 
+
+
+
+
+/* Fonts */
+/* rem is used bootstrap.css & tailwindcss etc.. 20240228now
+ * - https://tailwindcss.com/docs/font-size
+ * - https://getbootstrap.com/docs/5.3/utilities/text/#font-size
+ */
+.fs-sm {
+    font-size: 16px;
+}
+
+.fs-base {
+    font-size: 32px;
+}
+
+.fs-lg {
+    font-size: 48px;
+}
+
 .fwb {
     font-weight: bold;
 }
+
+
+
+
 
 /* gap */
 .gap10 {
