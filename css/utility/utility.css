@@ -1,0 +1,194 @@
+.vh {
+    height: 100vh;
+}
+
+.dvh {
+    height: 100dvh;
+}
+
+
+
+
+
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cb {
+    color: black;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem;
+}
+
+
+
+
+
+.db {
+    display: block;
+}
+
+.df {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap がないと 子要素に *-width系が　あると　レスポンシブ時に　はみ出す */
+}
+
+/* 
+ *  いつも大体 df は center set!
+.df {
+    display: flex;
+} 
+*/
+
+/* ??: .dfc is display:flex / df-center?  
+ *  いつも大体 df は center set! df-c: colmun
+ */
+.dfc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.flc,
+.fdc {
+    flex-direction: column;
+}
+
+.ais {
+    align-items: start !important;
+}
+
+.aib {
+    align-items: baseline !important;
+}
+
+.j-c,
+.jus-c {
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+.w {
+    width: 100%;
+}
+
+.m0a {
+    margin: 0 auto;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ptb {
+    padding: 1rem 0;
+}
+
+.ptb2 {
+    padding: 2rem 0;
+}
+
+.fwb {
+    font-weight: bold;
+}
+
+/* gap */
+.gap10 {
+    gap: 10px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+
+
+
+
+
+.por {
+    position: relative;
+}
+
+.poa {
+    position: absolute;
+}
+
+.tac {
+    text-align: center;
+}
+
+/* 開発用 */
+.b {
+    border: solid;
+}
+
+.br {
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.bgi {
+    background-image: url(../assets/images/azarashi.png);
+    /* path は 都度*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgg {
+    background: linear-gradient(180deg, #00a0e1, #024b81);
+}
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
