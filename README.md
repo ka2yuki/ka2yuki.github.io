@@ -1,4 +1,4 @@
-now is..
+currently
 
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
   
