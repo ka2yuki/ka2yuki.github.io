@@ -5,6 +5,10 @@ cssファイルが多すぎる為、できるだけディレクトリに分け�
 - components | 部品用のcss
 - libs | ライブラリ使用時ライブラリ専用のcss
 
+directory案：
+- layout | components よりも抽象的な枠組み 
+
+
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
   
 <!--
