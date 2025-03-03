@@ -1,8 +1,13 @@
 /*
+ * Copyright (c) 2025 https://ka2yuki.github.io
+ * Released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+/*
  - 親要素に 何をするか　付ける方針。
  - .swiper.swiper-img-mask
  */
-
 .swiper.swiper-img-mask .swiper-slide .img-wrap {
     overflow: hidden;
     position: relative;

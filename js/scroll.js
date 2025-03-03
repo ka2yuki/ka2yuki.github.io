@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2025 https://ka2yuki.github.io
+ * Released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
 function setFollowScroll(terget, scrollTop) {
     console.log(scrollTop);
     if (
