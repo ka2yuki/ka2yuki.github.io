@@ -33,6 +33,9 @@ body {
     /* border: 1px solid white; */
     --max-width: 1500px;
     /* サイト毎にカスタマイズ変数 */
+    --number-sm: 16px;
+    --number-base: 32px;
+    --number-lg: 48px;
 }
 
 a {
@@ -376,10 +379,12 @@ main section>.wrap {
     padding: 100px 0;
 }
 
-main section .wrap .title .border {
-    width: 110px;
-    margin: 5px auto 20px;
-    padding: 0;
+main section .wrap .title span.border {
+    display: block;
+    width: 5em;
+    margin: 0 auto;
+    padding: 8px 0 0;
+    border-bottom: solid 2px;
 }
 
 main section .wrap .l-area,

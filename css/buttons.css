@@ -156,15 +156,17 @@ button .arr-right {
 }
 
 
-/* ２つの場合 */
+/* ２つ以上の場合 
+ - grid を使いたい場合もあるので df はNG。 wrap>a*2>img　で imgサイズが大きい場合 flex されない現象。
+*/
 .btn-area,
 .btn-wrap,
 .btn-box {
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
     padding: 35px 0;
     flex-wrap: wrap;
-    gap: 20px 0px;
+    gap: 20px 0px; */
 }
 
 .btn-area button,

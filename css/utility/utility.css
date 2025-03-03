@@ -27,6 +27,10 @@
 
 
 .col2 {
+    /* col2 と指定できるのは 
+     - flex でも 直下を widthが 50%+50% で可能だが 
+     - col指定 grid. 
+    */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
@@ -147,6 +151,9 @@
     padding: 2rem 0;
 }
 
+.pb-lg {
+    padding-bottom: var(--number-lg);
+}
 
 
 
@@ -157,15 +164,15 @@
  * - https://getbootstrap.com/docs/5.3/utilities/text/#font-size
  */
 .fs-sm {
-    font-size: 16px;
+    font-size: var(--number-sm);
 }
 
 .fs-base {
-    font-size: 32px;
+    font-size: var(--number-base);
 }
 
 .fs-lg {
-    font-size: 48px;
+    font-size: var(--number-lg);
 }
 
 .fwb {
