@@ -6,7 +6,7 @@
 @import url('a.css');
 @import url('img.css');
 @import url('h.css');
-@import url('utility/utility.css');
+@import url('./utility/utility.css');
 /* https://ka2yuki.github.io */
 
 * {
@@ -91,8 +91,8 @@ p {
 
 section {
     margin: 0 auto;
-    /* section bg-c は 個別して portfolio時 その部分だけ白くなる */
-    background: white;
+    /* section の bg-c は 個別に指定 portfolio時 その部分だけ白くなる */
+    /* background white */
 }
 
 

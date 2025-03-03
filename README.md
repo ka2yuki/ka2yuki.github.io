@@ -5,8 +5,15 @@ cssファイルが多すぎる為、できるだけディレクトリに分け�
 - components | 部品用のcss
 - libs | ライブラリ使用時ライブラリ専用のcss
 
+対応する端末
+- sp/ | 大体対応
+- tab/ | まれに必要
+- pc/ | wideになれば必要
+
 directory案：
-- layout | components よりも抽象的な枠組み 
+- layout | components よりも抽象的な枠組み | マストではないが よくわからんに分類。
+- pc/ を作成するかどうか。| マストではないが よくわからんに分類。
+- 端末/compone/ の様に フラット化からインクルードする。| マストではないが なお良さげに分類。
 
 
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)

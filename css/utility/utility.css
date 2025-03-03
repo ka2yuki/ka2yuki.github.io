@@ -105,6 +105,17 @@
     justify-items: center;
 }
 
+/* https://ka2yuki.github.io
+ */
+@media screen and (max-width: 640px) {
+
+    .sp-flc,
+    .sp-fdc {
+        flex-direction: column;
+    }
+
+}
+
 
 
 
