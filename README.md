@@ -1,4 +1,9 @@
-currently
+# ディレクトリ構成
+cssファイルが多すぎる為、できるだけディレクトリに分けたい
+
+- utility | 調整用
+- components | 部品用のcss
+- libs | ライブラリ使用時ライブラリ専用のcss
 
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
   
@@ -7,7 +12,7 @@ currently
 -->  
 <img src="https://avatars.githubusercontent.com/in/29110?s=15" /> [security/dependabot](https://github.com/ka2yuki/ka2yuki.github.io/security/dependabot)
 
-# favo
+# 調査
 - [git-ftp](https://github.com/git-ftp/git-ftp?tab=readme-ov-file)
 
 # bookmark
