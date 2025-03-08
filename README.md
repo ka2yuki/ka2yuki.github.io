@@ -30,15 +30,14 @@ directory案：
 - [docker-pure-ftpd](https://github.com/stilliard/docker-pure-ftpd)
 
 
-```
-# return vanilla html
-curl "https://www.google.com/search?q=your+search+query"
-# text bace browser
-lynx "https://www.google.com/search?q=your+search+query"
-googler your search query
-# open default browser
-open "https://www.google.com/search?q=your+search+query"
-```
+return vanilla html  
+[curl](https://github.com/curl/curl) `"https://www.google.com/search?q=your+search+query"`  
+text bace browser  
+[lynx](https://github.com/lynx-family/lynx) `"https://www.google.com/search?q=your+search+query"`  
+googler your search query  
+open default browser  
+open `"https://www.google.com/search?q=your+search+query"`
+
 ---
 # my lib
 
