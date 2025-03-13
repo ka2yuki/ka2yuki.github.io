@@ -8,6 +8,11 @@
 
 @media screen and (max-width: 640px) {
 
+    main section .title {
+        gap: 3px;
+    }
+
+
     /* width */
     .sp-w80 {
         /* 

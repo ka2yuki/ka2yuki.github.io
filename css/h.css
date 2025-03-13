@@ -4,6 +4,7 @@
 h1,
 h2,
 h3 {
-    color: var(--main-color);
+    /* color var(--main-color) */
+    /* 最初から色を指定しない。 */
     margin: 0;
 }

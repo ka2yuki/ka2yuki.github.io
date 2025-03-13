@@ -47,70 +47,6 @@ body {
     /* コンテンツ自体が　なく 100vh　したい時は vh100 class を使用 */
 }
 
-a {
-    text-decoration: none;
-    /* color: white; */
-    /* 基本背景色が　白　の時に困るんで。color: white　をデフォにしないと思ったが blue。の時はあまりないので　見つけやすい． */
-
-    /* footerなど背景を敷くことが多いので white で　ok */
-}
-
-footer a {
-    /* color: white */
-    /*  footerなど背景を敷くことが多いが敷かないこともあるので 
-     *  site固有に：white で　ok だった. 2024.02.28 
-     *  contact a も
-     */
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-li {
-    /* list-style-type none; */
-    /* OL li の スタイルは　活かしたい */
-}
-
-/* 
- * wrap しないで直接 px 指定しても (-0-)みたいに ならかったりする。けど　どこかで　なった気がする。。
- * たぶん display:flex; align-items:unset; の時に height 付けないと 膨らんだきがする。。その際は width:100% で wrapする方向。
- *
- * img { 100% } は 親ボックス を はみ出さないので　便利。 => 組んだサイトで 100%　を外してみて試して再確認。 
- * 　その他にも　下記で便利
- * - display: flex;
- * - display: grid; 
- *　　img {　100%　}　だと　grid-template-columnsの repeate(3, 1fr) が　均等に。
- *
- * icon など　スマホ < PC で画像が　変化する必要がない場合： <img width="20" /> として使用する。
- * その為 img に 100% は指定せず、。
- */
-img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-p {
-    /* margin: 0 */
-    /* p tag のマージンは生かして 個別に。 */
-}
-
-section {
-    margin: 0 auto;
-    /* section の bg-c は 個別に指定 portfolio時 その部分だけ白くなる */
-    /* background white */
-}
-
-
-.border-static {
-    width: 100px;
-    display: block;
-    border: solid 1px;
-    margin: 0 auto;
-}
 
 
 header {
@@ -353,6 +289,14 @@ header nav ul li a:hover .border {
 
 
 
+main {
+    width: 100vw;
+    /*　この css　では。。
+     main に 100vw以外指定しないで section に指定する。
+     sectionに　背景を　敷くことが　多い為。忘れるのであえてmainに100vwと指定してコード上から確認する。
+    */
+}
+
 
 /*
  * Component: breadcrumbs
@@ -426,8 +370,9 @@ main section .title .en {
 
 main section .title .ja {
     font-weight: bold;
-    color: var(--main-color);
-    /* 大体メインカラー それぞれで調整 */
+    /* color: var(--main-color); */
+    /* memo: 最初から色を指定しないことにする。 */
+    /* 大体メインカラー を指定したいところだが、各サイトで異なるので、baseフェーズから色は　確定しないことにする。 */
     margin: 0;
     line-height: 1;
     /* font-size: reset; */
@@ -661,7 +606,7 @@ aside {
     main section>.wrap {
         /* wrap は　複数あるので > を付与 */
         width: 95vw;
-        max-width: 85vw;
+        max-width: 90vw;
         margin: 0 auto;
         padding: 50px 0;
         /* border: 1px solid; */
@@ -674,4 +619,79 @@ aside {
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+
+
+
+footer a {
+    /* color: white */
+    /*  footerなど背景を敷くことが多いが敷かないこともあるので 
+     *  site固有に：white で　ok だった. 2024.02.28 
+     *  contact a も
+     */
+}
+
+
+
+section {
+    margin: 0 auto;
+    /* section の bg-c は 個別に指定 portfolio時 その部分だけ白くなる */
+    /* background white */
+}
+
+
+
+
+.border-static {
+    width: 100px;
+    display: block;
+    border: solid 1px;
+    margin: 0 auto;
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    /* list-style-type none; */
+    /* OL li の スタイルは　活かしたい */
+}
+
+/* 
+ * wrap しないで直接 px 指定しても (-0-)みたいに ならかったりする。けど　どこかで　なった気がする。。
+ * たぶん display:flex; align-items:unset; の時に height 付けないと 膨らんだきがする。。その際は width:100% で wrapする方向。
+ *
+ * img { 100% } は 親ボックス を はみ出さないので　便利。 => 組んだサイトで 100%　を外してみて試して再確認。 
+ * 　その他にも　下記で便利
+ * - display: flex;
+ * - display: grid; 
+ *　　img {　100%　}　だと　grid-template-columnsの repeate(3, 1fr) が　均等に。
+ *
+ * icon など　スマホ < PC で画像が　変化する必要がない場合： <img width="20" /> として使用する。
+ * その為 img に 100% は指定せず、。
+ */
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    /* margin: 0 */
+    /* p tag のマージンは生かして 個別に。 */
+}
+
+
+a {
+    text-decoration: none;
+    /* color: white; */
+    /* 基本背景色が　白　の時に困るんで。color: white　をデフォにしないと思ったが blue。の時はあまりないので　見つけやすい． */
+
+    /* footerなど背景を敷くことが多いので white で　ok */
 }
