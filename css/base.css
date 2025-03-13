@@ -41,6 +41,10 @@ body {
     --number-sm: 16px;
     --number-base: 32px;
     --number-lg: 48px;
+
+    position: relative;
+
+    /* コンテンツ自体が　なく 100vh　したい時は vh100 class を使用 */
 }
 
 a {

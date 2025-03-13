@@ -4,11 +4,11 @@
  * https://opensource.org/licenses/MIT
  */
 
-.vh {
+.vh100 {
     height: 100vh;
 }
 
-.dvh {
+.dvh100 {
     height: 100dvh;
 }
 
@@ -164,6 +164,15 @@
 
 .mb10 {
     margin-bottom: 10px;
+}
+
+/* .padding */
+.py10 {
+    padding: 10px 0;
+}
+
+.py20 {
+    padding: 20px 0;
 }
 
 .ptb {
