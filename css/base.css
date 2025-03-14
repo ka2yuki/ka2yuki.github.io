@@ -295,6 +295,9 @@ main {
      main に 100vw以外指定しないで section に指定する。
      sectionに　背景を　敷くことが　多い為。忘れるのであえてmainに100vwと指定してコード上から確認する。
     */
+
+    /* max-width: 1000px; */
+    /* mainで指定しない。.wrapで。 */
 }
 
 
@@ -326,10 +329,15 @@ main .breadcrumbs .wrap span:not(:last-child)::after {
 /* 
  * Area-tag: section 
  */
-main section>.wrap {
+main section>.wrap,
+footer>.wrap {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 100px 0;
+    /* 
+    widthが100%にならないように .wrap のタイミングで padding-x:10px と思ったけど、 
+    - max-widthだとタブレットなど中間デバイスで100%になる場合がある為。それでOK.
+    */
 }
 
 main section .wrap .title span.border {

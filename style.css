@@ -126,7 +126,6 @@ main {
   padding: 0;
   margin: 0 auto;
   /* width 97%; */
-  max-width: 1000px;
   /* border: 5px solid #607D8B; */
 }
 
@@ -183,4 +182,11 @@ li span.tag {
     border-radius: 10px;
   }
 
+}
+
+
+.nuxt-style-b {
+  border-bottom: dashed;
+  border-color: rgb(30 41 59);
+  border-width: medium;
 }
