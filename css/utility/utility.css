@@ -138,6 +138,10 @@
     width: 100%;
 }
 
+.max-w-base {
+    max-width: 450px;
+}
+
 .m0a {
     margin: 0 auto;
 }
