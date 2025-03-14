@@ -12,8 +12,8 @@ cssファイルが多すぎる為、できるだけディレクトリに分け�
 
 directory案：
 - layout | components よりも抽象的な枠組み | マストではないが よくわからんに分類。
-- pc/ を作成するかどうか。| マストではないが よくわからんに分類。
-- 端末/compone/ の様に フラット化からインクルードする。| マストではないが なお良さげに分類。
+- pc/ を作成するかどうか。| マストじゃないけど よくわからない。sp first/pc first
+- 端末:pc/sp /compone/ の様に フラット化からインクルードする。| 案。
 
 
 # [todo list](https://github.com/users/ka2yuki/projects/4/views/2)
