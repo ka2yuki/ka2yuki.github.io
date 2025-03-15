@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>button</title>
 </head>
 
 <body>
+
+
     <a href="#" class="btn">
         <div class="crcle">
             <img class="icon" src="./assets/images/top/bt-circle.svg">
@@ -16,18 +18,64 @@
         <div class="arr-right">
             <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
         </div>
+        <style>
+            a.btn {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 250px;
+                border: solid;
+                color: inherit;
+                padding: 10px 0;
+            }
+        </style>
     </a>
-    <style>
-        a.btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 250px;
-            border: solid;
-            color: inherit;
-            padding: 10px 0;
+
+
+    <hr class="nuxt-style-b">
+
+
+
+    <custom-button href="https://example.com">リンクボタン</custom-button>
+    <script>
+        class CustomButton extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: "open" });
+
+                // a タグを作成
+                const link = document.createElement("a");
+                link.textContent = this.textContent;
+                link.href = this.getAttribute("href") || "#";
+                link.classList.add("button");
+
+                // スタイルを適用
+                const style = document.createElement("style");
+                style.textContent = `
+          .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+          }
+          .button:hover {
+            background-color: #0056b3;
+          }
+        `;
+
+                shadow.appendChild(style);
+                shadow.appendChild(link);
+            }
         }
-    </style>
+
+        customElements.define("custom-button", CustomButton);
+    </script>
+
 
 </body>
 
