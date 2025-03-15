@@ -8,12 +8,13 @@
 window.addEventListener('DOMContentLoaded', function (params) {
 	// コーダー: https:ka2yuki.github.io
 	const div = this.document.createElement('div');
-	div.style = "position:fixed; bottom:0; width:100vw; text-align:center; padding: 20px 0;background: #33333378; z-index: 999;color:white;";
-	div.innerHTML = "開発中";
+	div.style = "position:fixed; bottom:0; width:100vw; text-align:center; padding: 20px 0;background: rgb(45 45 45 / 94%); z-index: 999;color:white;";
+	div.innerHTML = "テストサーバー";
 	// 🚧 
 	div.title = 'https://ka2yuki.github.io';
 	this.document.body.prepend(div);
 });
+
 // damy text
 // Topに戻るボタン
 function setScrollTopBtn(path) {
