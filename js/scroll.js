@@ -3,6 +3,7 @@
  * Released under the MIT License.
  * https://opensource.org/licenses/MIT
  */
+
 function setFollowScroll(terget, scrollTop) {
     console.log(scrollTop);
     if (

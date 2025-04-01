@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2025 https://ka2yuki.github.io
+ * Released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
 .scroll-left {
     animation: scroll-left 70s infinite linear 0.5s;
 }

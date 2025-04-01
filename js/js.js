@@ -44,3 +44,6 @@ function setScrollTopBtn(path) {
 	// <a href="#"><img src="./assets/images/top/bt-top.png" alt="" style="position: fixed; right: 10px;bottom: 10px; width: 120px; cursor: pointer;"></a>
 }
 
+function setNews() {
+
+}
